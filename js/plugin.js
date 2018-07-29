@@ -102,7 +102,9 @@ $(".first-name input").on("focusout", function() {
                         $(".themes-overlay .themes ul li").click(function(){
                             $("link[href*='theme']").attr("href", $(this).attr("data-value"));
                            $(".themes-overlay").fadeOut();
-                        });
+                           $("#tab1-content").delay(500).fadeIn(1000);
+});
+                        
                        
 $('.themes-overlay .themes button').click(function(){
 $('.themes-overlay').fadeOut();
