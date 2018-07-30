@@ -10,12 +10,12 @@ $rgba_back: rgba(0, 0, 0, 0.2);
 $rgba_back_darker: rgba(0, 0, 0, 0.6);
 
 @font-face {
-	font-family: Itim;
-	src: url("../fonts/Itim-Regular.ttf");
+	font-family: Merienda;
+	src: url("../fonts/Merienda-Regular.ttf");
   }
 body {
 	background: #000;
-	font-family: Itim , Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 }
 .typed-cursor {
     display: none;
@@ -215,7 +215,7 @@ body {
             }
         }
         .first-theme {
-            background: #eef02b;
+            background: #f00b0b;
             span{
                 background: #43A047;
             }

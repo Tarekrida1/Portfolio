@@ -5,7 +5,7 @@
 
 body {
   background: #000;
-  font-family: Itim , Arial, Helvetica, sans-serif;
+  font-family: Itim, Arial, Helvetica, sans-serif;
 }
 
 .typed-cursor {
@@ -236,7 +236,7 @@ body {
 }
 
 .themes-overlay .themes ul .first-theme {
-  background: #9E9D24;
+  background: #f00b0b;
 }
 
 .themes-overlay .themes ul .first-theme span {
@@ -836,7 +836,9 @@ body {
   animation: animate-background 5s ease infinite;
 }
 
-.services h2, .services h1, .services h5 {
+.services h2,
+.services h1,
+.services h5 {
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 

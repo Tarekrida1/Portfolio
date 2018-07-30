@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Itim;
-  src: url("../fonts/Itim-Regular.ttf");
+  font-family: Merienda;
+  src: url("../fonts/Merienda-Regular.ttf");
 }
 
 body {
   background: #000;
-  font-family: Itim , Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .typed-cursor {
@@ -240,7 +240,7 @@ body {
 }
 
 .themes-overlay .themes ul .first-theme {
-  background: #eef02b;
+  background: #f00b0b;
 }
 
 .themes-overlay .themes ul .first-theme span {

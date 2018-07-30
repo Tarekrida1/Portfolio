@@ -5,7 +5,7 @@
 
 body {
   background: #000;
-  font-family: Itim , Arial, Helvetica, sans-serif;
+  font-family: Itim, Arial, Helvetica, sans-serif;
 }
 
 .typed-cursor {
@@ -41,7 +41,7 @@ body {
   position: fixed;
   top: 1.4rem;
   right: 1.24rem;
-  background-image: radial-gradient(#eef02b, #43A047);
+  background-image: radial-gradient(#f00b0b, #43A047);
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -92,7 +92,7 @@ body {
 }
 
 .navigation__item:hover {
-  color: #eef02b;
+  color: #f00b0b;
   text-decoration: none;
   background-position: 100%;
   margin-right: 1.5rem;
@@ -200,7 +200,7 @@ body {
 
 .themes-overlay .themes h3 {
   padding: 10px 0;
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .themes-overlay .themes button {
@@ -236,7 +236,7 @@ body {
 }
 
 .themes-overlay .themes ul .first-theme {
-  background: #9E9D24;
+  background: #f00b0b;
 }
 
 .themes-overlay .themes ul .first-theme span {
@@ -311,7 +311,7 @@ body {
 
 .signup h3 {
   padding-top: 3rem;
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .signup .signup-content {
@@ -350,7 +350,7 @@ body {
   left: 15%;
   top: 30px;
   font-size: 17px;
-  color: #eef02b;
+  color: #f00b0b;
   z-index: -1;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -370,7 +370,7 @@ body {
   left: 13%;
   top: -10px;
   font-size: 20px;
-  color: #eef02b;
+  color: #f00b0b;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -392,27 +392,27 @@ body {
   height: 130px;
   padding: 5px 10px;
   border: none;
-  border-bottom: 1px solid #eef02b;
+  border-bottom: 1px solid #f00b0b;
   background: transparent;
   margin: 0 50px;
 }
 
 .signup textarea::-webkit-input-placeholder {
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .signup textarea:-moz-placeholder {
   /* Firefox 18- */
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .signup textarea::-moz-placeholder {
   /* Firefox 19+ */
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .signup textarea:-ms-input-placeholder {
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .signup button {
@@ -469,7 +469,7 @@ body {
 
 .the-tabs .content .wellcome {
   height: 100vh;
-  background: linear-gradient(281deg, #eef02b, #43A047);
+  background: linear-gradient(281deg, #f00b0b, #43A047);
   background-size: 600% 600%;
   -webkit-animation: animate-background 5s ease infinite;
   animation: animate-background 5s ease infinite;
@@ -512,7 +512,7 @@ body {
 }
 
 .the-tabs .content .wellcome .overlay .wellcome-text p span:nth-of-type(2) span {
-  color: #eef02b;
+  color: #f00b0b;
   font-size: 50px;
   font-weight: 900;
 }
@@ -617,7 +617,7 @@ body {
 }
 
 .moree .con h1 {
-  color: #eef02b;
+  color: #f00b0b;
   font-weight: bold;
   font-size: 50px;
   padding-top: 25px;
@@ -633,7 +633,7 @@ body {
   font-weight: bold;
   border: 4px solid #81ee8e;
   border-radius: 15px;
-  background: #eef02b;
+  background: #f00b0b;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   color: #fff;
@@ -641,7 +641,7 @@ body {
 
 .moree .con button:hover {
   background: none;
-  border: 4px solid #eef02b;
+  border: 4px solid #f00b0b;
 }
 
 .moree .basic h2 {
@@ -690,7 +690,7 @@ body {
 }
 
 .moree .skills .progresss ul li .prog_bar .percent {
-  background: #eef02b;
+  background: #f00b0b;
   height: 100%;
   position: absolute;
   top: 0;
@@ -766,7 +766,7 @@ body {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  background: #eef02b;
+  background: #f00b0b;
   overflow: hidden;
   margin: 40px auto 20px auto;
 }
@@ -802,7 +802,7 @@ body {
 }
 
 .moree .my-cv a:hover {
-  background: #eef02b;
+  background: #f00b0b;
 }
 
 .moree .my-cv .overlay {
@@ -830,28 +830,30 @@ body {
   height: 100vh;
   position: relative;
   padding: 15px;
-  background: linear-gradient(281deg, #eef02b, #000000, #43A047);
+  background: linear-gradient(281deg, #f00b0b, #000000, #43A047);
   background-size: 600% 600%;
   -webkit-animation: animate-background 5s ease infinite;
   animation: animate-background 5s ease infinite;
 }
 
-.services h2, .services h1, .services h5 {
+.services h2,
+.services h1,
+.services h5 {
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
 .services h2 {
   padding: 15px 0;
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .services h1 {
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .services h5 {
   padding-bottom: 15px;
-  color: #eef02b;
+  color: #f00b0b;
 }
 
 .services .carousel {
@@ -892,7 +894,7 @@ body {
 }
 
 .services .carousel .carousel-indicators .active {
-  background: #eef02b;
+  background: #f00b0b;
   margin-top: -5px;
 }
 
