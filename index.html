@@ -14,17 +14,21 @@
   <script src="js/javascript.js"></script>
 </head>
 
+<script src="js/jquery-1.12.1.min.js"></script>
 <body>
-  <script src="js/jquery-1.12.1.min.js"></script>
-  <script src="js/jquery.nicescroll.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/wow.min.js"></script>
   <script>
-    new WOW().init();
-  </script>
-  <script src="js/plugin.js"></script>
+    $(function () {
+    $(window).load(function(){
+        $(".loading").slideUp(600, function(){
+            $(this).remove();
+                });
+            });
+});
+    </script>
+    <div class="loading">
+        <div class="lds-ripple"><div></div><div></div></div>
+      </div>
+  
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
     <label for="navi-toggle" class="navigation__button">
@@ -490,10 +494,16 @@ display:  none;">
     </div>
   </div>
 
-  <div class="loading">
-    <div class="lds-ripple"><div></div><div></div></div>
-  </div>
-   
+
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/plugin.js"></script>   
 </body>
 
 </html>
