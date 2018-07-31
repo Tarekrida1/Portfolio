@@ -116,5 +116,10 @@ $(function () {
     $("#change-color").click(function () {
         $('.themes-overlay').fadeIn();
     });
-
-});
+    $(window).load(function(){
+        $(".loading").fadeOut(300, function(){
+            $(this).remove();
+                });
+            });
+        });
+    
