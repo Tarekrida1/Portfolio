@@ -7,157 +7,208 @@ $dark_color:#007580;
 $grey_light: #f7f7f7;
 $rgba_back: rgba(0, 0, 0, 0.2);
 $rgba_back_darker: rgba(0, 0, 0, 0.6);
+
 @font-face {
-    font-family: Itim;
-    src: url("../fonts/Itim-Regular.ttf");
-}
-
+	font-family: Merienda;
+	src: url("../fonts/Merienda-Regular.ttf");
+  }
 body {
-    background: #000;
-    font-family: Itim, Arial, Helvetica, sans-serif;
+	background: #000;
+	font-family: Arial, sans-serif;
 }
-
 .typed-cursor {
     display: none;
 }
+.inactive {
+    background: $second_color
+}
+.loading {
+height: 100%;
+width: 100%;
+position: fixed;
+z-index: 9999;
+background: #fff;
+top: 0;
+left: 0;
+overflow: hidden;
+}
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid $second_color;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 28px;
+      left: 28px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+      width: 58px;
+      height: 58px;
+      opacity: 0;
+    }
+  }
+  
 
 /* logo */
-
 /* logo*/
 
 .navigation {
-    &__checkbox {
-        display: none;
-    }
-    &__button {
-        background: $w_color;
-        height: 3rem;
-        width: 3rem;
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        border-radius: 50%;
-        z-index: 2000;
-        line-height: 5rem;
-        text-align: center;
-        box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.4);
-        cursor: pointer;
-    }
-    &__background {
-        height: 2.5rem;
-        width: 2.5rem;
-        border-radius: 50%;
-        position: fixed;
-        top: 1.4rem;
-        right: 1.24rem;
-        background-image: radial-gradient($main_color, $second_color);
-        z-index: 1000;
-        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-        text-align: center;
-    }
-    &__nav {
-        height: 100vh;
-        width: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1600;
-        opacity: 0;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    &__list {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-57%, -50%);
-        list-style: none;
-        text-align: center;
-    }
-    &__item {
-        display: inherit;
-        font-size: 1.5rem;
-        font-weight: bold;
-        letter-spacing: 2px;
-        color: $w_color;
-        text-decoration: none;
-        text-transform: uppercase;
-        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $w_color 50%);
-        padding: 1rem 2rem;
-        background-size: 230%;
-        transition: all .4s;
-        width: 320px;
-        margin: 10px auto;
-        transform: translate(500%);
-        &:hover {
-            color: $main_color;
-            text-decoration: none;
-            background-position: 100%;
-            margin-right: 1.5rem;
-        }
-    }
-    &__checkbox:checked~&__background {
-        transform: scale(80);
-    }
-    &__checkbox:checked~&__nav {
-        width: 100%;
-        opacity: 1;
-    }
-    &__icon {
-        position: relative;
-        margin-top: 1.4rem;
-        &,
-        &::before,
-        &::after {
-            width: 2rem;
-            height: 5px;
-            background-color: #000;
-            display: inline-block;
-            border-radius: 5px;
-            transition: all .5s ease-in-out;
-        }
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-        }
-        &::before {
-            top: -.5rem;
-        }
-        &::after {
-            top: .5rem;
-        }
-    }
-    &__button:hover &__icon::before {
-        top: -.8rem
-    }
-    &__button:hover &__icon::after {
-        top: .8rem
-    }
-    &__checkbox:checked+&__button &__icon {
-        background-color: transparent;
-    }
-    &__checkbox:checked+&__button &__icon::before {
-        transform: rotate(135deg);
-        top: 0;
-        background-color: $second_color;
-    }
-    &__checkbox:checked+&__button &__icon::after {
-        transform: rotate(-135deg);
-        top: 0;
-        background-color: $second_color;
-    }
-}
+	&__checkbox {
+			display: none;
+	}
+	&__button {
+			background: $w_color;
+			height: 3rem;
+			width: 3rem;
+			position: fixed;
+			top: 1rem;
+			right: 1rem;
+			border-radius: 50%;
+			z-index: 2000;
+			line-height: 5rem;
+			text-align: center;
+			box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.4);
+			cursor: pointer;
+	}
+	&__background {
+		height: 2.5rem;
+		width: 2.5rem;
+		border-radius: 50%;
+		position: fixed;
+		top: 1.4rem;
+		right: 1.24rem;
+		background-image: radial-gradient($main_color, $second_color);
+		z-index: 1000;
+		transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+		text-align: center;
+	}
+	&__nav {
+			height: 100vh;
+			width: 0;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1600;
+			opacity: 0;
+			transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+	}
+	&__list {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-57%, -50%);
+			list-style: none;
+			text-align: center;
 
+
+	}
+	&__item {
+		display: inherit;
+		font-size: 1.5rem;
+		font-weight: bold;
+		letter-spacing: 2px;
+	color: $w_color;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-image: linear-gradient(120deg, transparent 0%, transparent 50% , $w_color 50%);
+	padding: 1rem 2rem;
+	background-size: 230%;
+	transition: all .4s ;
+	width: 320px;
+    margin: 10px auto;
+    transform: translate(500%);
+    cursor: pointer;
+&:hover {
+	color: $main_color;
+	text-decoration: none;
+	background-position: 100%;
+	margin-right: 1.5rem;
+}
+	}
+
+	&__checkbox:checked ~ &__background {
+		transform: scale(80);
+    }
+  
+	&__checkbox:checked ~ &__nav {
+		width: 100%;
+		opacity: 1;
+    }
+	&__icon {
+		position: relative;
+		margin-top: 1.4rem;
+		
+		&,
+		&::before,
+		&::after {
+				width: 2rem;
+				height: 5px;
+				background-color: #000;
+				display: inline-block;
+				border-radius: 5px;
+				transition: all .5s ease-in-out ;
+		}
+		&::before,
+		&::after  {
+			content: "";
+			position: absolute;
+			left: 0;
+			
+		}
+		&::before {
+				top: -.5rem;
+		}
+		&::after {
+			top: .5rem;
+		}
+		 
+	}
+	&__button:hover &__icon::before {top: -.8rem}
+	&__button:hover &__icon::after {top: .8rem}
+	&__checkbox:checked + &__button &__icon {
+			background-color: transparent;
+	}
+	&__checkbox:checked + &__button &__icon::before {
+		transform: rotate(135deg);
+		top: 0;
+		background-color: $second_color;
+
+}
+&__checkbox:checked + &__button &__icon::after {
+	transform: rotate(-135deg);
+	top: 0;
+	background-color: $second_color;
+}
+}
 .show-item {
     transform: translate(0);
 }
-
-.themes-overlay {
-    position: fixed;
+.themes-overlay {  position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 99;
+   z-index: 99;
     background: rgba(0, 0, 0, 0.53);
     border-radius: 10px;
     padding: 5px;
@@ -168,15 +219,15 @@ body {
         background: #fff;
         top: 50%;
         left: 50%;
-        z-index: 100;
-        transform: translate(-50%, -50%);
-        border-radius: 10px;
-        padding: 5px;
+          z-index: 100;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    h5 {
         text-align: center;
-        h5 {
-            text-align: center;
-            margin-right: 38px;
-        }
+        margin-right: 38px;
+    }
         h3 {
             padding: 10px 0;
             color: $main_color
@@ -184,62 +235,67 @@ body {
         button {
             background: transparent;
             color: $second_color;
-            border: none;
+            border : none;
             font-weight: 600;
             padding: 5px;
             transition: all .3s ease-in-out;
             &:hover {
                 background: $second_color;
                 color: #fff;
-                border-radius: 5px;
+                border-radius : 5px;
+                
             }
         }
-        ul {
-            list-style: none;
-            .li-theme {
-                position: relative;
-                span {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    height: 100%;
-                    width: 80px;
-                }
+  
+    ul {
+        list-style: none;
+        .li-theme {
+          
+            position: relative;
+            span {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 80px;
+                
+
             }
-            .first-theme {
-                background: $main_color;
-                span {
-                    background: $second_color;
-                }
+        }
+        .first-theme {
+            background: #f00b0b;
+            span{
+                background: #43A047;
             }
-            .second-theme {
-                background: #3949AB;
-                span {
-                    background: #E57373;
-                }
+        }
+        .second-theme {
+            background: #3949AB;
+            span{
+                background:#E57373 ;
             }
-            .third-theme {
-                background: #FDD835;
-                span {
-                    background: #B388FF;
-                }
+        }
+        .third-theme {
+            background: #FDD835;
+            span{
+                background: #B388FF;
             }
-            .default-theme {
-                background: #00c9fd;
-                span {
-                    background: #ff125a;
-                }
+        }
+        .default-theme {
+            background: #00c9fd;
+            span{
+                background: #ff125a;
             }
+        }
             li {
-                width: 160px;
-                height: 35px;
-                background: #000;
-                margin: 10px 0;
-            }
+            width: 160px;
+            height: 35px;
+            background: #000;
+            margin:  10px 0;
         }
     }
+    }
+  
 }
-
 /*
 .fixed-nav {
 	position: fixed;
@@ -269,28 +325,32 @@ body {
 /* sign up */
 
 .signup {
+    
     height: 100vh;
     width: 100%;
     text-align: center;
     h3 {
-        padding-top: 3rem;
-        color: $main_color
+		padding-top: 3rem;
+		color: $main_color
     }
+ 
     .signup-content {
-        z-index: 1;
-        border: 1px solid;
-        border-radius: 10px;
-        overflow: hidden;
-        color: #000;
-        background: #fff;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-left: 25%;
-        margin-right: 25%;
-        padding: 25px 10px;
-        height: 440px;
+	    z-index: 1;
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #000;
+
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 25%;
+	margin-right: 25%;
+	padding: 25px 10px;
+	height: 440px;
     }
+  
     .signup-input {
         width: 75%;
         height: 35px;
@@ -298,60 +358,63 @@ body {
         margin: 15px auto;
         font-size: 17px;
     }
-    .custom-input {
-        width: 80%;
-        position: relative;
-        padding: 5px;
-        margin: 0 auto;
-        label {
-            position: absolute;
-            left: 15%;
-            top: 30px;
-            font-size: 17px;
-            color: $main_color;
-            z-index: -1;
-            transition: all .3s ease-in-out;
-            -webkit-transition: all .3s ease-in-out;
-            -o-transition: all .3s ease-in-out;
-            -moz-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
-        }
-        input {
-            height: 45px;
-            padding: 5px 10px;
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid $second_color;
-            &:focus+label {
-                position: absolute;
-                left: 13%;
-                top: -10px;
-                font-size: 20px;
-                color: $main_color;
-                transition: all .3s ease-in-out;
-                -webkit-transition: all .3s ease-in-out;
-                -o-transition: all .3s ease-in-out;
-                -moz-transition: all .3s ease-in-out;
-                transition: all .3s ease-in-out;
-            }
-        }
-        .has-data {
-            position: absolute;
-            left: 13%;
-            top: -10px;
-            font-size: 20px;
-            color: $second_color;
-            transition: all .3s ease-in-out;
-            -webkit-transition: all .3s ease-in-out;
-            -o-transition: all .3s ease-in-out;
-            -moz-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
-        }
+.custom-input {
+    width: 80%;
+    position: relative;
+    padding: 5px;
+    margin: 0 auto;
+ 
+    label {
+        position: absolute;
+        left: 15%;
+        top: 30px;
+        font-size: 17px;
+        color: $main_color;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
-    /*
+    input {
+        height: 45px;
+    padding: 5px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $second_color;
+    &:focus + label {
+        position: absolute;
+    left: 13%;
+    top: -10px;
+    font-size: 20px;
+        color:$main_color;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    }
+    .has-data {
+        position: absolute;
+        left: 13%;
+        top: -10px;
+        font-size: 20px;
+        color: $second_color;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }  
+}
+
+/*
 
 */
-    textarea {
+
+     textarea {
         width: 60%;
         height: 130px;
         padding: 5px 10px;
@@ -359,222 +422,190 @@ body {
         border-bottom: 1px solid $main_color;
         background: transparent;
         margin: 0 50px;
-    }
-    textarea::-webkit-input-placeholder {
-        color: $main_color;
-    }
-    textarea:-moz-placeholder {
-        /* Firefox 18- */
-        color: $main_color;
-    }
-    textarea::-moz-placeholder {
-        /* Firefox 19+ */
-        color: $main_color;
-    }
-    textarea:-ms-input-placeholder {
-        color: $main_color;
-    }
-    button {
+	}
+	textarea::-webkit-input-placeholder {
+		color: $main_color;
+		}
+		
+		textarea:-moz-placeholder { /* Firefox 18- */
+		color: $main_color;  
+		}
+		
+		textarea::-moz-placeholder {  /* Firefox 19+ */
+		color: $main_color;  
+		}
+		
+		textarea:-ms-input-placeholder {
+		color: $main_color;  
+		}
+	button {
         padding: 10px 40px;
-        font-size: 25px;
-        font-weight: 600;
-        background: $second_color;
-        border: none;
-        border-radius: 10px;
-        color: #fff;
-        margin-top: 10px;
-        transition: all .3s ease-in-out;
-        &:hover {
-            background: #000;
-        }
+    font-size: 25px;
+    font-weight: 600;
+    background: $second_color;
+    border: none;
+    border-radius: 10px;
+	color: #fff;
+	margin-top: 10px;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background: #000;
+	}
     }
 }
 
 /* sign up */
-
 /************************ wellcom ***********************/
 
 @-webkit-keyframes animate-background {
-    0% {
-        background-position: 0% 56%
-    }
-    50% {
-        background-position: 100% 45%
-    }
-    100% {
-        background-position: 0% 56%
-    }
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
 }
-
 @-moz-keyframes animate-background {
-    0% {
-        background-position: 0% 56%
-    }
-    50% {
-        background-position: 100% 45%
-    }
-    100% {
-        background-position: 0% 56%
-    }
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
 }
-
 @-o-keyframes animate-background {
-    0% {
-        background-position: 0% 56%
-    }
-    50% {
-        background-position: 100% 45%
-    }
-    100% {
-        background-position: 0% 56%
-    }
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
 }
-
-@keyframes animate-background {
-    0% {
-        background-position: 0% 56%
-    }
-    50% {
-        background-position: 100% 45%
-    }
-    100% {
-        background-position: 0% 56%
-    }
+@keyframes animate-background { 
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
 }
-
-/* tabs */
-
-.the-tabs .content:not(:first-of-type) {
-    display: none;
-}
-
-.inactive {
-    background: $second_color
-}
-
-.the-tabs {
-    .content {
-        .wellcome {
-            height: 100vh;
-            background: linear-gradient(281deg, $main_color, $second_color);
-            background-size: 600% 600%;
-            -webkit-animation: animate-background 5s ease infinite;
-            -moz-animation: animate-background 5s ease infinite;
-            -o-animation: animate-background 5s ease infinite;
-            animation: animate-background 5s ease infinite;
-            img {
-                display: block;
-                margin: 5px auto;
+            /* tabs */
+            .the-tabs .content:not(:first-of-type) {
+                display: none;
             }
-            .overlay {
-                background: rgba(0, 0, 0, 0.6);
-                width: 100%;
-                height: 100%;
-                z-index: 2;
-                padding-top: 5px;
-                .wellcome-text {
-                    text-align: center;
-                    p {
-                        color: $w_color;
-                        font-weight: 600;
-                        border-radius: 10px;
-                        padding: 10px;
-                        span:nth-of-type(1) {
-                            font-size: 30px
+          
+            .the-tabs {
+                .content {
+                
+                    .wellcome {
+                        height: 100vh;
+                        background: linear-gradient(281deg, $main_color, $second_color);
+                        background-size: 600% 600%;
+                        -webkit-animation: animate-background 5s ease infinite;
+                        -moz-animation: animate-background 5s ease infinite;
+                        -o-animation: animate-background 5s ease infinite;
+                        animation: animate-background 5s ease infinite;
+                        img {
+                            display: block;
+                            margin: 5px auto;
                         }
-                        span:nth-of-type(2) {
-                            font-size: 50px;
-                            font-weight: 900;
-                            background: $second_color;
-                            padding: 5px 30px;
-                            border-radius: 5px;
-                            span {
-                                color: $main_color;
-                                font-size: 50px;
-                                font-weight: 900;
+                        .overlay {
+                            background: rgba(0, 0, 0, 0.6);
+                            width: 100%;
+                            height: 100%;
+                            z-index: 2;
+                            padding-top: 5px;
+                            .wellcome-text {
+                                text-align: center;
+                                
+                                p {
+                                    color: $w_color;
+                                    font-weight: 600;
+                                    border-radius: 10px;
+                                    padding: 10px;
+                                    span:nth-of-type(1) {
+                                        font-size: 30px
+                                    }
+                                    span:nth-of-type(2) {
+                                        font-size: 50px;
+                                        font-weight: 900;
+                                        background: $second_color;
+                                        padding: 5px 30px;
+                                        border-radius: 5px;
+                                        span {
+                                            color: $main_color;
+                                            font-size: 50px;
+                                            font-weight: 900;
+                                        }
+                                    }
+                                    span:nth-of-type(3) {
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                button {
+                                    background: $second_color;
+                                    border: none;
+                                    border-radius: 50%;
+                                    transition: all .3s ease-in-out;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    transform: translate(-50%, 0);
+                                    bottom: 5px;
+                                    width: 50px;
+                                    height: 50px;
+                                    &:hover {
+                                        width: 60px;
+                                        height: 60px;
+                                    }
+                                    i {
+                                        color: #fff;
+                                        font-size: 20px;
+                                        padding: 10px;
+                                        animation: down 5s infinite;
+                                    }
+                                }
                             }
-                        }
-                        span:nth-of-type(3) {
-                            font-size: 20px;
-                            font-weight: 600;
-                        }
-                    }
-                    button {
-                        background: $second_color;
-                        border: none;
-                        border-radius: 50%;
-                        transition: all .3s ease-in-out;
-                        overflow: hidden;
-                        position: absolute;
-                        transform: translate(-50%, 0);
-                        bottom: 5px;
-                        width: 50px;
-                        height: 50px;
-                        &:hover {
-                            width: 60px;
-                            height: 60px;
-                        }
-                        i {
-                            color: #fff;
-                            font-size: 20px;
-                            padding: 10px;
-                            animation: down 5s infinite;
-                        }
-                    }
-                }
-                .social {
-                    position: absolute;
-                    bottom: 0;
-                    left: 50%;
-                    transform: translate(-50%, -10%);
-                    display: inline-flex;
-                    .icon {
-                        display: inline-block;
-                        background: $w_color;
-                        border-radius: 50%;
-                        width: 50px;
-                        height: 50px;
-                        line-height: 50px;
-                        text-align: center;
-                        margin: 5px;
-                        transition: all .3s ease-in-out;
-                        &:hover {
-                            background: $second_color
-                        }
-                        a {
-                            font-size: 35px;
-                            color: #000;
-                            transition: all .3s ease-in-out;
-                            &:hover {
-                                color: $w_color
+                            .social {
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translate(-50%, -10%); 
+                                display: inline-flex;
+                                .icon {
+                                    display: inline-block;
+                                    background: $w_color;
+                                    border-radius: 50%;
+                                    width: 50px;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    margin: 5px;
+                                    transition: all .3s ease-in-out;
+                                    &:hover {
+                                        background: $second_color
+                                    }
+                                    a {
+                                        font-size: 35px;
+                                        color: #000;
+                                        transition: all .3s ease-in-out;
+                                        &:hover {
+                                            color: $w_color
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-    }
-}
-
-/* tabs */
+            /* tabs */
 
 /*********************** wellcome ************************/
-
 /***************** start about me ***********************/
 
 .moree {
     background: rgb(20, 19, 19);
-    transform: translate(0%, 8%);
-    margin: 0 15px;
+ 
     border-radius: 15px;
     border: 1px solid $second_color;
     position: relative;
+    transform: translate(0%, 8%);
+    margin: 0 15px;
     img {
         border-radius: 50%;
         border: 1px solid $second_color;
         position: absolute;
-        transform: translate(-50%, -90%);
-        -ms-transform: translate(-50%, -90%);
+        transform: translate(-50%,-90%);
+        -ms-transform: translate(-50%,-90%);
     }
     .con {
         text-align: center;
@@ -630,7 +661,8 @@ body {
                 padding: 0;
                 list-style: none;
                 li {
-                    margin: 15px 0;
+                margin: 15px 0;
+                    
                     h4 {
                         letter-spacing: 2px;
                         font-weight: bold;
@@ -674,6 +706,7 @@ body {
                         }
                         .percent98 {
                             width: 98%;
+                          
                         }
                         .percent86 {
                             width: 86%
@@ -762,164 +795,167 @@ body {
 }
 
 /****************** end about me **********************************/
-
 /***************** start sevices ********************/
-
 .services {
-    padding: 20px 0;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    padding: 15px;
-    background: linear-gradient(281deg, $main_color, #000000, $second_color);
-    background-size: 600% 600%;
-    -webkit-animation: animate-background 5s ease infinite;
-    -moz-animation: animate-background 5s ease infinite;
-    -o-animation: animate-background 5s ease infinite;
-    animation: animate-background 5s ease infinite;
-    h2,
-    h1,
-    h5 {
-        text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-    }
-    h2 {
-        padding: 15px 0;
-        color: $main_color
-    }
-    h1 {
-        color: $main_color
-    }
-    h5 {
-        padding-bottom: 15px;
-        color: $main_color
-    }
-    .carousel {
-        text-align: center;
-        position: unset;
-        .carousel-item {
-            padding-top: 15px;
-            i {
-                background: #fff;
-                width: 170px;
-                height: 170px;
-                line-height: 170px;
-                border-radius: 50%;
-                color: $second_color;
-                font-weight: bold;
-                font-size: 90px;
-                text-align: center;
-            }
-            h3 {
-                color: $second_color;
-                font-weight: 600;
-                padding-top: 15px
-            }
-            p {
-                color: #fff;
-                font-weight: 600;
-                padding-top: 10px;
-            }
+	
+	padding: 20px 0;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding: 15px;
+	background: linear-gradient(281deg, $main_color, #000000, $second_color);
+	background-size: 600% 600%;
+	-webkit-animation: animate-background 5s ease infinite;
+	-moz-animation: animate-background 5s ease infinite;
+	-o-animation: animate-background 5s ease infinite;
+	animation: animate-background 5s ease infinite;
+h2, h1, h5 {
+	text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+	h2{
+		padding: 15px 0;
+		color: $main_color
+	}
+	h1 {
+		color: $main_color
+	}
+	h5{
+		padding-bottom: 15px;
+		color: $main_color
+	}
+	.carousel {
+		text-align: center;
+		position: unset;
+		.carousel-item {
+			padding-top: 15px;
+			
+			i{
+				background: #fff;
+				width: 170px;
+				height: 170px;
+				line-height: 170px;
+				border-radius: 50%;
+				color: $second_color;
+				font-weight: bold;
+				font-size: 90px;
+				text-align: center ;
+		
+			}
+			h3 {
+					color: $second_color;
+					font-weight: 600;
+					padding-top: 15px
+			}
+			p {
+				color: #fff;
+				font-weight: 600;
+				padding-top: 10px;
+			}
+		}
+		.carousel-indicators {
+			bottom: 30px;
+			.active {
+				background: $main_color;
+				margin-top: -5px;
+			}
+			li {
+				transition: all .3s ease-in-out;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				margin-right: 10px;
+				background: $second_color
+	 
+			}
+		}
+
+	}
+
+}
+
+/********************** end sevicese                              */
+/*************************** start protfolio ******************/
+.the-tabs {
+    .content {
+       .gallery {
+           width: 100%;
+           overflow: hidden;
+        h1 {
+            color: $w_color;
+            margin: 30px 0;
+            letter-spacing: 4px;
+             text-align: center;
+             font-weight: bold
+
         }
-        .carousel-indicators {
-            bottom: 30px;
-            .active {
-                background: $main_color;
-                margin-top: -5px;
+        p {
+            font-weight: 600;
+            padding-bottom: 10px;
+            color: rgba(243, 245, 243, 0.8);
+            text-align: center
+        }
+        .item {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            
+            img {
+                width: 100%;
+                height: 100%;
             }
-            li {
-                transition: all .3s ease-in-out;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                margin-right: 10px;
-                background: $second_color
+            .overlay {
+             transition: all .4s ease-in-out;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.7);
+                top: 0;
+                left: 0;
+                transform: scale(0);
+                opacity: 0;
+                
+                 .over-text {
+                     position: absolute;
+                     left: 50%;
+                     top: 50%;
+                     transform: translate(-50%, -50%);
+                     text-align: center;
+                     display: grid;
+                     h4 {
+                         font-size: 25px;
+                         font-weight: bold
+                     }
+                     span {
+                         color: $second_color;
+                         font-weight: bold;
+                         text-align: center;
+                         padding-bottom: 10px;
+                         font-size: 22px;
+                     }
+                     a {
+                         background: $second_color;
+                         text-decoration: none;
+                         padding: 5px;
+                         font-size: 30px;
+                         font-weight: 600;
+                         border-radius: 25px;
+                         color: #fff;
+                         transition: all .3s ease-in-out;
+                        
+                         &:hover {
+                             background: $main_color;
+                             color: $second_color
+                         }
+                     }
+                 }
+            }
+            &:hover .overlay {
+             transform: scale(1);
+             opacity: 1;
             }
         }
     }
 }
-
-/********************** end sevicese                              */
-
-/*************************** start protfolio ******************/
-
-.the-tabs {
-    .content {
-        .gallery {
-            width: 100%;
-            overflow: hidden;
-            h1 {
-                color: $w_color;
-                margin: 30px 0;
-                letter-spacing: 4px;
-                text-align: center;
-                font-weight: bold
-            }
-            p {
-                font-weight: 600;
-                padding-bottom: 10px;
-                color: rgba(243, 245, 243, 0.8);
-                text-align: center
-            }
-            .item {
-                position: relative;
-                overflow: hidden;
-                padding: 0;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-                .overlay {
-                    transition: all .4s ease-in-out;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(255, 255, 255, 0.7);
-                    top: 0;
-                    left: 0;
-                    transform: scale(0);
-                    opacity: 0;
-                    .over-text {
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
-                        text-align: center;
-                        display: grid;
-                        h4 {
-                            font-size: 25px;
-                            font-weight: bold
-                        }
-                        span {
-                            color: $second_color;
-                            font-weight: bold;
-                            text-align: center;
-                            padding-bottom: 10px;
-                            font-size: 22px;
-                        }
-                        a {
-                            background: $second_color;
-                            text-decoration: none;
-                            padding: 5px;
-                            font-size: 30px;
-                            font-weight: 600;
-                            border-radius: 25px;
-                            color: #fff;
-                            transition: all .3s ease-in-out;
-                            width: 205px;
-                            &:hover {
-                                background: #000;
-                                color: #fff
-                            }
-                        }
-                    }
-                }
-                &:hover .overlay {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-        }
-    }
 }
 
 /***************** end protfolio *****************************/

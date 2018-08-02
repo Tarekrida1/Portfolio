@@ -164,6 +164,7 @@ body {
   margin: 10px auto;
   -webkit-transform: translate(500%);
           transform: translate(500%);
+  cursor: pointer;
 }
 
 .navigation__item:hover {
@@ -1058,12 +1059,11 @@ body {
   color: #fff;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  width: 205px;
 }
 
 .the-tabs .content .gallery .item .overlay .over-text a:hover {
-  background: #000;
-  color: #fff;
+  background: #00c9fd;
+  color: #ff125a;
 }
 
 .the-tabs .content .gallery .item:hover .overlay {

@@ -140,6 +140,7 @@ overflow: hidden;
 	width: 320px;
     margin: 10px auto;
     transform: translate(500%);
+    cursor: pointer;
 &:hover {
 	color: $main_color;
 	text-decoration: none;
@@ -941,10 +942,10 @@ h2, h1, h5 {
                          border-radius: 25px;
                          color: #fff;
                          transition: all .3s ease-in-out;
-                         width: 205px;
+                        
                          &:hover {
-                             background: #000;
-                             color: #fff
+                             background: $main_color;
+                             color: $second_color
                          }
                      }
                  }
