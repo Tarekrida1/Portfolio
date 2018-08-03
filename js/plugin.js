@@ -37,7 +37,7 @@ $(function () {
 
 
     var typed3 = new Typed('#ppp', {
-        strings: ['<span>Hello World!</span><br><span>My Name Is <span>TaReK</span></span><br><span>I’m a front-end developer</span><br>I have more than 3 years of experience in web Design based on webstandard technologies like HTML5, CSS, javascript, jquery, bootstrap and sass.'],
+        strings: ['<span>Hello World!</span><br><span>My Name Is <span>TaReK</span></span><br><span>I’m a front-end developer</span><br>I have more than 2 years of experience in web Design based on webstandard technologies like HTML5, CSS, javascript, jquery, bootstrap and sass.'],
         typeSpeed: 20,
         loop: false
     });
