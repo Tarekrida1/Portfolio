@@ -146,7 +146,7 @@
 }
     /**************** wellcome ********/
     .wellcome {
-background-image: url(../img/background-mob.jpg);
+background-image: url(../img/Screenshot-mob.svg);
 
     }
 .wellcome .wellcome-text .ppp span:nth-of-type(1) {
@@ -207,7 +207,7 @@ background-image: url(../img/background-mob.jpg);
 
     margin: 40px 15px}
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
     .wellcome img {
         width: 150px;
         height: 180px;

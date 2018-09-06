@@ -139,7 +139,7 @@ body {
 /***************************** start wellcomee ************/
 .wellcome {
   height: 100vh;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/Screenshot.svg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -164,7 +164,6 @@ body {
   font-weight: 600;
   border-radius: 10px;
   padding-top: 10px;
-  text-shadow: #fff 0 0 5px;
 }
 
 .wellcome .wellcome-text .ppp span:nth-of-type(1) {
@@ -180,6 +179,7 @@ body {
   color: #00c9fd;
   font-size: 50px;
   font-weight: 900;
+  text-shadow: #000 0 0 6px;
 }
 
 .wellcome .wellcome-text .ppp span:nth-of-type(3) {
