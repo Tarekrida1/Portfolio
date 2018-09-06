@@ -33,4 +33,8 @@
 .signup textarea {
   text-align: right;
 }
+
+.moree .basic h4, .moree .my-cv a, .gallery h1 {
+  letter-spacing: 0;
+}
 /*# sourceMappingURL=rtl.css.map */

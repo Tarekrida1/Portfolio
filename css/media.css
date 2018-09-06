@@ -13,10 +13,10 @@
           display: inherit;
           text-decoration: none;
           border-radius: 5px ;
-          -webkit-border-radius: 5px ;
-          -moz-border-radius: 5px ;
-          -ms-border-radius: 5px ;
-          -o-border-radius: 5px ;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
           transition: all .4s ease-in-out;
           -webkit-transition: all .4s ease-in-out;
           -moz-transition: all .4s ease-in-out;
@@ -28,7 +28,7 @@
 @media only screen and (max-width: 768px) {
     .navbar .menu {
         width: 280px;
-        background: rgba(255, 255, 255, 0.95);
+        background: #fff;
         text-align: center;
         opacity: 0;
         transition: all 1s ease-in-out;
@@ -45,11 +45,10 @@
         -moz-transform: matrix(1, 0, 0.7, 1, 1000, 0);
         -ms-transform: matrix(1, 0, 0.7, 1, 1000, 0);
         -o-transform: matrix(1, 0, 0.7, 1, 1000, 0);
-        -webkit-transition: all .5s ease-in-out;
-        -moz-transition: all .5s ease-in-out;
-        -ms-transition: all .5s ease-in-out;
-        -o-transition: all .5s ease-in-out;
-    
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
 }
     .menu a {
         color: #000;
@@ -207,4 +206,27 @@ background-image: url(../img/background-mob.jpg);
 .moree {
 
     margin: 40px 15px}
+}
+@media only screen and (max-width: 480px) {
+    .wellcome img {
+        width: 150px;
+        height: 180px;
+    }
+    .wellcome .wellcome-text .ppp span:nth-of-type(1) {
+        font-size: 15px;
+    }
+    .wellcome .wellcome-text .ppp span:nth-of-type(2) span {
+        font-size: 25px;
+    }
+    .wellcome .wellcome-text #pp {
+        font-size: 13px
+    }
+    .moree .my-cv {
+        width: 150px;
+        height: 150px;
+    }
+    .moree .my-cv a {
+        width: 90px;
+        height: 90px;
+        line-height: 90px}
 }

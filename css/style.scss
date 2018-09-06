@@ -3,8 +3,12 @@ $second_color: #ff125a;
 $w_color: #fff;
 $rgba_1:rgba(239, 83, 80, 0.7);
 $rgba_2:rgba(0, 131, 143, 0.7);
+@font-face {
+        src: url(../fonts/Cairo-Regular.ttf);
+        font-family: cairo-font
+}
 body {
-    font-family: sans-serif
+    font-family: cairo-font , sans-serif
 }
 
 .typed-cursor {
@@ -87,14 +91,13 @@ body {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
     .lan {
         font-weight: bold;
+
+        font-size: 12px;
         a {
             color: $main_color;
             padding: 5px;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
+      
+           
             -webkit-transition: all .5s ease-in-out;
             -moz-transition: all .5s ease-in-out;
             -ms-transition: all .5s ease-in-out;
@@ -103,7 +106,13 @@ body {
             &:hover {
                 color: #fff;
                 text-decoration: none;
-                background: $second_color
+                background: $second_color;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+           
             }
         }
     }
@@ -476,14 +485,27 @@ body {
                     font-size: 22px;
                 }
                 a {
-                    background: $second_color;
+                    background: #fff;
                     text-decoration: none;
-                    padding: 5px;
                     font-size: 30px;
+                    width: 70px;
+                    line-height: 70px;
+                    height: 70px;
                     font-weight: 600;
-                    border-radius: 25px;
-                    color: #fff;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    color: #000;
+                    -webkit-transition: all .3s ease-in-out;
                     transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -ms-transition: all .3s ease-in-out;
+                    -o-transition: all .3s ease-in-out;
+                    margin: auto;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4392156862745098);
+
                     &:hover {
                         background: $main_color;
                         color: $second_color

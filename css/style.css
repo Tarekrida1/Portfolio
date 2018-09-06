@@ -1,5 +1,10 @@
+@font-face {
+  src: url(../fonts/Cairo-Regular.ttf);
+  font-family: cairo-font;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: cairo-font , sans-serif;
 }
 
 .typed-cursor {
@@ -100,16 +105,12 @@ body {
 
 .navbar .lan {
   font-weight: bold;
+  font-size: 12px;
 }
 
 .navbar .lan a {
   color: #00c9fd;
   padding: 5px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -118,6 +119,11 @@ body {
   color: #fff;
   text-decoration: none;
   background: #ff125a;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .menu a:hover {
@@ -553,15 +559,27 @@ body {
 }
 
 .gallery .item .overlay .over-text a {
-  background: #ff125a;
+  background: #fff;
   text-decoration: none;
-  padding: 5px;
   font-size: 30px;
+  width: 70px;
+  line-height: 70px;
+  height: 70px;
   font-weight: 600;
-  border-radius: 25px;
-  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #000;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.439216);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.439216);
 }
 
 .gallery .item .overlay .over-text a:hover {
