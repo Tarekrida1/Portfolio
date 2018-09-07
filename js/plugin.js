@@ -1,6 +1,7 @@
 $(function () {
     'use strict';
 
+   
     // animate prog while scroll
     $(document).scroll(function () {
         var y = $(this).scrollTop();
@@ -54,7 +55,17 @@ $(function () {
             $(".repassword label").removeClass("has-data");
         }
     });
-
+    $("#theme-click").on("click", function(){
+        $(".theme-click .i2").toggleClass("i22");
+        $(".themes").toggleClass("themes-1");
+        
+    });
   
+    $(".themes .themes-menu .list div").on("click", function () {       
+        $(".themes").removeClass("themes-1");
+        $(".theme-click .i2").removeClass("i22");
+        $("link[href*='theme']").attr("href", $(this).attr("data-value"));
+ 
+    }); 
         });
     
