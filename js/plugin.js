@@ -1,7 +1,6 @@
 $(function () {
     'use strict';
 
-   
     // animate prog while scroll
     $(document).scroll(function () {
         var y = $(this).scrollTop();

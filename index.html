@@ -12,15 +12,16 @@
   <link rel="stylesheet" href="css/animate.css" type="text/css">
   <link rel="stylesheet" href="css/theme-1.css" type="text/css">
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-1.12.1.min.js"></script>
   <script>
-    $(function () {
-      $(window).on("load", function () {
-        $(".loading").slideUp(600, function () {
-          $(this).remove();
-        });
-      });
-    });
-  </script>
+          $(function () {
+              $(window).load(function () {
+                  $(".loading").slideUp(600, function () {
+                      $(this).remove();
+                  });
+              });
+          });
+      </script>
 </head>
 
 <body>
@@ -480,7 +481,6 @@
   <!-- end loading -->
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
   <script src="js/popper.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
