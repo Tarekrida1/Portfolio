@@ -411,6 +411,8 @@ color: #000;
     transform: translate(0%, 8%);
     margin: 80px 15px;
     img {
+        height: 200px;
+        width: 200px;
         border-radius: 50%;
         border: 1px solid $second_color;
         position: absolute;
