@@ -92,32 +92,9 @@ body {
 
 /**************************** end loading ************/
 /*********** start themes *******/
-.themes {
-  /*
-    display: none;
-    */
-  position: fixed;
-  background: rgba(0, 200, 83, 0.5);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 99998;
-  transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-}
-
-.themes .themes-menu {
-  height: 300px;
-  width: 200px;
+.themes-menu {
+  height: 160px;
+  width: 100px;
   background: #fff;
   position: fixed;
   border-radius: 10px;
@@ -125,10 +102,13 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  right: 50%;
+  right: 0;
   bottom: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  transform: translate(102%, 50%);
+  -o-transform: translate(102%, 50%);
+  -webkit-transform: translate(102%, 50%);
+  -ms-transform: translate(102%, 50%);
+  -moz-transform: translate(102%, 50%);
   transition: all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
@@ -142,85 +122,79 @@ body {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
 }
 
-.themes .themes-menu span {
+.themes-menu span {
   font-weight: bold;
   text-align: center;
   display: block;
-  margin: 10px;
-  font-size: 24px;
+  margin: 5px;
+  font-size: 14px;
 }
 
-.themes .themes-menu .list {
+.themes-menu .list {
   margin: auto;
   display: -ms-grid;
   display: grid;
   text-align: center;
 }
 
-.themes .themes-menu .list div {
-  width: 100px;
-  height: 30px;
+.themes-menu .list div {
+  width: 40px;
+  height: 20px;
   cursor: pointer;
-  margin: 5px auto;
+  margin: 2px auto;
   position: relative;
+  border-radius: 5px;
 }
 
-.themes .themes-menu .list div div {
+.themes-menu .list div div {
   position: absolute;
-  top: -5px;
+  top: -2px;
   right: 0;
-  width: 50px;
+  width: 20px;
+  border-radius: 2px 5px;
 }
 
-.themes .themes-menu .list #theme-1 {
+.themes-menu .list #theme-1 {
   background: #ff125a;
 }
 
-.themes .themes-menu .list #theme-1 div {
+.themes-menu .list #theme-1 div {
   background: #00c9fd;
 }
 
-.themes .themes-menu .list #theme-2 {
+.themes-menu .list #theme-2 {
   background: #00c853;
 }
 
-.themes .themes-menu .list #theme-2 div {
+.themes-menu .list #theme-2 div {
   background: #FFB74D;
 }
 
-.themes .themes-menu .list #theme-3 {
+.themes-menu .list #theme-3 {
   background: #FF7043;
 }
 
-.themes .themes-menu .list #theme-3 div {
+.themes-menu .list #theme-3 div {
   background: #9575CD;
 }
 
-.themes .themes-menu .list #theme-4 {
+.themes-menu .list #theme-4 {
   background: #F48FB1;
 }
 
-.themes .themes-menu .list #theme-4 div {
+.themes-menu .list #theme-4 div {
   background: #26A69A;
 }
 
-.themes .themes-menu .list #theme-5 {
+.themes-menu .list #theme-5 {
   background: #9E9E9E;
 }
 
-.themes .themes-menu .list #theme-5 div {
+.themes-menu .list #theme-5 div {
   background: #AFB42B;
 }
 
-.themes-1 {
-  transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-}
-
-.theme-click {
+.themes-menu .theme-click {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -229,12 +203,19 @@ body {
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
   position: fixed;
-  bottom: 5px;
+  top: -30px;
   cursor: pointer;
-  right: 5px;
+  right: 50%;
+  -webkit-transform: translate(-175%);
+          transform: translate(-175%);
   background: #fff;
   z-index: 99999;
   border: none;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
   -ms-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
@@ -242,11 +223,11 @@ body {
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
 }
 
-.theme-click .i1, .theme-click .i2 {
+.themes-menu .theme-click .i1, .themes-menu .theme-click .i2 {
   position: absolute;
   top: 0;
   left: 0;
-  background: #00c853;
+  background: #fff;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -257,9 +238,10 @@ body {
   line-height: 30px;
   z-index: 999910;
   color: #000;
+  font-size: 14px;
 }
 
-.theme-click .i2 {
+.themes-menu .theme-click .i2 {
   z-index: 999911;
   transition: all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
@@ -273,12 +255,28 @@ body {
   -moz-transform: scale(0);
 }
 
-.theme-click .i22 {
+.themes-menu .theme-click .i22 {
   transform: scale(1);
   -o-transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
+}
+
+.themes-menu .theme-click-1 {
+  transform: translate(50%);
+  -o-transform: translate(50%);
+  -webkit-transform: translate(50%);
+  -ms-transform: translate(50%);
+  -moz-transform: translate(50%);
+}
+
+.themes-1 {
+  transform: translate(0, 50%);
+  -o-transform: translate(0, 50%);
+  -webkit-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
 }
 
 /*********** end themes *******/
@@ -602,6 +600,7 @@ body {
   position: absolute;
   left: 20%;
   bottom: 20%;
+  font-size: 14px;
   z-index: 2;
   font-weight: bold;
 }
@@ -654,7 +653,7 @@ body {
 
 .gallery p {
   font-weight: 600;
-  padding-bottom: 10px;
+  padding: 10px 0;
   color: #FFB74D;
   text-align: center;
 }
@@ -753,11 +752,11 @@ body {
 
 .services h2 {
   padding: 15px 0;
-  color: #00c853;
+  color: #FFB74D;
 }
 
 .services h1 {
-  color: #FFB74D;
+  color: #00c853;
   font-weight: bold;
   font-size: 50px;
 }
@@ -1153,9 +1152,6 @@ body {
     width: 130px;
     line-height: 130px;
     font-size: 75px;
-  }
-  .services h1 {
-    font-size: 20px;
   }
   .services h5 {
     font-size: 16px;

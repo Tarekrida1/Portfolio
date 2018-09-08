@@ -55,13 +55,15 @@ $(function () {
         }
     });
     $("#theme-click").on("click", function(){
+        $(this).toggleClass("theme-click-1");
         $(".theme-click .i2").toggleClass("i22");
-        $(".themes").toggleClass("themes-1");
+        $(".themes-menu").toggleClass("themes-1");
         
     });
   
-    $(".themes .themes-menu .list div").on("click", function () {       
-        $(".themes").removeClass("themes-1");
+    $(".themes-menu .list div").on("click", function () {       
+        $(".themes-menu").removeClass("themes-1");
+        $("#theme-click").removeClass("theme-click-1");
         $(".theme-click .i2").removeClass("i22");
         $("link[href*='theme']").attr("href", $(this).attr("data-value"));
  
