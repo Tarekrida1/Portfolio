@@ -264,11 +264,11 @@ body {
 }
 
 .themes-menu .theme-click-1 {
-  transform: translate(50%);
-  -o-transform: translate(50%);
-  -webkit-transform: translate(50%);
-  -ms-transform: translate(50%);
-  -moz-transform: translate(50%);
+  transform: translate(50%) rotate(-180deg);
+  -o-transform: translate(50%) rotate(-180deg);
+  -webkit-transform: translate(50%) rotate(-180deg);
+  -ms-transform: translate(50%) rotate(-180deg);
+  -moz-transform: translate(50%) rotate(-180deg);
 }
 
 .themes-1 {
