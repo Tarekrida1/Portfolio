@@ -196,6 +196,14 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .wellcome .wellcome-text .ppp span:nth-of-type(1) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .wellcome .wellcome-text #pp {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -208,12 +216,6 @@
   }
   .wellcome .wellcome-text .ppp span:nth-of-type(1) {
     font-size: 64px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .wellcome .wellcome-text #pp {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -222,9 +224,9 @@
     margin-top: 70px;
   }
   .wellcome .wellcome-text .ppp span:nth-of-type(1) {
-    font-size: 40px;
-    margin-left: 0;
-    margin-right: 0;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
