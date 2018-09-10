@@ -371,7 +371,7 @@ font-size: 14px;
         display: inline-flex;
         .icon {
             display: inline-block;
-            background: #000;
+            background: #fff;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -379,16 +379,17 @@ font-size: 14px;
             text-align: center;
             margin: 2px;
             transition: all .3s ease-in-out;
-            &:hover {
-                background: $second_color
-            }
+           
             a {
                 font-size: 35px;
-                color: #fff;
-                transition: all .3s ease-in-out;
-                &:hover {
-                    color: $w_color
-                }
+                color: #000;
+              
+            }
+            &:hover {
+                background: $second_color;
+            }
+            &:hover a {
+                color: #fff
             }
         }
     }
