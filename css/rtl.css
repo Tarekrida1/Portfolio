@@ -37,4 +37,12 @@
 .moree .basic h4, .moree .my-cv a, .gallery h1 {
   letter-spacing: 0;
 }
+
+#all {
+  border-radius: 0 65px 65px 0;
+}
+
+#brands {
+  border-radius: 65px 0 0 65px;
+}
 /*# sourceMappingURL=rtl.css.map */

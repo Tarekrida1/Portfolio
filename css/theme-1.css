@@ -195,6 +195,7 @@ body {
 }
 
 .themes-menu .theme-click {
+  outline: none;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -323,6 +324,10 @@ body {
   display: none;
 }
 
+#toggle:checked ~ .click span:nth-of-type(1), #toggle:checked ~ .click span:last-child {
+  background: #ff125a;
+}
+
 /****************************** end nav *****************/
 /***************************** start wellcomee ************/
 .wellcome {
@@ -334,12 +339,14 @@ body {
 }
 
 .wellcome .wellcome-text {
-  margin-top: 100px;
+  margin-top: 150px;
   text-align: center;
 }
 
 .wellcome .wellcome-text #pp {
   font-weight: bold;
+  margin-right: 200px;
+  margin-left: 200px;
 }
 
 .wellcome .wellcome-text .ppp {
@@ -348,7 +355,7 @@ body {
 }
 
 .wellcome .wellcome-text .ppp span:nth-of-type(1) {
-  font-size: 65px;
+  font-size: 100px;
 }
 
 .wellcome .wellcome-text .ppp span:nth-of-type(1) span {
@@ -573,65 +580,30 @@ body {
 
 .moree .my-cv {
   text-align: center;
-  position: relative;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  background: #00c9fd;
-  overflow: hidden;
-  margin: 40px auto 20px auto;
+  margin: 10px 0 20px 0;
+  background: #fff;
+  width: 130px;
+  padding: 5px 0;
+  margin: 20px auto;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
 }
 
 .moree .my-cv a {
-  background: #ff125a;
-  color: #fff;
-  width: 180px;
-  display: block;
-  margin: auto;
-  height: 180px;
-  letter-spacing: 2px;
-  line-height: 180px;
+  color: #000;
   text-decoration: none;
-  border: 1px solid #fff;
-  -webkit-transition: all .2s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  border-radius: 50%;
-  position: absolute;
-  left: 20%;
-  bottom: 20%;
-  z-index: 2;
-  font-size: 14px;
-  font-weight: bold;
 }
 
-.moree .my-cv a:hover + .overlay {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.moree .my-cv a:hover {
-  background: #00c9fd;
-}
-
-.moree .my-cv .overlay {
-  position: absolute;
+.moree .my-cv:hover {
   background: #ff125a;
-  width: 45px;
-  opacity: 0;
-  display: block;
-  left: 43%;
-  bottom: 43%;
-  height: 45px;
-  z-index: 1;
-  -webkit-transition: all 4s ease-in-out;
-  text-align: center;
-  border-radius: 50%;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+}
+
+.moree .my-cv:hover a {
+  color: #fff;
 }
 
 /****************** end about me **********************************/
@@ -644,7 +616,7 @@ body {
 
 .gallery h1 {
   color: #00c9fd;
-  margin: 30px 0 0 0;
+  margin: 10px 0 0 0;
   letter-spacing: 4px;
   text-align: center;
   font-weight: bold;
@@ -666,7 +638,8 @@ body {
 
 .gallery .item img {
   width: 100%;
-  height: 100%;
+  height: 200px;
+  overflow: hidden;
 }
 
 .gallery .item .overlay {
@@ -741,6 +714,47 @@ body {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
+}
+
+#my-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#my-tabs li {
+  display: inline-block;
+  padding: 10px;
+  background: #ff125a;
+  border: 1px solid #000;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  margin-right: -5px;
+  transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+#my-tabs li.inactive {
+  background: #fff;
+  color: #000;
+}
+
+#my-tabs li.inactive:hover {
+  background: #ff125a;
+  color: #fff;
+}
+
+#all {
+  border-radius: 65px 0 0 65px;
+}
+
+#brands {
+  border-radius: 0 65px 65px 0;
 }
 
 /******************end gallery */
@@ -964,222 +978,21 @@ body {
 }
 
 .signup button {
-  padding: 10px 40px;
-  font-size: 25px;
+  padding: 5px 20px;
+  font-size: 16px;
   font-weight: 600;
-  background: #ff125a;
+  background: #fff;
   border: none;
+  border: 1px solid #ff125a;
   border-radius: 10px;
-  color: #fff;
+  color: #000;
   margin-top: 10px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 .signup button:hover {
-  background: #000;
+  background: #ff125a;
+  color: #fff;
 }
-
-/******************************* media ******************/
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .navbar .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 5px auto;
-  }
-  .menu a {
-    margin: 5px;
-    padding: 5px;
-    color: #000;
-    font-size: 14px;
-    display: inherit;
-    text-decoration: none;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .navbar .menu {
-    width: 150px;
-    background: #fff;
-    text-align: center;
-    opacity: 0;
-    transition: all 1s ease-in-out;
-    position: fixed;
-    right: 0;
-    max-height: 85vh;
-    overflow-y: auto;
-    z-index: 90;
-    top: 50px;
-    padding: 30px;
-    transform: matrix(1, 0, 0.7, 1, 1000, 0);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%, 0 64%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%, 0 64%);
-    -webkit-transform: matrix(1, 0, 0.7, 1, 1000, 0);
-    -moz-transform: matrix(1, 0, 0.7, 1, 1000, 0);
-    -ms-transform: matrix(1, 0, 0.7, 1, 1000, 0);
-    -o-transform: matrix(1, 0, 0.7, 1, 1000, 0);
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-  }
-  .menu a {
-    color: #000;
-    font-size: 14px;
-    padding: 5px;
-    border-radius: 5px;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    display: inherit;
-    text-decoration: none;
-    transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-  }
-  .click {
-    position: absolute;
-    right: 20px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    padding: 5px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-  }
-  .click span {
-    height: 2px;
-    width: 25px;
-    background: #000;
-    display: inline-block;
-    position: absolute;
-    margin: -4px 6.5px;
-    border-radius: 15px;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-  .click span:nth-of-type(1) {
-    top: 13px;
-    left: 0;
-  }
-  .click span:nth-of-type(2) {
-    top: 22px;
-    left: 0;
-  }
-  .click span:last-child {
-    top: 30px;
-    left: 0;
-  }
-  #toggle:checked ~ .menu {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-  .click:hover span:nth-of-type(1) {
-    top: 11px;
-  }
-  .click:hover span:nth-of-type(3) {
-    top: 33px;
-  }
-  #toggle:checked ~ .click span:nth-of-type(2) {
-    background: transparent;
-  }
-  #toggle:checked ~ .click span:nth-of-type(1) {
-    top: 22px;
-    left: 0px;
-    transform: rotate(-135deg);
-    background: #ff125a;
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -ms-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
-  }
-  #toggle:checked ~ .click span:last-child {
-    top: 22px;
-    left: 0px;
-    background: #ff125a;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-  }
-  /**************** wellcome ********/
-  .wellcome {
-    background-image: url(../img/Screenshot-mob.svg);
-  }
-  .wellcome .wellcome-text .ppp :nth-of-type(1) {
-    font-size: 45px;
-  }
-  .wellcome .social .icon {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-  }
-  .wellcome .social .icon a {
-    font-size: 25px;
-  }
-  /**************** end wellcome *************/
-  /*************** gallery */
-  .gallery {
-    margin-top: 150px;
-  }
-  /***************** end gallery *****/
-  /******************* services **********/
-  .services .carousel .carousel-item i {
-    height: 130px;
-    width: 130px;
-    line-height: 130px;
-    font-size: 75px;
-  }
-  .services h5 {
-    font-size: 16px;
-  }
-  .services .carousel .carousel-item p {
-    padding-top: 0;
-  }
-  /******************* end services **********/
-  .signup .signup-content {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .moree {
-    margin: 40px 15px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  .moree .my-cv {
-    width: 150px;
-    height: 150px;
-  }
-  .moree .my-cv a {
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
-  }
-}
-
-/********************************* media ******************/
 /*# sourceMappingURL=theme-1.css.map */

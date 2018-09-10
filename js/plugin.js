@@ -68,5 +68,24 @@ $(function () {
         $("link[href*='theme']").attr("href", $(this).attr("data-value"));
  
     }); 
+    // tabs
+// get the click li  id and cache in myId varible
+ $("#my-tabs li").on("click", function()
+ {
+var myID = $(this).attr("id");
+// remove class inactive frome clicked li and add it to other li in the same UL
+ $(this).removeClass("inactive").siblings().addClass("inactive");
+ $(".tab").fadeOut();
+ $("."+myID+"-content").fadeIn(700);
+ // $(".the-tabs .ss").fadeOut(5000);
+// hide all divs when click on the li
+
+
+});
+
+$("#my-tabs .all").on("click", function(){
+    $(".tab").fadeIn();
+});
+
         });
     

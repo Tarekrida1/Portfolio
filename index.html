@@ -11,55 +11,50 @@
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/animate.css" type="text/css">
   <link rel="stylesheet" href="css/theme-1.css" type="text/css">
+  <link rel="stylesheet" href="css/media.css" type="text/css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-1.12.1.min.js"></script>
   <script>
-          $(function () {
-              $(window).load(function () {
-                  $(".loading").slideUp(600, function () {
-                      $(this).remove();
-                  });
-              });
-          });
-      </script>
+    $(function () {
+      $(window).load(function () {
+        $(".loading").slideUp(600, function () {
+          $(this).remove();
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
-
-
   <!-- theme option   -->
-    <div class="themes-menu">
-      <span>Change Theme</span>
-      <div class="list">
-        <div id="theme-1" data-value="css/theme-1.css">
-          <div></div>
-        </div>
-        <div id="theme-2" data-value="css/theme-2.css">
-          <div></div>
-        </div>
-        <div id="theme-3" data-value="css/theme-3.css">
-          <div></div>
-        </div>
-        <div id="theme-4" data-value="css/theme-4.css">
-          <div></div>
-        </div>
-        <div id="theme-5" data-value="css/theme-5.css">
-          <div></div>
-        </div>
-
+  <div class="themes-menu">
+    <span>Change Theme</span>
+    <div class="list">
+      <div id="theme-1" data-value="css/theme-1.css">
+        <div></div>
       </div>
-      <button class="theme-click" id="theme-click">
-        <i class="i1 fa  fa-thumb-tack"></i>
-        <i class="i2 fa  fa-close"></i>
-      </button>
+      <div id="theme-2" data-value="css/theme-2.css">
+        <div></div>
+      </div>
+      <div id="theme-3" data-value="css/theme-3.css">
+        <div></div>
+      </div>
+      <div id="theme-4" data-value="css/theme-4.css">
+        <div></div>
+      </div>
+      <div id="theme-5" data-value="css/theme-5.css">
+        <div></div>
+      </div>
     </div>
-   
-  
+    <button class="theme-click" id="theme-click">
+      <i class="i1 fa  fa-thumb-tack"></i>
+      <i class="i2 fa  fa-close"></i>
+    </button>
+  </div>
   <!-- theme option   -->
   <!-- start nav -->
   <nav class="navbar">
     <div class="lan">
-      <a href="index.html">ENGLISH</a> /
       <a href="index-rtl.html">عربي</a>
     </div>
     <input type="checkbox" id="toggle">
@@ -74,8 +69,6 @@
       <a href="#" class="menu-item">Portfolio</a>
       <a href="#" class="menu-item">Services</a>
       <a href="#" class="menu-item">Contact Me</a>
-
-
     </div>
   </nav>
   <!-- end nav -->
@@ -91,10 +84,7 @@
           <span></span>
         </p>
         <p id="pp" data-text="I’m a front-end developer I have more than 2 years of experience in web Design based on webstandard technologies like HTML5, CSS, javascript, jquery, bootstrap and sass."></p>
-
-
       </div>
-
     </div>
     <div class="social">
       <div class="icon">
@@ -122,7 +112,6 @@
           <i class="fa fa-linkedin"></i>
         </a>
       </div>
-
     </div>
   </div>
   <!-- end wellcome -->
@@ -154,7 +143,6 @@
           <P>Muslim</P>
           <h4>Military Service :</h4>
           <P>Completed</P>
-
         </div>
         <div class="skills col-md-6 col-sm-12">
           <h2>My Skills</h2>
@@ -241,147 +229,393 @@
       <a href="https://onedrive.live.com/?authkey=%21AI5uy39fOBDkLEg&cid=5E4F6DAE2F8B84DE&id=5E4F6DAE2F8B84DE%21104300&parId=5E4F6DAE2F8B84DE%21103814&o=OneUp"
         target="_blank">
         <i class="fa fa-download"></i> Resume</a>
-      <div class="overlay">
-
-      </div>
     </div>
-
   </div>
   <!-- end more about me -->
   <!-- start gallery -->
   <div class="gallery">
     <h1>Portfolio</h1>
     <p>Most Important Websites I have developed them.</p>
-    <div class="row">
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/books.jpg" alt="Books Template" title="Books Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>Books Template</h4>
-            <span>$9</span>
-            <a href="https://tarekrida1.github.io/books_web_page_NotCompletd/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
+    <div class="the-tabs">
+      <ul id="my-tabs">
+        <li class="all" id="all">All</li>
+        <li id="templates" class="inactive">Templates</li>
+        <li id="graphics" class="inactive">graphics</li>
+        <li id="Photographs" class="inactive">Photographs</li>
+        <li id="brands" class="inactive">Brands</li>
+      </ul>
+        <div class="row">
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12 photo">
+            <img src="img/Screenshots/books.jpg" alt="Books Template" title="Books Template">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>Books Template</h4>
+                <span>$9</span>
+                <a href="https://tarekrida1.github.io/books_web_page_NotCompletd/" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/Screenshots/courses.jpg" alt="Courses Template" title="Courses Template">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>Courses Template</h4>
+                <span>$23</span>
+                <a href="https://tarekrida1.github.io/page_task/" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/08.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/08.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/brands/1.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/brands/1.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/graphics/6.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/graphics/6.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/graphics/1.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/graphics/1.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/graphics/3.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/graphics/3.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/brands/3.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/brands/3.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/graphics/7.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/graphics/7.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/Screenshots/cloud.jpg" alt="Cloud Template" title="Cloud Template">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>Cloud Template</h4>
+                <span>$10</span>
+                <a href="https://tarekrida1.github.io/cloud/" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/02.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/02.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/brands/5.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/brands/5.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/03.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/03.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/Screenshots/bootstrap.jpg" alt="bootstrap 4 Template" title="bootstrap 4 Template">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>bootstrap 4 Template</h4>
+                <span>$13</span>
+                <a href="https://tarekrida1.github.io/bootstrab4/" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/04.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/04.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/06.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/06.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/07.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/07.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/09.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/09.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/11.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/11.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/brands/2.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/brands/2.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/graphics/5.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/graphics/5.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/12.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/12.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/graphics/4.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/graphics/4.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/15.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/15.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/Screenshots/1.jpg" alt="Personal Template" title="Personal Template">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>Personal Template</h4>
+                <span>$9</span>
+                <a href="https://tarekrida1.github.io/project3/" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/graphics/2.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/graphics/2.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/13.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/13.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/14.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/14.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/16.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/16.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/graphics/8.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/graphics/8.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/mycamera/17.jpg" alt="" title="">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>$14</h4>
+                <a href="img/mycamera/17.jpg" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+            <img src="img/Screenshots/6.jpg" alt="Pesonal 2 Template" title="Pesonal 2 Template">
+            <div class="overlay">
+              <div class="over-text">
+                <h4>Pesonal 2 Template</h4>
+                <span>$11</span>
+                <a href="https://tarekrida1.github.io/new/" target="_blank">
+                  <i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/bootstrap.jpg" alt="bootstrap 4 Template" title="bootstrap 4 Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>bootstrap 4 Template</h4>
-            <span>$13</span>
-            <a href="https://tarekrida1.github.io/bootstrab4/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/cloud.jpg" alt="Cloud Template" title="Cloud Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>Cloud Template</h4>
-            <span>$10</span>
-            <a href="https://tarekrida1.github.io/cloud/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/courses.jpg" alt="Courses Template" title="Courses Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>Courses Template</h4>
-            <span>$23</span>
-            <a href="https://tarekrida1.github.io/page_task/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/1.jpg" alt="Personal Template" title="Personal Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>Personal Template</h4>
-            <span>$9</span>
-            <a href="https://tarekrida1.github.io/project3/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/6.jpg" alt="Pesonal 2 Template" title="Pesonal 2 Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>Pesonal 2 Template</h4>
-            <span>$11</span>
-            <a href="https://tarekrida1.github.io/new/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/2.jpg" alt="New Template" title="New Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>New Template</h4>
-            <span>$15</span>
-            <a href="https://tarekrida1.github.io/project3/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/4.jpg" alt="Cloud Template" title="Cloud Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>Cloud Template</h4>
-            <span>$10</span>
-            <a href="https://tarekrida1.github.io/project3/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="item col-md-4 col-sm-6 col-xs-12">
-        <img src="img/Screenshots/2.jpg" alt="Jump Template" title="Jump Template">
-        <div class="overlay">
-          <div class="over-text">
-            <h4>Jump Template</h4>
-            <span>$10</span>
-            <a href="https://tarekrida1.github.io/project2/" target="_blank">
-              <i class="fa fa-eye"></i>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- end gallery -->
   <!-- start services -->
   <div class="services text-center wow fadeIn" id="services">
-
     <div class="container">
       <div class="head">
         <h1>Services</h1>
         <h2>What Can I Do For You?</h2>
         <h5>responsive websites, javascript and jquery functions, clean and professional code.</h5>
       </div>
-
       <div id="demo" class="carousel slide" data-ride="carousel">
-
         <!-- Indicators -->
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -391,14 +625,12 @@
           <li data-target="#demo" data-slide-to="4"></li>
           <li data-target="#demo" data-slide-to="5"></li>
         </ul>
-
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <i class="fa fa-desktop wow wobble"></i>
             <h3 class="wow fadeInUp">Web Design</h3>
             <p class="wow fadeInUp">I Can Create And Design Your Dreams Wesbite!</p>
-
           </div>
           <div class="carousel-item">
             <i class="fa fa-edit wow wobble"></i>
@@ -410,43 +642,29 @@
             <h3 class="wow fadeInUp">Clean Code</h3>
             <p class="wow fadeInUp">Will Find it So Easy To Edit, Maintain, Or Even Adding On My Code!</p>
           </div>
-
           <div class="carousel-item">
             <i class="fa fa-mobile wow wobble"></i>
-            
             <h3 class="wow fadeInUp">Fully Responsive</h3>
             <p class="wow fadeInUp">My Web Designs Are Fully Responsive And Friendly On Any Kind Of Screens
             </p>
-
           </div>
           <div class="carousel-item">
-
-
             <i class="fa fa-exclamation-triangle wow wobble"></i>
             <h3 class="wow fadeInUp">Fixing errors</h3>
             <p class="wow fadeInUp">You can contact me via email to find all support</p>
-
           </div>
           <div class="carousel-item">
-
-
             <i class="fa fa-cogs wow wobble"></i>
             <h3 class="wow fadeInUp">Dynamic</h3>
             <p class="wow fadeInUp">Websites don't have to be static, I love making pages come to life.</p>
           </div>
         </div>
       </div>
-
-
-
     </div>
-
   </div>
   <!-- end services -->
-
   <!-- sign up -->
   <div class="signup">
-
     <div class="container">
       <h1>Contact With Me</h1>
       <h3>You can send a message to contact with me</h3>
@@ -464,8 +682,6 @@
         <button>Submit</button>
       </form>
     </div>
-
-
   </div>
   <!-- end sgin up -->
   <!-- start loading  -->
