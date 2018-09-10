@@ -1,5 +1,66 @@
 $(function () {
     'use strict';
+    $(document).scroll(function () {
+     if ($(document).scrollTop() > 20) {
+            $(".navbar").addClass("custom-nav");
+            $(".navbar .lan").addClass("black");
+            $(".navbar .lan a").css({"color": "#000"});
+            $("#ar-click").removeClass("ar-click");
+     }
+     else {
+        $(".navbar").removeClass("custom-nav");
+        $(".navbar .lan").removeClass("black");
+        $(".navbar .lan a").css({"color": "#fff"});
+        $("#ar-click").addClass("ar-click");
+    }
+    });
+    $(document).scroll(function () {
+        if ($(document).scrollTop() > 20) {
+            $(".menu a").removeClass("active"); 
+            $("#home").addClass("active");  }
+    });
+
+    $(document).scroll(function () {
+        if ($(this).scrollTop() >= $('.moree').offset().top - 200) {
+            $(".menu a").removeClass("active"); 
+            $("#moree").addClass("active");    }
+    });
+    $(document).scroll(function () {
+        if ($(this).scrollTop() >= $('.gallery').offset().top - 200) {
+            $(".menu a").removeClass("active"); 
+            $("#Portfolio").addClass("active");    }
+    });
+    $(document).scroll(function () {
+        if ($(this).scrollTop() >= $('.services').offset().top - 200) {
+            $(".menu a").removeClass("active"); 
+            $("#Services").addClass("active");    }
+    });
+    $(document).scroll(function () {
+        if ($(this).scrollTop() >= $('.signup').offset().top - 200) {
+            $(".menu a").removeClass("active"); 
+            $("#Contact").addClass("active");    }
+    });
+    $("#home").on("click", function(){
+        event.preventDefault();
+        $("html, body").animate({scrollTop: $("body").offset().top});
+            });
+    $("#moree").on("click", function(){
+        event.preventDefault();
+$("html, body").animate({scrollTop: $(".moree").offset().top - 171});
+    });
+    $("#Portfolio").on("click", function(){
+        event.preventDefault();
+$("html, body").animate({scrollTop: $(".gallery").offset().top - 50});
+    });
+    $("#Services").on("click", function(){
+        event.preventDefault();
+$("html, body").animate({scrollTop: $(".services").offset().top - 50});
+    });
+    $("#Contact").on("click", function(){
+        event.preventDefault();
+$("html, body").animate({scrollTop: $(".signup").offset().top - 50});
+    });
+
 
     // animate prog while scroll
     $(document).scroll(function () {

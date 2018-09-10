@@ -283,36 +283,55 @@ body {
 /*********** end themes *******/
 /****************************** start nav **************/
 .navbar {
-  background: rgba(255, 255, 255, 0.95);
+  background: transparent;
   position: fixed;
   width: 100%;
   height: 50px;
   z-index: 100;
   top: 0;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-}
-
-.navbar .lan {
-  font-size: 12px;
-}
-
-.navbar .lan a {
-  color: #F48FB1;
-  padding: 5px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
-.navbar .lan a:hover {
+.navbar .lan {
+  height: 25px;
+  width: 35px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-size: 12px;
   color: #fff;
+}
+
+.navbar .lan a {
   text-decoration: none;
-  background: #26A69A;
+  color: #fff;
+}
+
+.navbar .lan:hover {
+  border: 1px solid #fff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.navbar .lan.black {
+  color: #000;
+}
+
+.navbar .lan.black:hover {
+  border: 1px solid #000;
+}
+
+.navbar.custom-nav {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 .menu a:hover {
@@ -724,20 +743,17 @@ body {
 
 #my-tabs {
   list-style: none;
-  padding: 0;
-  margin: 0;
   text-align: center;
 }
 
 #my-tabs li {
   display: inline-block;
   padding: 10px;
-  background: #26A69A;
-  border: 1px solid #000;
+  color: #26A69A;
+  border: 1px solid #26A69A;
   text-align: center;
   cursor: pointer;
-  color: #fff;
-  margin-right: -5px;
+  border-radius: 5px;
   transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
@@ -746,21 +762,13 @@ body {
 }
 
 #my-tabs li.inactive {
-  background: #fff;
+  border: 1px solid #000;
   color: #000;
 }
 
 #my-tabs li.inactive:hover {
-  background: #26A69A;
-  color: #fff;
-}
-
-#all {
-  border-radius: 65px 0 0 65px;
-}
-
-#brands {
-  border-radius: 0 65px 65px 0;
+  color: #26A69A;
+  border: 1px solid #26A69A;
 }
 
 /******************end gallery */

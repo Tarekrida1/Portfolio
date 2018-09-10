@@ -50,7 +50,7 @@
 
     </div>
     <button class="theme-click" id="theme-click">
-      <i class="i1 fa  fa-thumb-tack"></i>
+      <i class="i1 fa  fa-cog fa-spin"></i>
       <i class="i2 fa  fa-close"></i>
     </button>
   </div>
@@ -59,25 +59,28 @@
 <!-- theme option   -->
     <!-- start nav -->
     <nav class="navbar">
-        <div class="lan">
-            <a href="index.html">ENGLISH</a>
+      <div class="lan black english" style="
+    line-height: 22px;
+    width:  55px;">
+    <a href="index.html" style="color: #000;">ENGLISH</a>
         </div>
         <input type="checkbox" id="toggle">
-        <label for="toggle" class="click">
+        <label for="toggle" class="click ar-click" id="ar-click">
             <span></span>
             <span></span>
             <span></span>
         </label>
         <div class="menu">
-            <a href="#" class="menu-item">الرئيسية</a>
-            <a href="#" class="menu-item">معلومات عني</a>
-            <a href="#" class="menu-item" أعمالي</a>
-                <a href="#" class="menu-item">خدمات</a>
-                <a href="#" class="menu-item">اتصل بي</a>
+            <a href="#" class="menu-item active" id="home">الرئيسية</a>
+            <a href="#" class="menu-item" id="moree">حول</a>
+            <a href="#" class="menu-item" id="Portfolio">أعمالي</a>
+                <a href="#" class="menu-item"id="Services">خدمات</a>
+                <a href="#" class="menu-item" id="Contact">اتصل بي</a>
 
 
         </div>
     </nav>
+
     <!-- end nav -->
     <!-- start wellcome  -->
     <div class="wellcome">
@@ -732,6 +735,20 @@
     </script>
     <script src="js/plugin.js"></script>
     <script src="js/javascript.js"></script>
-</body>
+    <script>
+      $(function (){
+        $(document).scroll(function () {
+     if ($(document).scrollTop() > 20) {
+            $(".navbar").addClass("custom-nav");
+          
+     }
+     else {
+        $(".navbar").removeClass("custom-nav");
+        $(".navbar .lan a").css({"color": "#000"});
+     }
+        });
+      });
 
+      </script>
+</body>
 </html>

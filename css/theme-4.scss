@@ -252,50 +252,73 @@ transform: translate(0 ,50%);
 
 
 /*********** end themes *******/
+
 /****************************** start nav **************/
 .navbar {
-background: rgba(255, 255, 255, 0.95);
-position: fixed;
-width: 100%;
-height: 50px;
-z-index: 100;
-top: 0;
-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-.lan {
-    font-size: 12px;
-    a {
-        color: $main_color;
-        padding: 5px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    top: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+   
+    
+    .lan {
+        height: 25px;
+        width: 35px;
+        text-align: center;
+        line-height: 18px;
+        border-radius: 5px;
+        border: 1px solid transparent;
         -webkit-transition: all .5s ease-in-out;
         -moz-transition: all .5s ease-in-out;
         -ms-transition: all .5s ease-in-out;
         -o-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
-        &:hover {
-            color: #fff;
+        font-size: 12px;
+        color: #fff;
+        a {
             text-decoration: none;
-            background: $second_color;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-       
+            color: #fff
+        }
+         
+            &:hover {
+                border: 1px solid #fff;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+           
+        
+        }
+    }
+    .lan.black {
+        color: #000;
+        &:hover {
+            border: 1px solid #000
         }
     }
 }
+.navbar.custom-nav {
+    background: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
-
 .menu a:hover {
-background: $second_color;
-color: #fff;
+    background: $second_color;
+    color: #fff;
 }
 
 #toggle {
-display: none;
+    display: none;
 }
 #toggle:checked ~  .click span:nth-of-type(1) , #toggle:checked ~  .click span:last-child {
-background: $second_color
+    background: $second_color
 } 
 /****************************** end nav *****************/
 
@@ -543,140 +566,129 @@ color: #fff
 }
 
 /****************** end about me **********************************/
-
 /******************** start galry ***********/
 
 .gallery {
-margin-top: 100px;
-width: 100%;
-overflow: hidden;
-h1 {
-    color: $main_color;
-    margin: 10px 0 0 0;
-    letter-spacing: 4px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px
-}
-p {
-    font-weight: 600;
-    padding: 10px 0;
-    color: $second_color;
-    text-align: center
-}
-.item {
-    position: relative;
+    margin-top: 100px;
+    width: 100%;
     overflow: hidden;
-    padding: 0;
-    img {
-        width: 100%;
-        height: 200px;
-        overflow: hidden;
+    h1 {
+        color: $main_color;
+        margin: 10px 0 0 0;
+        letter-spacing: 4px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px
     }
-    .overlay {
-        transition: all .4s ease-in-out;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: $rgba_2;
-        top: 0;
-        left: 0;
-        transform: scale(0);
-        opacity: 0;
-        .over-text {
+    p {
+        font-weight: 600;
+        padding: 10px 0;
+        color: $second_color;
+        text-align: center
+    }
+    .item {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        img {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        .overlay {
+            transition: all .4s ease-in-out;
             position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            display: grid;
-            h4 {
-                font-size: 20px;
-                font-weight: bold;
-                color: #fff
-            }
-            span {
-                color: #fff;
-                font-weight: bold;
+            width: 100%;
+            height: 100%;
+            background: $rgba_2;
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            opacity: 0;
+            .over-text {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
                 text-align: center;
-                padding-bottom: 10px;
-                font-size: 18px;
-            }
-            a {
-                background: #fff;
-                text-decoration: none;
-                font-size: 30px;
-                width: 70px;
-                line-height: 70px;
-                height: 70px;
-                font-weight: 600;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
-                color: #000;
-                -webkit-transition: all .3s ease-in-out;
-                transition: all .3s ease-in-out;
-                -moz-transition: all .3s ease-in-out;
-                -ms-transition: all .3s ease-in-out;
-                -o-transition: all .3s ease-in-out;
-                margin: auto;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4392156862745098);
+                display: grid;
+                h4 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #fff
+                }
+                span {
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    font-size: 18px;
+                }
+                a {
+                    background: #fff;
+                    text-decoration: none;
+                    font-size: 30px;
+                    width: 70px;
+                    line-height: 70px;
+                    height: 70px;
+                    font-weight: 600;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    color: #000;
+                    -webkit-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                    -moz-transition: all .3s ease-in-out;
+                    -ms-transition: all .3s ease-in-out;
+                    -o-transition: all .3s ease-in-out;
+                    margin: auto;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4392156862745098);
 
-                &:hover {
-                    background: $main_color;
-                    color: $second_color
+                    &:hover {
+                        background: $main_color;
+                        color: $second_color
+                    }
                 }
             }
         }
+        &:hover .overlay {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
-    &:hover .overlay {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
+   
 }
 
 #my-tabs {
-list-style: none;
-padding: 0;
-margin: 0;
-text-align: center;
-
+    list-style: none;  
+    text-align: center;
 }
 #my-tabs li {
-display: inline-block;
-padding: 10px;
-background: $second_color;
-border: 1px solid #000;
-text-align: center;
-cursor: pointer;
-color: #fff;
-margin-right: -5px;
-transition: all .5s ease-in-out;
--o-transition: all .5s ease-in-out;
--webkit-transition: all .5s ease-in-out;
--ms-transition: all .5s ease-in-out;
--moz-transition: all .5s ease-in-out;
+    display: inline-block;
+    padding: 10px;
+    color: $second_color;
+    border: 1px solid $second_color;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
 
 }
 #my-tabs li.inactive {
-background: #fff;
+    border: 1px solid #000;
 color: #000;
 &:hover {
-background: $second_color;
-color: #fff
+    color: $second_color;
+    border: 1px solid $second_color;
 }
 }
-#all {
 
-border-radius: 65px 0 0 65px
-}
-#brands {
-border-radius: 0 65px 65px 0
-}
 /******************end gallery */
 
 /***************** start sevices ********************/
