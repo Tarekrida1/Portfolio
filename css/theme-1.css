@@ -406,6 +406,12 @@ body {
   color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .wellcome {
+    background-image: url(../img/Screenshot-mob.svg);
+  }
+}
+
 /******************************** end wellcome*************/
 /***************** start about me ***********************/
 .moree {
