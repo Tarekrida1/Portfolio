@@ -3,14 +3,6 @@
   .wellcome .wellcome-text {
     margin-top: 50px;
   }
-  .wellcome .wellcome-text .ppp span:nth-of-type(1) {
-    margin-left: 100px;
-    margin-right: 19px;
-  }
-  .wellcome .wellcome-text #pp {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -19,7 +11,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 5px auto;
   }
   .menu a {
     margin: 5px;
@@ -164,8 +155,18 @@
     -o-transform: rotate(135deg);
   }
   /**************** wellcome ********/
+  .wellcome .bottom {
+    bottom: 0px;
+  }
+  .wellcome .top-left {
+    top: 0px;
+  }
+  .wellcome .wellcome-text .ppp {
+    margin-top: 100px;
+  }
   .wellcome .wellcome-text .ppp :nth-of-type(1) {
     font-size: 45px;
+    margin-top: 20px;
   }
   .wellcome .social .icon {
     width: 40px;
@@ -202,18 +203,6 @@
   .moree {
     margin: 40px 15px;
   }
-  .wellcome .wellcome-text .ppp span:nth-of-type(1) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .wellcome .wellcome-text .ppp span:nth-of-type(1) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .wellcome .wellcome-text #pp {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -235,8 +224,6 @@
   }
   .wellcome .wellcome-text .ppp span:nth-of-type(1) {
     font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 

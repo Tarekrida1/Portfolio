@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: cairo-font , sans-serif;
+  font-family: cairo-font, sans-serif;
 }
 
 .typed-cursor {
@@ -224,7 +224,8 @@ body {
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
 }
 
-.themes-menu .theme-click .i1, .themes-menu .theme-click .i2 {
+.themes-menu .theme-click .i1,
+.themes-menu .theme-click .i2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -320,11 +321,13 @@ body {
   -o-border-radius: 5px;
 }
 
-.navbar .lan.black, .navbar .lan.english {
+.navbar .lan.black,
+.navbar .lan.english {
   color: #000;
 }
 
-.navbar .lan.black:hover, .navbar .lan.english:hover {
+.navbar .lan.black:hover,
+.navbar .lan.english:hover {
   border: 1px solid #000;
 }
 
@@ -354,18 +357,58 @@ body {
   display: none;
 }
 
-#toggle:checked ~ .click span:nth-of-type(1), #toggle:checked ~ .click span:last-child {
-  background: #9E9E9E;
+#toggle:checked ~ .click span:nth-of-type(1),
+#toggle:checked ~ .click span:last-child {
+  background: #AFB42B;
 }
 
 /****************************** end nav *****************/
 /***************************** start wellcomee ************/
 .wellcome {
   height: 100vh;
-  background-image: url(../img/theme-5.svg);
-  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  position: relative;
+}
+
+.wellcome .top-left {
+  width: 50%;
+  position: absolute;
+  top: -55px;
+  left: 0;
+  z-index: 1;
+}
+
+.wellcome .top-left .st0 {
+  fill: rgba(158, 158, 158, 0.5);
+}
+
+.wellcome .top-left .st1 {
+  fill: #AFB42B;
+}
+
+.wellcome .top-left .st2 {
+  fill: #9E9E9E;
+}
+
+.wellcome .bottom {
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  z-index: 1;
+}
+
+.wellcome .bottom .st0 {
+  fill: rgba(158, 158, 158, 0.5);
+}
+
+.wellcome .bottom .st1 {
+  fill: #AFB42B;
+}
+
+.wellcome .bottom .st2 {
+  fill: #9E9E9E;
 }
 
 .wellcome .wellcome-text {
@@ -375,8 +418,6 @@ body {
 
 .wellcome .wellcome-text #pp {
   font-weight: bold;
-  margin-right: 200px;
-  margin-left: 200px;
 }
 
 .wellcome .wellcome-text .ppp {
@@ -406,6 +447,9 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  position: absolute;
+  bottom: 15px;
+  z-index: 2;
 }
 
 .wellcome .social .icon {
@@ -427,17 +471,11 @@ body {
 }
 
 .wellcome .social .icon:hover {
-  background: #9E9E9E;
+  background: #AFB42B;
 }
 
 .wellcome .social .icon:hover a {
   color: #fff;
-}
-
-@media only screen and (max-width: 768px) {
-  .wellcome {
-    background-image: url(../img/theme-5mob.svg);
-  }
 }
 
 /******************************** end wellcome*************/
@@ -672,7 +710,7 @@ body {
 
 .gallery .item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -753,6 +791,7 @@ body {
 #my-tabs {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 
 #my-tabs li {
