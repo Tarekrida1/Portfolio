@@ -40,7 +40,7 @@ body {
 
 .lds-ripple div {
   position: absolute;
-  border: 4px solid #26A69A;
+  border: 4px solid #ff125a;
   opacity: 1;
   border-radius: 50%;
   animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
@@ -93,7 +93,7 @@ body {
 /**************************** end loading ************/
 /*********** start themes *******/
 .themes-menu {
-  height: 160px;
+  height: 180px;
   width: 100px;
   background: #fff;
   position: fixed;
@@ -120,6 +120,17 @@ body {
   -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
   -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
+}
+
+.themes-menu .dw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.themes-menu .dw div {
+  margin: auto;
+  cursor: pointer;
 }
 
 .themes-menu span {
@@ -152,46 +163,15 @@ body {
   right: 0;
   width: 20px;
   border-radius: 2px 5px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
 }
 
-.themes-menu .list #theme-1 {
-  background: #ff125a;
-}
-
-.themes-menu .list #theme-1 div {
-  background: #00c9fd;
-}
-
-.themes-menu .list #theme-2 {
-  background: #00c853;
-}
-
-.themes-menu .list #theme-2 div {
-  background: #FFB74D;
-}
-
-.themes-menu .list #theme-3 {
-  background: #FF7043;
-}
-
-.themes-menu .list #theme-3 div {
-  background: #9575CD;
-}
-
-.themes-menu .list #theme-4 {
-  background: #F48FB1;
-}
-
-.themes-menu .list #theme-4 div {
-  background: #26A69A;
-}
-
-.themes-menu .list #theme-5 {
-  background: #9E9E9E;
-}
-
-.themes-menu .list #theme-5 div {
-  background: #AFB42B;
+.themes-menu .list div:hover div {
+  right: 20px;
 }
 
 .themes-menu .theme-click {
@@ -331,6 +311,11 @@ body {
   border: 1px solid #000;
 }
 
+.navbar .lan.black a,
+.navbar .lan.english a {
+  color: #000;
+}
+
 .navbar.custom-nav {
   background: #fff;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
@@ -342,24 +327,17 @@ body {
 }
 
 .menu a:hover {
-  background: #F48FB1;
   border: 1px solid #000;
   color: #fff;
 }
 
 .menu a.active {
-  background: #F48FB1;
   color: #fff;
   border: 1px solid #000;
 }
 
 #toggle {
   display: none;
-}
-
-#toggle:checked ~ .click span:nth-of-type(1),
-#toggle:checked ~ .click span:last-child {
-  background: #26A69A;
 }
 
 /****************************** end nav *****************/
@@ -379,36 +357,12 @@ body {
   z-index: 1;
 }
 
-.wellcome .top-left .st0 {
-  fill: rgba(244, 143, 177, 0.5);
-}
-
-.wellcome .top-left .st1 {
-  fill: #26A69A;
-}
-
-.wellcome .top-left .st2 {
-  fill: #F48FB1;
-}
-
 .wellcome .bottom {
   width: 100%;
   position: absolute;
   bottom: -100px;
   left: 0;
   z-index: 1;
-}
-
-.wellcome .bottom .st0 {
-  fill: rgba(244, 143, 177, 0.5);
-}
-
-.wellcome .bottom .st1 {
-  fill: #26A69A;
-}
-
-.wellcome .bottom .st2 {
-  fill: #F48FB1;
 }
 
 .wellcome .wellcome-text {
@@ -427,10 +381,6 @@ body {
 
 .wellcome .wellcome-text .ppp span:nth-of-type(1) {
   font-size: 100px;
-}
-
-.wellcome .wellcome-text .ppp span:nth-of-type(1) span {
-  color: #F48FB1;
 }
 
 .wellcome .wellcome-text .ppp span:nth-of-type(2) {
@@ -470,20 +420,10 @@ body {
   color: #000;
 }
 
-.wellcome .social .icon:hover {
-  background: #26A69A;
-}
-
-.wellcome .social .icon:hover a {
-  color: #fff;
-}
-
 /******************************** end wellcome*************/
 /***************** start about me ***********************/
 .moree {
-  background: #141313;
   border-radius: 15px;
-  border: 1px solid #26A69A;
   position: relative;
   -webkit-transform: translate(0%, 8%);
           transform: translate(0%, 8%);
@@ -494,7 +434,6 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  border: 1px solid #26A69A;
   position: absolute;
   -webkit-transform: translate(-50%, -90%);
           transform: translate(-50%, -90%);
@@ -507,7 +446,6 @@ body {
 }
 
 .moree .con h1 {
-  color: #F48FB1;
   font-weight: bold;
   font-size: 50px;
   padding-top: 25px;
@@ -515,45 +453,25 @@ body {
 
 .moree .con p {
   font-weight: bold;
-  color: #fff;
-}
-
-.moree .con button {
-  padding: 15px 25px 15px 25px;
-  font-weight: bold;
-  border: 4px solid #81ee8e;
-  border-radius: 15px;
-  background: #F48FB1;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  color: #fff;
-}
-
-.moree .con button:hover {
-  background: none;
-  border: 4px solid #F48FB1;
 }
 
 .moree .basic h2 {
   text-align: center;
   font-weight: bold;
-  color: #26A69A;
 }
 
 .moree .basic h4 {
   letter-spacing: 2px;
   font-weight: bold;
-  color: #fff;
 }
 
 .moree .basic p {
-  color: rgba(243, 245, 243, 0.8);
+  color: rgba(8, 8, 8, 0.8);
 }
 
 .moree .skills h2 {
   text-align: center;
   font-weight: bold;
-  color: #26A69A;
 }
 
 .moree .skills .progresss ul {
@@ -569,18 +487,15 @@ body {
 .moree .skills .progresss ul li h4 {
   letter-spacing: 2px;
   font-weight: bold;
-  color: #fff;
   padding-left: 25px;
 }
 
 .moree .skills .progresss ul li .prog_bar {
-  background: #DDD;
   height: 15px;
   position: relative;
 }
 
 .moree .skills .progresss ul li .prog_bar .percent {
-  background: #F48FB1;
   height: 100%;
   position: absolute;
   top: 0;
@@ -597,7 +512,6 @@ body {
   color: #fff;
   line-height: 40px;
   font-weight: bold;
-  background: #26A69A;
   position: absolute;
   right: -20px;
   bottom: 24px;
@@ -611,7 +525,6 @@ body {
   bottom: 20px;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
-  border-top: 5px solid #26A69A;
 }
 
 .moree .skills .progresss ul li .prog_bar .percent98 {
@@ -671,7 +584,7 @@ body {
 }
 
 .moree .my-cv:hover {
-  background: #26A69A;
+  background: #ff125a;
 }
 
 .moree .my-cv:hover a {
@@ -687,7 +600,6 @@ body {
 }
 
 .gallery h1 {
-  color: #F48FB1;
   margin: 10px 0 0 0;
   letter-spacing: 4px;
   text-align: center;
@@ -698,7 +610,6 @@ body {
 .gallery p {
   font-weight: 600;
   padding: 10px 0;
-  color: #26A69A;
   text-align: center;
 }
 
@@ -719,7 +630,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(38, 166, 154, 0.5);
   top: 0;
   left: 0;
   -webkit-transform: scale(0);
@@ -776,11 +686,6 @@ body {
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.439216);
 }
 
-.gallery .item .overlay .over-text a:hover {
-  background: #F48FB1;
-  color: #26A69A;
-}
-
 .gallery .item:hover .overlay {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -796,8 +701,6 @@ body {
 #my-tabs li {
   display: inline-block;
   padding: 10px;
-  color: #26A69A;
-  border: 1px solid #26A69A;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
@@ -813,11 +716,6 @@ body {
   color: #000;
 }
 
-#my-tabs li.inactive:hover {
-  color: #26A69A;
-  border: 1px solid #26A69A;
-}
-
 /******************end gallery */
 /***************** start sevices ********************/
 .services {
@@ -827,11 +725,9 @@ body {
 
 .services h2 {
   padding: 15px 0;
-  color: #26A69A;
 }
 
 .services h1 {
-  color: #F48FB1;
   font-weight: bold;
   font-size: 50px;
 }
@@ -856,14 +752,13 @@ body {
   height: 170px;
   line-height: 170px;
   border-radius: 50%;
-  color: #26A69A;
+  color: #ff125a;
   font-weight: bold;
   font-size: 90px;
   text-align: center;
 }
 
 .services .carousel .carousel-item h3 {
-  color: #26A69A;
   font-weight: 600;
   padding-top: 15px;
 }
@@ -881,7 +776,6 @@ body {
 }
 
 .services .carousel .carousel-indicators .active {
-  background: #26A69A;
   margin-top: -5px;
 }
 
@@ -891,7 +785,6 @@ body {
   height: 20px;
   border-radius: 50%;
   margin-right: 10px;
-  background: #F48FB1;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
@@ -919,12 +812,7 @@ body {
 .signup h1 {
   font-size: 35px;
   font-weight: bold;
-  color: #F48FB1;
   padding-top: 40px;
-}
-
-.signup h3 {
-  color: #26A69A;
 }
 
 .signup .signup-content {
@@ -964,7 +852,6 @@ body {
   left: 15%;
   top: 30px;
   font-size: 17px;
-  color: #F48FB1;
   z-index: -1;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
@@ -976,7 +863,6 @@ body {
   padding: 5px 10px;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #26A69A;
 }
 
 .signup .custom-input input:focus {
@@ -988,7 +874,6 @@ body {
   left: 13%;
   top: -10px;
   font-size: 20px;
-  color: #F48FB1;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -1000,7 +885,6 @@ body {
   left: 13%;
   top: -10px;
   font-size: 20px;
-  color: #26A69A;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -1011,7 +895,6 @@ body {
   height: 130px;
   padding: 5px 10px;
   border: none;
-  border-bottom: 1px solid #26A69A;
   background: transparent;
   margin: 0 50px;
 }
@@ -1020,40 +903,17 @@ body {
   outline: none;
 }
 
-.signup textarea::-webkit-input-placeholder {
-  color: #F48FB1;
-}
-
-.signup textarea:-moz-placeholder {
-  /* Firefox 18- */
-  color: #F48FB1;
-}
-
-.signup textarea::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #F48FB1;
-}
-
-.signup textarea:-ms-input-placeholder {
-  color: #F48FB1;
-}
-
 .signup button {
   padding: 5px 20px;
   font-size: 16px;
   font-weight: 600;
   background: #fff;
   border: none;
-  border: 1px solid #26A69A;
+  border: 1px solid #ff125a;
   border-radius: 10px;
   color: #000;
   margin-top: 10px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-
-.signup button:hover {
-  background: #26A69A;
-  color: #fff;
-}
-/*# sourceMappingURL=theme-4.css.map */
+/*# sourceMappingURL=style.css.map */

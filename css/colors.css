@@ -1,0 +1,727 @@
+/****/
+/****/
+/*******/
+/***********/
+/*   theme1 ********/
+[data-default-color="theme1"] .color1 {
+  color: #00c9fd;
+}
+
+[data-default-color="theme1"] .color2 {
+  color: #ff3773;
+}
+
+[data-default-color="theme1"] .background1 {
+  background-color: #00c9fd;
+}
+
+[data-default-color="theme1"] .background2 {
+  background-color: #ff3773;
+}
+
+[data-default-color="theme1"] .rgb1 {
+  background-color: rgba(255, 18, 90, 0.5);
+}
+
+[data-default-color="theme1"] .rgb2 {
+  background-color: rgba(0, 201, 253, 0.5);
+}
+
+[data-default-color="theme1"] .border1 {
+  border: 1px solid #ff3773;
+}
+
+[data-default-color="theme1"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+  border-top: 5px solid #ff3773;
+}
+
+[data-default-color="theme1"] .moree .my-cv:hover {
+  background: #ff3773;
+  color: #fff;
+}
+
+[data-default-color="theme1"] .signup button:hover {
+  background: #ff3773;
+  color: #fff;
+}
+
+[data-default-color="theme1"] .themes-menu .theme-click .i22 {
+  color: #ff3773;
+}
+
+[data-default-color="theme1"] .menu a:hover {
+  background: #00c9fd;
+}
+
+[data-default-color="theme1"] #toggle:checked ~ .click span:nth-of-type(1) {
+  background: #ff3773;
+  color: #fff;
+}
+
+[data-default-color="theme1"] #toggle:checked ~ .click span:last-child {
+  background: #ff3773;
+  color: #fff;
+}
+
+[data-default-color="theme1"] .wellcome .social .icon:hover {
+  background: #ff3773;
+}
+
+[data-default-color="theme1"] .wellcome .social .icon:hover a {
+  color: #fff;
+}
+
+[data-default-color="theme1"] .menu a.active {
+  background: #ff3773;
+  color: #fff;
+}
+
+[data-default-color="theme1"] #my-tabs li.inactive:hover {
+  color: #ff3773;
+  border: 1px solid #ff3773;
+}
+
+[data-default-color="theme1"] .services .carousel .carousel-indicators .active {
+  background: #ff3773;
+}
+
+[data-default-color="theme1"] .signup .custom-input input {
+  border-bottom: 1px solid #ff3773;
+}
+
+[data-default-color="theme1"] .signup textarea {
+  border-bottom: 1px solid #ff3773;
+}
+
+[data-default-color="theme1"] .signup textarea::-webkit-input-placeholder {
+  color: #00c9fd;
+}
+
+[data-default-color="theme1"] .signup textarea::-moz-input-placeholder {
+  color: #00c9fd;
+}
+
+[data-default-color="theme1"] .signup textarea::-o-input-placeholder {
+  color: #00c9fd;
+}
+
+[data-default-color="theme1"] .signup textarea::-ms-input-placeholder {
+  color: #00c9fd;
+}
+
+[data-default-color="theme1"] .signup textarea::input-placeholder {
+  color: #00c9fd;
+}
+
+[data-default-color="theme1"] .st0 {
+  fill: rgba(255, 18, 90, 0.5);
+}
+
+[data-default-color="theme1"] .st1 {
+  fill: #ff3773;
+}
+
+[data-default-color="theme1"] .st2 {
+  fill: #00c9fd;
+}
+
+.gallery .item .overlay .over-text a:hover {
+  background: #ff3773;
+  color: #fff;
+}
+
+/************** end theme1 *********/
+/*   theme2 ********/
+[data-default-color="theme2"] .color1 {
+  color: #00c853;
+}
+
+[data-default-color="theme2"] .color2 {
+  color: #FFB74D;
+}
+
+[data-default-color="theme2"] .background1 {
+  background-color: #00c853;
+}
+
+[data-default-color="theme2"] .background2 {
+  background-color: #FFB74D;
+}
+
+[data-default-color="theme2"] .rgb1 {
+  background-color: rgba(0, 200, 83, 0.5);
+}
+
+[data-default-color="theme2"] .rgb2 {
+  background-color: rgba(255, 183, 77, 0.5);
+}
+
+[data-default-color="theme2"] .border1 {
+  border: 1px solid #FFB74D;
+}
+
+[data-default-color="theme2"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+  border-top: 5px solid #FFB74D;
+}
+
+[data-default-color="theme2"] .moree .my-cv:hover {
+  background: #FFB74D;
+  color: #fff;
+}
+
+[data-default-color="theme2"] .signup button:hover {
+  background: #FFB74D;
+  color: #fff;
+}
+
+[data-default-color="theme2"] .themes-menu .theme-click .i22 {
+  color: #FFB74D;
+}
+
+[data-default-color="theme2"] .menu a:hover {
+  background: #00c853;
+}
+
+[data-default-color="theme2"] #toggle:checked ~ .click span:nth-of-type(1) {
+  background: #FFB74D;
+  color: #fff;
+}
+
+[data-default-color="theme2"] #toggle:checked ~ .click span:last-child {
+  background: #FFB74D;
+  color: #fff;
+}
+
+[data-default-color="theme2"] .wellcome .social .icon:hover {
+  background: #FFB74D;
+}
+
+[data-default-color="theme2"] .wellcome .social .icon:hover a {
+  color: #fff;
+}
+
+[data-default-color="theme2"] .menu a.active {
+  background: #FFB74D;
+  color: #fff;
+}
+
+[data-default-color="theme2"] #my-tabs li.inactive:hover {
+  color: #FFB74D;
+  border: 1px solid #FFB74D;
+}
+
+[data-default-color="theme2"] .services .carousel .carousel-indicators .active {
+  background: #FFB74D;
+}
+
+[data-default-color="theme2"] .signup .custom-input input {
+  border-bottom: 1px solid #FFB74D;
+}
+
+[data-default-color="theme2"] .signup textarea {
+  border-bottom: 1px solid #FFB74D;
+}
+
+[data-default-color="theme2"] .signup textarea::-webkit-input-placeholder {
+  color: #00c853;
+}
+
+[data-default-color="theme2"] .signup textarea::-moz-input-placeholder {
+  color: #00c853;
+}
+
+[data-default-color="theme2"] .signup textarea::-o-input-placeholder {
+  color: #00c853;
+}
+
+[data-default-color="theme2"] .signup textarea::-ms-input-placeholder {
+  color: #00c853;
+}
+
+[data-default-color="theme2"] .signup textarea::input-placeholder {
+  color: #00c9fd;
+}
+
+[data-default-color="theme2"] .st0 {
+  fill: rgba(0, 200, 83, 0.5);
+}
+
+[data-default-color="theme2"] .st1 {
+  fill: #FFB74D;
+}
+
+[data-default-color="theme2"] .st2 {
+  fill: #00c853;
+}
+
+.gallery .item .overlay .over-text a:hover {
+  background: #FFB74D;
+  color: #fff;
+}
+
+/************** end theme2 *********/
+/*   theme3 ********/
+[data-default-color="theme3"] .color1 {
+  color: #FF7043;
+}
+
+[data-default-color="theme3"] .color2 {
+  color: #9575CD;
+}
+
+[data-default-color="theme3"] .background1 {
+  background-color: #FF7043;
+}
+
+[data-default-color="theme3"] .background2 {
+  background-color: #9575CD;
+}
+
+[data-default-color="theme3"] .rgb1 {
+  background-color: rgba(255, 112, 67, 0.5);
+}
+
+[data-default-color="theme3"] .rgb2 {
+  background-color: rgba(149, 117, 205, 0.5);
+}
+
+[data-default-color="theme3"] .border1 {
+  border: 1px solid #9575CD;
+}
+
+[data-default-color="theme3"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+  border-top: 5px solid #9575CD;
+}
+
+[data-default-color="theme3"] .moree .my-cv:hover {
+  background: #9575CD;
+  color: #fff;
+}
+
+[data-default-color="theme3"] .signup button:hover {
+  background: #9575CD;
+  color: #fff;
+}
+
+[data-default-color="theme3"] .themes-menu .theme-click .i22 {
+  color: #9575CD;
+}
+
+[data-default-color="theme3"] .menu a:hover {
+  background: #FF7043;
+}
+
+[data-default-color="theme3"] #toggle:checked ~ .click span:nth-of-type(1) {
+  background: #9575CD;
+  color: #fff;
+}
+
+[data-default-color="theme3"] #toggle:checked ~ .click span:last-child {
+  background: #9575CD;
+  color: #fff;
+}
+
+[data-default-color="theme3"] .wellcome .social .icon:hover {
+  background: #9575CD;
+}
+
+[data-default-color="theme3"] .wellcome .social .icon:hover a {
+  color: #fff;
+}
+
+[data-default-color="theme3"] .menu a.active {
+  background: #9575CD;
+  color: #fff;
+}
+
+[data-default-color="theme3"] #my-tabs li.inactive:hover {
+  color: #9575CD;
+  border: 1px solid #9575CD;
+}
+
+[data-default-color="theme3"] .services .carousel .carousel-indicators .active {
+  background: #9575CD;
+}
+
+[data-default-color="theme3"] .signup .custom-input input {
+  border-bottom: 1px solid #9575CD;
+}
+
+[data-default-color="theme3"] .signup textarea {
+  border-bottom: 1px solid #9575CD;
+}
+
+[data-default-color="theme3"] .signup textarea::-webkit-input-placeholder {
+  color: #FF7043;
+}
+
+[data-default-color="theme3"] .signup textarea::-moz-input-placeholder {
+  color: #FF7043;
+}
+
+[data-default-color="theme3"] .signup textarea::-o-input-placeholder {
+  color: #FF7043;
+}
+
+[data-default-color="theme3"] .signup textarea::-ms-input-placeholder {
+  color: #FF7043;
+}
+
+[data-default-color="theme3"] .signup textarea::input-placeholder {
+  color: #FF7043;
+}
+
+[data-default-color="theme3"] .st0 {
+  fill: rgba(255, 112, 67, 0.5);
+}
+
+[data-default-color="theme3"] .st1 {
+  fill: #9575CD;
+}
+
+[data-default-color="theme3"] .st2 {
+  fill: #FF7043;
+}
+
+.gallery .item .overlay .over-text a:hover {
+  background: #9575CD;
+  color: #fff;
+}
+
+/************** end theme3 *********/
+/*   theme4 ********/
+[data-default-color="theme4"] .color1 {
+  color: #F48FB1;
+}
+
+[data-default-color="theme4"] .color2 {
+  color: #26A69A;
+}
+
+[data-default-color="theme4"] .background1 {
+  background-color: #F48FB1;
+}
+
+[data-default-color="theme4"] .background2 {
+  background-color: #26A69A;
+}
+
+[data-default-color="theme4"] .rgb1 {
+  background-color: rgba(244, 143, 177, 0.5);
+}
+
+[data-default-color="theme4"] .rgb2 {
+  background-color: rgba(38, 166, 154, 0.5);
+}
+
+[data-default-color="theme4"] .border1 {
+  border: 1px solid #26A69A;
+}
+
+[data-default-color="theme4"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+  border-top: 5px solid #26A69A;
+}
+
+[data-default-color="theme4"] .moree .my-cv:hover {
+  background: #26A69A;
+  color: #fff;
+}
+
+[data-default-color="theme4"] .signup button:hover {
+  background: #26A69A;
+  color: #fff;
+}
+
+[data-default-color="theme4"] .themes-menu .theme-click .i22 {
+  color: #26A69A;
+}
+
+[data-default-color="theme4"] .menu a:hover {
+  background: #F48FB1;
+}
+
+[data-default-color="theme4"] #toggle:checked ~ .click span:nth-of-type(1) {
+  background: #26A69A;
+  color: #fff;
+}
+
+[data-default-color="theme4"] #toggle:checked ~ .click span:last-child {
+  background: #26A69A;
+  color: #fff  4;
+}
+
+[data-default-color="theme4"] .wellcome .social .icon:hover {
+  background: #26A69A;
+}
+
+[data-default-color="theme4"] .wellcome .social .icon:hover a {
+  color: #fff;
+}
+
+[data-default-color="theme4"] .menu a.active {
+  background: #26A69A;
+  color: #fff;
+}
+
+[data-default-color="theme4"] #my-tabs li.inactive:hover {
+  color: #26A69A;
+  border: 1px solid #26A69A;
+}
+
+[data-default-color="theme4"] .services .carousel .carousel-indicators .active {
+  background: #26A69A;
+}
+
+[data-default-color="theme4"] .signup .custom-input input {
+  border-bottom: 1px solid #26A69A;
+}
+
+[data-default-color="theme4"] .signup textarea {
+  border-bottom: 1px solid #26A69A;
+}
+
+[data-default-color="theme4"] .signup textarea::-webkit-input-placeholder {
+  color: #F48FB1;
+}
+
+[data-default-color="theme4"] .signup textarea::-moz-input-placeholder {
+  color: #F48FB1;
+}
+
+[data-default-color="theme4"] .signup textarea::-o-input-placeholder {
+  color: #F48FB1;
+}
+
+[data-default-color="theme4"] .signup textarea::-ms-input-placeholder {
+  color: #F48FB1;
+}
+
+[data-default-color="theme4"] .signup textarea::input-placeholder {
+  color: #00c9fd;
+}
+
+[data-default-color="theme4"] .st0 {
+  fill: rgba(244, 143, 177, 0.5);
+}
+
+[data-default-color="theme4"] .st1 {
+  fill: #26A69A;
+}
+
+[data-default-color="theme4"] .st2 {
+  fill: #F48FB1;
+}
+
+.gallery .item .overlay .over-text a:hover {
+  background: #26A69A;
+  color: #fff;
+}
+
+/************** end theme4 *********/
+/*   theme5 ********/
+[data-default-color="theme5"] .color1 {
+  color: #9E9E9E;
+}
+
+[data-default-color="theme5"] .color2 {
+  color: #AFB42B;
+}
+
+[data-default-color="theme5"] .background1 {
+  background-color: #9E9E9E;
+}
+
+[data-default-color="theme5"] .background2 {
+  background-color: #AFB42B;
+}
+
+[data-default-color="theme5"] .rgb1 {
+  background-color: rgba(158, 158, 158, 0.5);
+}
+
+[data-default-color="theme5"] .rgb2 {
+  background-color: rgba(175, 180, 43, 0.5);
+}
+
+[data-default-color="theme5"] .border1 {
+  border: 1px solid #AFB42B;
+}
+
+[data-default-color="theme5"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+  border-top: 5px solid #AFB42B;
+}
+
+[data-default-color="theme5"] .moree .my-cv:hover {
+  background: #AFB42B;
+  color: #fff;
+}
+
+[data-default-color="theme5"] .signup button:hover {
+  background: #AFB42B;
+  color: #fff;
+}
+
+[data-default-color="theme5"] .themes-menu .theme-click .i22 {
+  color: #AFB42B;
+}
+
+[data-default-color="theme5"] .menu a:hover {
+  background: #9E9E9E;
+}
+
+[data-default-color="theme5"] #toggle:checked ~ .click span:nth-of-type(1) {
+  background: #AFB42B;
+  color: #fff;
+}
+
+[data-default-color="theme5"] #toggle:checked ~ .click span:last-child {
+  background: #AFB42B;
+  color: #fff;
+}
+
+[data-default-color="theme5"] .wellcome .social .icon:hover {
+  background: #AFB42B;
+}
+
+[data-default-color="theme5"] .wellcome .social .icon:hover a {
+  color: #fff;
+}
+
+[data-default-color="theme5"] .menu a.active {
+  background: #AFB42B;
+  color: #fff;
+}
+
+[data-default-color="theme5"] #my-tabs li.inactive:hover {
+  color: #AFB42B;
+  border: 1px solid #AFB42B;
+}
+
+[data-default-color="theme5"] .services .carousel .carousel-indicators .active {
+  background: #AFB42B;
+}
+
+[data-default-color="theme5"] .signup .custom-input input {
+  border-bottom: 1px solid #AFB42B;
+}
+
+[data-default-color="theme5"] .signup textarea {
+  border-bottom: 1px solid #AFB42B;
+}
+
+[data-default-color="theme5"] .signup textarea::-webkit-input-placeholder {
+  color: #9E9E9E;
+}
+
+[data-default-color="theme5"] .signup textarea::-moz-input-placeholder {
+  color: #9E9E9E;
+}
+
+[data-default-color="theme5"] .signup textarea::-o-input-placeholder {
+  color: #9E9E9E;
+}
+
+[data-default-color="theme5"] .signup textarea::-ms-input-placeholder {
+  color: #9E9E9E;
+}
+
+[data-default-color="theme5"] .signup textarea::input-placeholder {
+  color: #9E9E9E;
+}
+
+[data-default-color="theme5"] .st0 {
+  fill: rgba(158, 158, 158, 0.5);
+}
+
+[data-default-color="theme5"] .st1 {
+  fill: #AFB42B;
+}
+
+[data-default-color="theme5"] .st2 {
+  fill: #9E9E9E;
+}
+
+.gallery .item .overlay .over-text a:hover {
+  background: #AFB42B;
+  color: #fff;
+}
+
+/************** end theme5 *********/
+#theme-1 {
+  background: #ff3773;
+}
+
+#theme-1 div {
+  background: #00c9fd;
+}
+
+#theme-2 {
+  background: #FFB74D;
+}
+
+#theme-2 div {
+  background: #00c853;
+}
+
+#theme-3 {
+  background: #9575CD;
+}
+
+#theme-3 div {
+  background: #FF7043;
+}
+
+#theme-4 {
+  background: #26A69A;
+}
+
+#theme-4 div {
+  background: #F48FB1;
+}
+
+#theme-5 {
+  background: #AFB42B;
+}
+
+#theme-5 div {
+  background: #9E9E9E;
+}
+
+[data-dark="dark"] .background-dark {
+  background: #000;
+}
+
+[data-dark="dark"] .color-dark {
+  background: #000;
+}
+
+[data-dark="dark"] .background-light {
+  background: #fff;
+}
+
+[data-dark="dark"] .color-light {
+  color: #fff;
+}
+
+[data-dark="dark"] .moree .basic p {
+  color: #ddd0d0;
+}
+
+[data-dark="dark"] #my-tabs li.inactive {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+[data-dark="dark"] .services .carousel .carousel-item p {
+  color: #fff;
+}
+
+[data-dark="dark"] .signup .signup-content {
+  background: #000;
+  border: 1px solid #fff;
+}
+
+[data-dark="dark"] .themes-menu {
+  border: 1px solid #fff;
+}
+/*# sourceMappingURL=colors.css.map */

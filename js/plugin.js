@@ -1,5 +1,6 @@
 $(function () {
     'use strict';
+ 
     $(document).scroll(function () {
      if ($(document).scrollTop() > 20) {
             $(".navbar").addClass("custom-nav");
@@ -126,7 +127,7 @@ $("html, body").animate({scrollTop: $(".signup").offset().top - 50});
         $(".themes-menu").removeClass("themes-1");
         $("#theme-click").removeClass("theme-click-1");
         $(".theme-click .i2").removeClass("i22");
-        $("link[href*='theme']").attr("href", $(this).attr("data-value"));
+       $("body").attr("data-default-color", $(this).data("color"));
  
     }); 
     // tabs
@@ -147,6 +148,16 @@ var myID = $(this).attr("id");
 $("#my-tabs .all").on("click", function(){
     $(".tab").fadeIn();
 });
-
+$("#dark").on("click", function (){
+    $("body").attr("data-dark", "dark");
+    $("body").css({"background":"#000"});
+    $(".themes-menu").removeClass("themes-1");
+    $("#theme-click").removeClass("theme-click-1");
+});
+$("#light").on("click", function (){
+    $("body").removeAttr("data-dark", "dark");
+    $("body").css({"background":"#fff"});
+    $(".themes-menu").removeClass("themes-1");
+    $("#theme-click").removeClass("theme-click-1");
+});
         });
-    

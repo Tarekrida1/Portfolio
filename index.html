@@ -3,53 +3,61 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no">
   <meta name="description" content="creating responsive websites and converting psd files to codes using front end web developer technologies">
   <title>Tarek Portfolio</title>
   <link rel="shortcut icon" href="/img/logo.png">
+  <link rel="stylesheet" href="css/aos.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="css/animate.css" type="text/css">
-  <link rel="stylesheet" href="css/theme-1.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/media.css" type="text/css">
+  <link rel="stylesheet" href="css/colors.css" type="text/css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-1.12.1.min.js"></script>
   <script>
     $(function () {
       $(window).load(function () {
-        $(".loading").slideUp(600, function () {
+        $(".loading").slideUp(1, function () {
           $(this).remove();
         });
       });
+
     });
   </script>
 </head>
 
-<body>
+<body data-default-color="theme1">
   <!-- theme option   -->
-  <div class="themes-menu">
-    <span>Change Theme</span>
+  <div class="themes-menu background-dark">
+    <span class="color-light">Change Theme</span>
     <div class="list">
-      <div id="theme-1" data-value="css/theme-1.css">
+      <div id="theme-1" data-color="theme1">
         <div></div>
       </div>
-      <div id="theme-2" data-value="css/theme-2.css">
+      <div id="theme-2" data-color="theme2">
         <div></div>
       </div>
-      <div id="theme-3" data-value="css/theme-3.css">
+      <div id="theme-3" data-color="theme3">
         <div></div>
       </div>
-      <div id="theme-4" data-value="css/theme-4.css">
+      <div id="theme-4" data-color="theme4">
         <div></div>
       </div>
-      <div id="theme-5" data-value="css/theme-5.css">
+      <div id="theme-5" data-color="theme5">
         <div></div>
       </div>
+    
     </div>
+
     <button class="theme-click" id="theme-click">
       <i class="i1 fa  fa-cog fa-spin"></i>
       <i class="i2 fa  fa-close"></i>
     </button>
+    <div class="dw">
+    <div class="color-light" id="dark">Dark</div>
+    <div class="color-light" id="light">Light</div>
+  </div>
   </div>
   <!-- theme option   -->
   <!-- start nav -->
@@ -58,7 +66,7 @@
       <a href="index-rtl.html">عربي</a>
     </div>
     <input type="checkbox" id="toggle">
-    <label for="toggle" class="click en-click">
+    <label for="toggle" class="click en-click background-light">
       <span></span>
       <span></span>
       <span></span>
@@ -76,14 +84,14 @@
   <div class="wellcome">
     <div class="container">
       <div class="wellcome-text">
-        <p class="ppp">
-          <span>My Name Is
-            <span>TaReK</span>
+        <p class="ppp" data-aos="fade-right">
+          <span class="color-light">My Name Is
+            <span class="color1">TaReK</span>
           </span>
           <br>
           <span></span>
         </p>
-        <p id="pp" data-text="I’m a front-end developer I have more than 2 years of experience in web Design based on webstandard technologies like HTML5, CSS, javascript, jquery, bootstrap and sass."></p>
+        <p class="color-light" id="pp" data-text="I’m a front-end developer I have more than 2 years of experience in web Design based on webstandard technologies like HTML5, CSS, javascript, jquery, bootstrap and sass." data-aos="fade-left"></p>
       </div>
     </div>
     <div class="social">
@@ -145,106 +153,106 @@
   </div>
   <!-- end wellcome -->
   <!-- start more about me -->
-  <div class="moree">
+  <div class="moree border1">
     <div class="container">
-      <div class="con wow fadeInDown">
-        <img src="img/my-photo.jpg" alt="profile imge">
-        <h1>About Me</h1>
-        <p>
+      <div class="con" data-aos="fade-up">
+        <img class="border1" src="img/my-photo.jpg" alt="profile imge">
+        <h1 class="color1">About Me</h1>
+        <p class="color-light">
           I graduated from Faculty of Tourism and Hotels, South Valley University, Hotel Management Hotel in June 2016, I am Egyptian
           My date of birth is 1/9/1994, I am Muslim, I am single, I completed my military service, my place of birth is Luxor
           and I live in Cairo.</p>
       </div>
       <div class="row">
         <div class="basic col-md-6 col-sm-12">
-          <h2>PERSONAL INFORMATION</h2>
-          <h4>Full Name :</h4>
-          <P>Tarek Abd Elnasser Rida</P>
-          <h4>Birth Day :</h4>
-          <P>1, september, 1994</P>
-          <h4>Job :</h4>
-          <P>Front End Developer</P>
-          <h4>Phone No :</h4>
-          <P>01065596566</P>
-          <h4>Email :</h4>
-          <P>Tarek.rida1@Hotmail.com</P>
-          <h4>Riligion :</h4>
-          <P>Muslim</P>
-          <h4>Military Service :</h4>
-          <P>Completed</P>
+          <h2 class="color2" data-aos="fade-up">PERSONAL INFORMATION</h2>
+          <h4 class="color-light" data-aos="fade-up">Full Name :</h4>
+          <P data-aos="fade-up">Tarek Abd Elnasser Rida</P>
+          <h4 class="color-light" data-aos="fade-up">Birth Day :</h4>
+          <P data-aos="fade-up">1, september, 1994</P>
+          <h4 class="color-light" data-aos="fade-up">Job :</h4>
+          <P data-aos="fade-up">Front End Developer</P>
+          <h4 class="color-light" data-aos="fade-up">Phone No :</h4>
+          <P data-aos="fade-up">01065596566</P>
+          <h4 class="color-light" data-aos="fade-up">Email :</h4>
+          <P data-aos="fade-up">Tarek.rida1@Hotmail.com</P>
+          <h4 class="color-light" data-aos="fade-up">Riligion :</h4>
+          <P data-aos="fade-up">Muslim</P>
+          <h4 class="color-light" data-aos="fade-up">Military Service :</h4>
+          <P data-aos="fade-up">Completed</P>
         </div>
-        <div class="skills col-md-6 col-sm-12">
-          <h2>My Skills</h2>
+        <div class="skills col-md-6 col-sm-12" data-aos="fade-right">
+          <h2 class="color2" data-aos="fade-up">My Skills</h2>
           <div class="progresss">
             <ul>
               <li>
-                <h4>Html5</h4>
-                <div class="prog_bar">
-                  <div class="percent percent98 prog_width" id="percent">
-                    <span>98%</span>
+                <h4 class="color-light" data-aos="fade-up">Html5</h4>
+                <div class="prog_bar background2" data-aos="fade-up">
+                  <div class="percent percent98 prog_width background1" id="percent">
+                    <span class="background2">98%</span>
                     <span></span>
                   </div>
                 </div>
               </li>
               <li>
-                <h4>Css</h4>
-                <div class="prog_bar">
-                  <div class="percent percent86 prog_width">
-                    <span>86%</span>
+                <h4 class="color-light" data-aos="fade-up">Css</h4>
+                <div class="prog_bar background2" data-aos="fade-up">
+                  <div class="percent percent86 prog_width background1">
+                    <span class="background2">86%</span>
                     <span></span>
                   </div>
                 </div>
               </li>
               <li>
-                <h4>Bootstrap</h4>
-                <div class="prog_bar">
-                  <div class="percent percent89 prog_width">
-                    <span>89%</span>
+                <h4 class="color-light" data-aos="fade-up">Bootstrap</h4>
+                <div class="prog_bar background2" data-aos="fade-up">
+                  <div class="percent percent89 prog_width background1">
+                    <span class="background2">89%</span>
                     <span></span>
                   </div>
                 </div>
               </li>
               <li>
-                <h4>JavaScript</h4>
-                <div class="prog_bar">
-                  <div class="percent percent76 prog_width">
-                    <span>76%</span>
+                <h4 class="color-light" data-aos="fade-up">JavaScript</h4>
+                <div class="prog_bar background2" data-aos="fade-up">
+                  <div class="percent percent76 prog_width background1">
+                    <span class="background2">76%</span>
                     <span></span>
                   </div>
                 </div>
               </li>
               <li>
-                <h4>Jquery</h4>
-                <div class="prog_bar">
-                  <div class="percent percent83 prog_width">
-                    <span>83%</span>
+                <h4 class="color-light" data-aos="fade-up">Jquery</h4>
+                <div class="prog_bar background2" data-aos="fade-up">
+                  <div class="percent percent83 prog_width background1">
+                    <span class="background2">83%</span>
                     <span></span>
                   </div>
                 </div>
               </li>
               <li>
-                <h4>Sass</h4>
-                <div class="prog_bar" id="skills">
-                  <div class="percent percent81 prog_width">
-                    <span>81%</span>
+                <h4 class="color-light" data-aos="fade-up">Sass</h4>
+                <div class="prog_bar background2 data-aos="fade-up"" id="skills">
+                  <div class="percent percent81 prog_width background1">
+                    <span class="background2">81%</span>
                     <span></span>
                   </div>
                 </div>
               </li>
               <li>
-                <h4>Adobe Photoshop</h4>
-                <div class="prog_bar">
-                  <div class="percent percent80 prog_width">
-                    <span>80%</span>
+                <h4 class="color-light" data-aos="fade-up">Adobe Photoshop</h4>
+                <div class="prog_bar background2" data-aos="fade-up">
+                  <div class="percent percent80 prog_width background1">
+                    <span class="background2">80%</span>
                     <span></span>
                   </div>
                 </div>
               </li>
               <li>
-                <h4>MS Office</h4>
-                <div class="prog_bar">
-                  <div class="percent percent85 prog_width">
-                    <span>85%</span>
+                <h4 class="color-light" data-aos="fade-up">MS Office</h4>
+                <div class="prog_bar background2" data-aos="fade-up">
+                  <div class="percent percent85 prog_width background1">
+                    <span class="background2">85%</span>
                     <span></span>
                   </div>
                 </div>
@@ -254,7 +262,7 @@
         </div>
       </div>
     </div>
-    <div class="my-cv">
+    <div class="my-cv border1" data-aos="fade-up">
       <a href="https://onedrive.live.com/?authkey=%21AI5uy39fOBDkLEg&cid=5E4F6DAE2F8B84DE&id=5E4F6DAE2F8B84DE%21104300&parId=5E4F6DAE2F8B84DE%21103814&o=OneUp"
         target="_blank">
         <i class="fa fa-download"></i> Resume</a>
@@ -263,20 +271,20 @@
   <!-- end more about me -->
   <!-- start gallery -->
   <div class="gallery">
-    <h1>Portfolio</h1>
-    <p>Most Important Websites I have developed them.</p>
+    <h1 class="color1" data-aos="fade-up">Portfolio</h1>
+    <p class="color2" data-aos="fade-up">Most Important Websites I have developed them.</p>
     <div class="the-tabs">
-      <ul id="my-tabs">
-        <li class="all" id="all">All</li>
-        <li id="templates" class="inactive">Templates</li>
-        <li id="graphics" class="inactive">graphics</li>
-        <li id="Photographs" class="inactive">Photographs</li>
-        <li id="brands" class="inactive">Brands</li>
+      <ul id="my-tabs" data-aos="zoom-out">
+        <li class="all border1 color2" id="all">All</li>
+        <li id="templates" class="inactive  border1 color2">Templates</li>
+        <li id="graphics" class="inactive border1 color2">graphics</li>
+        <li id="Photographs" class="inactive border1 color2">Photographs</li>
+        <li id="brands" class="inactive border1 color2">Brands</li>
       </ul>
         <div class="row">
-          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12 photo">
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12 photo" data-aos="fade-up">
             <img src="img/Screenshots/books.jpg" alt="Books Template" title="Books Template">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>Books Template</h4>
                 <span>$9</span>
@@ -286,9 +294,9 @@
               </div>
             </div>
           </div>
-          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/Screenshots/courses.jpg" alt="Courses Template" title="Courses Template">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>Courses Template</h4>
                 <span>$23</span>
@@ -298,9 +306,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/08.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/08.jpg" target="_blank">
@@ -309,9 +317,9 @@
               </div>
             </div>
           </div>
-          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/brands/1.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/brands/1.jpg" target="_blank">
@@ -320,9 +328,9 @@
               </div>
             </div>
           </div>
-          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/graphics/6.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/graphics/6.jpg" target="_blank">
@@ -331,9 +339,9 @@
               </div>
             </div>
           </div>
-          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/graphics/1.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/graphics/1.jpg" target="_blank">
@@ -342,9 +350,9 @@
               </div>
             </div>
           </div>
-          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/graphics/3.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/graphics/3.jpg" target="_blank">
@@ -353,9 +361,9 @@
               </div>
             </div>
           </div>
-          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/brands/3.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/brands/3.jpg" target="_blank">
@@ -364,9 +372,9 @@
               </div>
             </div>
           </div>
-          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/graphics/7.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/graphics/7.jpg" target="_blank">
@@ -375,9 +383,9 @@
               </div>
             </div>
           </div>
-          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/Screenshots/cloud.jpg" alt="Cloud Template" title="Cloud Template">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>Cloud Template</h4>
                 <span>$10</span>
@@ -387,9 +395,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/02.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/02.jpg" target="_blank">
@@ -398,9 +406,9 @@
               </div>
             </div>
           </div>
-          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/brands/5.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/brands/5.jpg" target="_blank">
@@ -409,9 +417,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/03.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/03.jpg" target="_blank">
@@ -420,9 +428,9 @@
               </div>
             </div>
           </div>
-          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/Screenshots/bootstrap.jpg" alt="bootstrap 4 Template" title="bootstrap 4 Template">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>bootstrap 4 Template</h4>
                 <span>$13</span>
@@ -432,9 +440,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/04.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/04.jpg" target="_blank">
@@ -443,9 +451,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/06.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/06.jpg" target="_blank">
@@ -454,9 +462,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/07.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/07.jpg" target="_blank">
@@ -465,9 +473,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/09.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/09.jpg" target="_blank">
@@ -476,9 +484,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/11.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/11.jpg" target="_blank">
@@ -487,9 +495,9 @@
               </div>
             </div>
           </div>
-          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item brands-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/brands/2.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/brands/2.jpg" target="_blank">
@@ -498,9 +506,9 @@
               </div>
             </div>
           </div>
-          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/graphics/5.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/graphics/5.jpg" target="_blank">
@@ -509,9 +517,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/12.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/12.jpg" target="_blank">
@@ -520,9 +528,9 @@
               </div>
             </div>
           </div>
-          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/graphics/4.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/graphics/4.jpg" target="_blank">
@@ -531,9 +539,9 @@
               </div>
             </div>
           </div>
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/15.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/15.jpg" target="_blank">
@@ -542,9 +550,9 @@
               </div>
             </div>
           </div>
-          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/Screenshots/1.jpg" alt="Personal Template" title="Personal Template">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>Personal Template</h4>
                 <span>$9</span>
@@ -554,9 +562,9 @@
               </div>
             </div>
           </div>
-          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item graphics-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/graphics/2.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/graphics/2.jpg" target="_blank">
@@ -566,9 +574,9 @@
             </div>
           </div>
 
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/16.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/16.jpg" target="_blank">
@@ -578,9 +586,9 @@
             </div>
           </div>
 
-          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item Photographs-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/mycamera/17.jpg" alt="" title="">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>$14</h4>
                 <a href="img/mycamera/17.jpg" target="_blank">
@@ -589,9 +597,9 @@
               </div>
             </div>
           </div>
-          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12">
+          <div class="item templates-content tab col-md-4 col-sm-6 col-xs-12" data-aos="fade-up">
             <img src="img/Screenshots/6.jpg" alt="Pesonal 2 Template" title="Pesonal 2 Template">
-            <div class="overlay">
+            <div class="overlay rgb1">
               <div class="over-text">
                 <h4>Pesonal 2 Template</h4>
                 <span>$11</span>
@@ -606,55 +614,55 @@
   </div>
   <!-- end gallery -->
   <!-- start services -->
-  <div class="services text-center wow fadeIn" id="services">
+  <div class="services text-center " id="services">
     <div class="container">
       <div class="head">
-        <h1>Services</h1>
-        <h2>What Can I Do For You?</h2>
-        <h5>responsive websites, javascript and jquery functions, clean and professional code.</h5>
+        <h1 class="color1" data-aos="fade-up">Services</h1>
+        <h2 class="color2" data-aos="fade-up">What Can I Do For You?</h2>
+        <h5 class="color-light">responsive websites, javascript and jquery functions, clean and professional code.</h5>
       </div>
-      <div id="demo" class="carousel slide" data-ride="carousel">
+      <div id="demo" class="carousel slide" data-ride="carousel" data-aos="fade-up">
         <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-          <li data-target="#demo" data-slide-to="3"></li>
-          <li data-target="#demo" data-slide-to="4"></li>
-          <li data-target="#demo" data-slide-to="5"></li>
+        <ul class="carousel-indicators" data-aos="fade-down">
+          <li data-target="#demo" data-slide-to="0" class="active background1"></li>
+          <li data-target="#demo" data-slide-to="1" class="background1"></li>
+          <li data-target="#demo" data-slide-to="2" class="background1"></li>
+          <li data-target="#demo" data-slide-to="3" class="background1"></li>
+          <li data-target="#demo" data-slide-to="4" class="background1"></li>
+          <li data-target="#demo" data-slide-to="5" class="background1"></li>
         </ul>
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <i class="fa fa-desktop wow wobble"></i>
-            <h3 class="wow fadeInUp">Web Design</h3>
-            <p class="wow fadeInUp">I Can Create And Design Your Dreams Wesbite!</p>
+            <i class="fa fa-desktop" data-aos="fade-up"></i>
+            <h3 class=" color2 color-light">Web Design</h3>
+            <p data-aos="fade-up">I Can Create And Design Your Dreams Wesbite!</p>
           </div>
           <div class="carousel-item">
-            <i class="fa fa-edit wow wobble"></i>
-            <h3 class="wow fadeInUp">Branding</h3>
-            <p class="wow fadeInUp">Creating PSD (photoshop) Or Images For Your New Branding And Logo!</p>
+            <i class="fa fa-edit" data-aos="fade-up"></i>
+            <h3 class=" color2 color-light">Branding</h3>
+            <p data-aos="fade-up">Creating PSD (photoshop) Or Images For Your New Branding And Logo!</p>
           </div>
           <div class="carousel-item">
-            <i class="fa fa-thumbs-up wow wobble"></i>
-            <h3 class="wow fadeInUp">Clean Code</h3>
-            <p class="wow fadeInUp">Will Find it So Easy To Edit, Maintain, Or Even Adding On My Code!</p>
+            <i class="fa fa-thumbs-up" data-aos="fade-up"></i>
+            <h3 class=" color2 color-light">Clean Code</h3>
+            <p data-aos="fade-up">Will Find it So Easy To Edit, Maintain, Or Even Adding On My Code!</p>
           </div>
           <div class="carousel-item">
-            <i class="fa fa-mobile wow wobble"></i>
-            <h3 class="wow fadeInUp">Fully Responsive</h3>
-            <p class="wow fadeInUp">My Web Designs Are Fully Responsive And Friendly On Any Kind Of Screens
+            <i class="fa fa-mobile" data-aos="fade-up"></i>
+            <h3 class=" color2 color-light">Fully Responsive</h3>
+            <p data-aos="fade-up">My Web Designs Are Fully Responsive And Friendly On Any Kind Of Screens
             </p>
           </div>
           <div class="carousel-item">
-            <i class="fa fa-exclamation-triangle wow wobble"></i>
-            <h3 class="wow fadeInUp">Fixing errors</h3>
-            <p class="wow fadeInUp">You can contact me via email to find all support</p>
+            <i class="fa fa-exclamation-triangle" data-aos="fade-up"></i>
+            <h3 class=" color2 color-light">Fixing errors</h3>
+            <p data-aos="fade-up">You can contact me via email to find all support</p>
           </div>
           <div class="carousel-item">
-            <i class="fa fa-cogs wow wobble"></i>
-            <h3 class="wow fadeInUp">Dynamic</h3>
-            <p class="wow fadeInUp">Websites don't have to be static, I love making pages come to life.</p>
+            <i class="fa fa-cogs" data-aos="fade-up"></i>
+            <h3 class=" color2 color-light">Dynamic</h3>
+            <p data-aos="fade-up">Websites don't have to be static, I love making pages come to life.</p>
           </div>
         </div>
       </div>
@@ -664,20 +672,20 @@
   <!-- sign up -->
   <div class="signup">
     <div class="container">
-      <h1>Contact With Me</h1>
-      <h3>You can send a message to contact with me</h3>
+      <h1 class="color1" data-aos="fade-up">Contact With Me</h1>
+      <h3 class="color2" data-aos="fade-up">You can send a message to contact with me</h3>
       <form class="signup-content">
         <div class="custom-input first-name">
           <input type="text" class="signup-input">
-          <label>Full name</label>
+          <label class="color1" data-aos="fade-up">Full name</label>
         </div>
         <div class="custom-input email">
           <input type="email" class="signup-input">
-          <label>Email Adress</label>
+          <label class="color1" data-aos="fade-up">Email Adress</label>
         </div>
-        <textarea id="subject" name="subject" placeholder="Write a message for us.."></textarea>
+        <textarea id="subject" name="subject" placeholder="Write a message for us.." data-aos="fade-up"></textarea>
         <br>
-        <button>Submit</button>
+        <button class="background-dark color-light" data-aos="fade-up">Submit</button>
       </form>
     </div>
   </div>
@@ -693,12 +701,15 @@
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/popper.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
   <script src="js/plugin.js"></script>
   <script src="js/javascript.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
 </body>
 
 </html>
