@@ -3,601 +3,844 @@ $theme1-second: #ff3773;
 $theme1-rgba_2:rgba(0, 201, 253, 0.5);
 $theme1-rgba_1:rgba(255, 18, 90, 0.5);
 /****/
+
 $theme2-main: #00c853;
 $theme2-second: #FFB74D;
 $theme2-rgba_2:rgba(255, 183, 77, 0.5);
 $theme2-rgba_1:rgba(0, 200, 83, 0.5);
 /****/
+
 $theme3-main: #FF7043;
 $theme3-second: #9575CD;
 $theme3-rgba_2:rgba(149, 117, 205, 0.5);
 $theme3-rgba_1:rgba(255, 112, 67, 0.5);
 /*******/
+
 $theme4-main: #F48FB1;
 $theme4-second: #26A69A;
 $theme4-rgba_2:rgba(38, 166, 154, 0.5);
 $theme4-rgba_1:rgba(244, 143, 177, 0.5);
 /***********/
+
 $theme5-main: #9E9E9E;
 $theme5-second: #AFB42B;
 $theme5-rgba_2:rgba(175, 180, 43, 0.5);
 $theme5-rgba_1:rgba(158, 158, 158, 0.5);
-
 /*   theme1 ********/
-[data-default-color="theme1"] .color1 {
-color: $theme1-main;
-}
-[data-default-color="theme1"] .color2 {
-color: $theme1-second
-}
-[data-default-color="theme1"] .background1 {
-background-color: $theme1-main
-}
-[data-default-color="theme1"] .background2 {
-background-color: $theme1-second
-}
-[data-default-color="theme1"] .rgb1 {
-    background-color: $theme1-rgba_1
-    }
-    [data-default-color="theme1"] .rgb2 {
-        background-color: $theme1-rgba_2
-        }
-[data-default-color="theme1"] .border1 {
-    border: 1px solid $theme1-second
-    }
 
-    [data-default-color="theme1"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-        border-top: 5px solid $theme1-second;
-    }
-    [data-default-color="theme1"]  .moree .my-cv:hover {
-        background: $theme1-second;
-        color: #fff
-    }
-    [data-default-color="theme1"]    .signup button:hover {
-        background: $theme1-second;
-        color: #fff
-    }
-[data-default-color="theme1"] .themes-menu .theme-click .i22 {
+[data-default-color="theme1"] .color1 {
+    color: $theme1-main;
+}
+
+[data-default-color="theme1"] .color2 {
     color: $theme1-second
 }
-[data-default-color="theme1"] .menu a:hover {
-    background: $theme1-main
+
+[data-default-color="theme1"] .background1 {
+    background-color: $theme1-main
 }
-[data-default-color="theme1"] #toggle:checked ~ .click span:nth-of-type(1){
+
+[data-default-color="theme1"] .background2 {
+    background-color: $theme1-second
+}
+
+[data-default-color="theme1"] .rgb1 {
+    background-color: $theme1-rgba_1
+}
+
+[data-default-color="theme1"] .rgb2 {
+    background-color: $theme1-rgba_2
+}
+
+[data-default-color="theme1"] .border1 {
+    border: 1px solid $theme1-second
+}
+
+[data-default-color="theme1"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+    border-top: 5px solid $theme1-second;
+}
+
+[data-default-color="theme1"] .moree .my-cv:hover {
     background: $theme1-second;
     color: #fff
 }
-[data-default-color="theme1"]  #toggle:checked ~ .click span:last-child {
+
+[data-default-color="theme1"] .signup button:hover {
     background: $theme1-second;
-    color: #fff   
+    color: #fff
 }
+
+[data-default-color="theme1"] .themes-menu .theme-click .i22 {
+    color: $theme1-second
+}
+
+[data-default-color="theme1"] .menu a:hover {
+    background: $theme1-main
+}
+
+[data-default-color="theme1"] #toggle:checked~.click span:nth-of-type(1) {
+    background: $theme1-second;
+    color: #fff
+}
+
+[data-default-color="theme1"] #toggle:checked~.click span:last-child {
+    background: $theme1-second;
+    color: #fff
+}
+
 [data-default-color="theme1"] .wellcome .social .icon:hover {
     background: $theme1-second;
 }
+
 [data-default-color="theme1"] .wellcome .social .icon:hover a {
-   color: #fff
+    color: #fff
 }
+
 [data-default-color="theme1"] .menu a.active {
     background: $theme1-second;
     color: #fff
 }
+
 [data-default-color="theme1"] #my-tabs li.inactive:hover {
     color: $theme1-second;
     border: 1px solid $theme1-second;
 }
+
 [data-default-color="theme1"] .services .carousel .carousel-indicators .active {
     background: $theme1-second;
 }
-[data-default-color="theme1"] .signup .custom-input input  {
-    border-bottom: 1px solid $theme1-second;
-}
-[data-default-color="theme1"]  .signup  textarea {
-    border-bottom: 1px solid $theme1-second;
-}
-[data-default-color="theme1"] .signup textarea::-webkit-input-placeholder {
-    color: $theme1-main ;
-}
-[data-default-color="theme1"] .signup textarea::-moz-input-placeholder {
-    color: $theme1-main ;
-}
-[data-default-color="theme1"] .signup textarea::-o-input-placeholder {
-    color: $theme1-main ;
-}
-[data-default-color="theme1"] .signup textarea::-ms-input-placeholder {
-    color: $theme1-main ;
-}
-[data-default-color="theme1"] .signup textarea::input-placeholder {
-    color: $theme1-main ;
-}
-[data-default-color="theme1"] .st0{
 
+[data-default-color="theme1"] .signup .custom-input input {
+    border-bottom: 1px solid $theme1-second;
+}
+
+[data-default-color="theme1"] .signup textarea {
+    border-bottom: 1px solid $theme1-second;
+}
+
+[data-default-color="theme1"] .signup textarea::-webkit-input-placeholder {
+    color: $theme1-main;
+}
+
+[data-default-color="theme1"] .signup textarea::-moz-input-placeholder {
+    color: $theme1-main;
+}
+
+[data-default-color="theme1"] .signup textarea::-o-input-placeholder {
+    color: $theme1-main;
+}
+
+[data-default-color="theme1"] .signup textarea::-ms-input-placeholder {
+    color: $theme1-main;
+}
+
+[data-default-color="theme1"] .signup textarea::input-placeholder {
+    color: $theme1-main;
+}
+
+[data-default-color="theme1"] .st0 {
     fill: $theme1-rgba_1
 }
-[data-default-color="theme1"] .st1{
 
+[data-default-color="theme1"] .st1 {
     fill: $theme1-second
 }
-[data-default-color="theme1"] .st2{
 
+[data-default-color="theme1"] .st2 {
     fill: $theme1-main
 }
-.gallery .item .overlay .over-text a:hover {
+
+[data-default-color="theme1"] .gallery .item .overlay .over-text a:hover {
     background: $theme1-second;
     color: #fff;
 }
+
+[data-default-color="theme1"] .control:hover {
+    background: $theme1-second;
+    color: #fff;
+    border: 1px solid #000
+}
+
+[data-default-color="theme1"] .mixitup-control-active {
+    background: $theme1-main;
+    color: #fff;
+    outline: none;
+    border: 1px solid #000
+}
+
 /************** end theme1 *********/
 
 /*   theme2 ********/
+
 [data-default-color="theme2"] .color1 {
     color: $theme2-main;
-    }
-    [data-default-color="theme2"] .color2 {
+}
+
+[data-default-color="theme2"] .color2 {
     color: $theme2-second
-    }
-    [data-default-color="theme2"] .background1 {
+}
+
+[data-default-color="theme2"] .background1 {
     background-color: $theme2-main
-    }
-    [data-default-color="theme2"] .background2 {
+}
+
+[data-default-color="theme2"] .background2 {
     background-color: $theme2-second
-    }
-    [data-default-color="theme2"] .rgb1 {
-        background-color: $theme2-rgba_1
-        }
-        [data-default-color="theme2"] .rgb2 {
-            background-color: $theme2-rgba_2
-            }
-    [data-default-color="theme2"] .border1 {
-        border: 1px solid $theme2-second
-        }
-    
-        [data-default-color="theme2"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-            border-top: 5px solid $theme2-second;
-        }
-        [data-default-color="theme2"]  .moree .my-cv:hover {
-            background: $theme2-second;
-            color: #fff
-        }
-        [data-default-color="theme2"]  .signup button:hover {
-            background: $theme2-second;
-            color: #fff
-        }
-    [data-default-color="theme2"] .themes-menu .theme-click .i22 {
-        color: $theme2-second
-    }
-    [data-default-color="theme2"] .menu a:hover {
-        background: $theme2-main
-    }
-    [data-default-color="theme2"] #toggle:checked ~ .click span:nth-of-type(1) {
-        background: $theme2-second;
-        color: #fff
-    }
-    [data-default-color="theme2"]  #toggle:checked ~ .click span:last-child {
-        background: $theme2-second;
-        color: #fff   
-    }
-    [data-default-color="theme2"] .wellcome .social .icon:hover {
-        background: $theme2-second;
-    }
-    [data-default-color="theme2"] .wellcome .social .icon:hover a {
-       color: #fff
-    }
-    [data-default-color="theme2"] .menu a.active {
-        background: $theme2-second;
-        color: #fff
-    }
-    [data-default-color="theme2"] #my-tabs li.inactive:hover {
-        color: $theme2-second;
-        border: 1px solid $theme2-second;
-    }
-    [data-default-color="theme2"] .services .carousel .carousel-indicators .active {
-        background: $theme2-second;
-    }
-    [data-default-color="theme2"] .signup .custom-input input  {
-        border-bottom: 1px solid $theme2-second;
-    }
-    [data-default-color="theme2"]  .signup  textarea {
-        border-bottom: 1px solid $theme2-second;
-    }
-    [data-default-color="theme2"] .signup textarea::-webkit-input-placeholder {
-        color: $theme2-main ;
-    }
-    [data-default-color="theme2"] .signup textarea::-moz-input-placeholder {
-        color: $theme2-main ;
-    }
-    [data-default-color="theme2"] .signup textarea::-o-input-placeholder {
-        color: $theme2-main ;
-    }
-    [data-default-color="theme2"] .signup textarea::-ms-input-placeholder {
-        color: $theme2-main ;
-    }
-    [data-default-color="theme2"] .signup textarea::input-placeholder {
-        color: $theme1-main ;
-    }
-    [data-default-color="theme2"] .st0{
-    
-        fill: $theme2-rgba_1
-    }
-    [data-default-color="theme2"] .st1{
-    
-        fill: $theme2-second
-    }
-    [data-default-color="theme2"] .st2{
-    
-        fill: $theme2-main
-    }
-    .gallery .item .overlay .over-text a:hover {
-        background: $theme2-second;
-        color: #fff;
-    }
-    /************** end theme2 *********/
+}
+
+[data-default-color="theme2"] .rgb1 {
+    background-color: $theme2-rgba_1
+}
+
+[data-default-color="theme2"] .rgb2 {
+    background-color: $theme2-rgba_2
+}
+
+[data-default-color="theme2"] .border1 {
+    border: 1px solid $theme2-second
+}
+
+[data-default-color="theme2"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+    border-top: 5px solid $theme2-second;
+}
+
+[data-default-color="theme2"] .moree .my-cv:hover {
+    background: $theme2-second;
+    color: #fff
+}
+
+[data-default-color="theme2"] .signup button:hover {
+    background: $theme2-second;
+    color: #fff
+}
+
+[data-default-color="theme2"] .themes-menu .theme-click .i22 {
+    color: $theme2-second
+}
+
+[data-default-color="theme2"] .menu a:hover {
+    background: $theme2-main
+}
+
+[data-default-color="theme2"] #toggle:checked~.click span:nth-of-type(1) {
+    background: $theme2-second;
+    color: #fff
+}
+
+[data-default-color="theme2"] #toggle:checked~.click span:last-child {
+    background: $theme2-second;
+    color: #fff
+}
+
+[data-default-color="theme2"] .wellcome .social .icon:hover {
+    background: $theme2-second;
+}
+
+[data-default-color="theme2"] .wellcome .social .icon:hover a {
+    color: #fff
+}
+
+[data-default-color="theme2"] .menu a.active {
+    background: $theme2-second;
+    color: #fff
+}
+
+[data-default-color="theme2"] #my-tabs li.inactive:hover {
+    color: $theme2-second;
+    border: 1px solid $theme2-second;
+}
+
+[data-default-color="theme2"] .services .carousel .carousel-indicators .active {
+    background: $theme2-second;
+}
+
+[data-default-color="theme2"] .signup .custom-input input {
+    border-bottom: 1px solid $theme2-second;
+}
+
+[data-default-color="theme2"] .signup textarea {
+    border-bottom: 1px solid $theme2-second;
+}
+
+[data-default-color="theme2"] .signup textarea::-webkit-input-placeholder {
+    color: $theme2-main;
+}
+
+[data-default-color="theme2"] .signup textarea::-moz-input-placeholder {
+    color: $theme2-main;
+}
+
+[data-default-color="theme2"] .signup textarea::-o-input-placeholder {
+    color: $theme2-main;
+}
+
+[data-default-color="theme2"] .signup textarea::-ms-input-placeholder {
+    color: $theme2-main;
+}
+
+[data-default-color="theme2"] .signup textarea::input-placeholder {
+    color: $theme1-main;
+}
+
+[data-default-color="theme2"] .st0 {
+    fill: $theme2-rgba_1
+}
+
+[data-default-color="theme2"] .st1 {
+    fill: $theme2-second
+}
+
+[data-default-color="theme2"] .st2 {
+    fill: $theme2-main
+}
+
+[data-default-color="theme2"] .gallery .item .overlay .over-text a:hover {
+    background: $theme2-second;
+    color: #fff;
+}
+
+[data-default-color="theme2"] .control:hover {
+    background: $theme2-second;
+    color: #fff;
+    border: 1px solid #000
+}
+
+[data-default-color="theme2"] .mixitup-control-active {
+    background: $theme2-main;
+    color: #fff;
+    outline: none;
+    border: 1px solid #000
+}
+
+/************** end theme2 *********/
 
 /*   theme3 ********/
+
 [data-default-color="theme3"] .color1 {
     color: $theme3-main;
-    }
-    [data-default-color="theme3"] .color2 {
+}
+
+[data-default-color="theme3"] .color2 {
     color: $theme3-second
-    }
-    [data-default-color="theme3"] .background1 {
+}
+
+[data-default-color="theme3"] .background1 {
     background-color: $theme3-main
-    }
-    [data-default-color="theme3"] .background2 {
+}
+
+[data-default-color="theme3"] .background2 {
     background-color: $theme3-second
-    }
-    [data-default-color="theme3"] .rgb1 {
-        background-color: $theme3-rgba_1
-        }
-        [data-default-color="theme3"] .rgb2 {
-            background-color: $theme3-rgba_2
-            }
-    [data-default-color="theme3"] .border1 {
-        border: 1px solid $theme3-second
-        }
-    
-        [data-default-color="theme3"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-            border-top: 5px solid $theme3-second;
-        }
-        [data-default-color="theme3"]  .moree .my-cv:hover {
-            background: $theme3-second;
-            color: #fff
-        }
-        [data-default-color="theme3"]    .signup button:hover {
-            background: $theme3-second;
-            color: #fff
-        }
-    [data-default-color="theme3"] .themes-menu .theme-click .i22 {
-        color: $theme3-second
-    }
-    [data-default-color="theme3"] .menu a:hover {
-        background: $theme3-main
-    }
-    [data-default-color="theme3"] #toggle:checked ~ .click span:nth-of-type(1) {
-        background: $theme3-second;
-        color: #fff
-    }
-    [data-default-color="theme3"]  #toggle:checked ~ .click span:last-child {
-        background: $theme3-second;
-        color: #fff   
-    }
-    [data-default-color="theme3"] .wellcome .social .icon:hover {
-        background: $theme3-second;
-    }
-    [data-default-color="theme3"] .wellcome .social .icon:hover a {
-       color: #fff
-    }
-    [data-default-color="theme3"] .menu a.active {
-        background: $theme3-second;
-        color: #fff
-    }
-    [data-default-color="theme3"] #my-tabs li.inactive:hover {
-        color: $theme3-second;
-        border: 1px solid $theme3-second;
-    }
-    [data-default-color="theme3"] .services .carousel .carousel-indicators .active {
-        background: $theme3-second;
-    }
-    [data-default-color="theme3"] .signup .custom-input input  {
-        border-bottom: 1px solid $theme3-second;
-    }
-    [data-default-color="theme3"]  .signup  textarea {
-        border-bottom: 1px solid $theme3-second;
-    }
-    [data-default-color="theme3"] .signup textarea::-webkit-input-placeholder {
-        color: $theme3-main ;
-    }
-    [data-default-color="theme3"] .signup textarea::-moz-input-placeholder {
-        color: $theme3-main ;
-    }
-    [data-default-color="theme3"] .signup textarea::-o-input-placeholder {
-        color: $theme3-main ;
-    }
-    [data-default-color="theme3"] .signup textarea::-ms-input-placeholder {
-        color: $theme3-main ;
-    }
-    [data-default-color="theme3"] .signup textarea::input-placeholder {
-        color: $theme3-main ;
-    }
-    [data-default-color="theme3"] .st0{
-    
-        fill: $theme3-rgba_1
-    }
-    [data-default-color="theme3"] .st1{
-    
-        fill: $theme3-second
-    }
-    [data-default-color="theme3"] .st2{
-    
-        fill: $theme3-main
-    }
-    .gallery .item .overlay .over-text a:hover {
-        background: $theme3-second;
-        color: #fff;
-    }
-    /************** end theme3 *********/
+}
+
+[data-default-color="theme3"] .rgb1 {
+    background-color: $theme3-rgba_1
+}
+
+[data-default-color="theme3"] .rgb2 {
+    background-color: $theme3-rgba_2
+}
+
+[data-default-color="theme3"] .border1 {
+    border: 1px solid $theme3-second
+}
+
+[data-default-color="theme3"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+    border-top: 5px solid $theme3-second;
+}
+
+[data-default-color="theme3"] .moree .my-cv:hover {
+    background: $theme3-second;
+    color: #fff
+}
+
+[data-default-color="theme3"] .signup button:hover {
+    background: $theme3-second;
+    color: #fff
+}
+
+[data-default-color="theme3"] .themes-menu .theme-click .i22 {
+    color: $theme3-second
+}
+
+[data-default-color="theme3"] .menu a:hover {
+    background: $theme3-main
+}
+
+[data-default-color="theme3"] #toggle:checked~.click span:nth-of-type(1) {
+    background: $theme3-second;
+    color: #fff
+}
+
+[data-default-color="theme3"] #toggle:checked~.click span:last-child {
+    background: $theme3-second;
+    color: #fff
+}
+
+[data-default-color="theme3"] .wellcome .social .icon:hover {
+    background: $theme3-second;
+}
+
+[data-default-color="theme3"] .wellcome .social .icon:hover a {
+    color: #fff
+}
+
+[data-default-color="theme3"] .menu a.active {
+    background: $theme3-second;
+    color: #fff
+}
+
+[data-default-color="theme3"] #my-tabs li.inactive:hover {
+    color: $theme3-second;
+    border: 1px solid $theme3-second;
+}
+
+[data-default-color="theme3"] .services .carousel .carousel-indicators .active {
+    background: $theme3-second;
+}
+
+[data-default-color="theme3"] .signup .custom-input input {
+    border-bottom: 1px solid $theme3-second;
+}
+
+[data-default-color="theme3"] .signup textarea {
+    border-bottom: 1px solid $theme3-second;
+}
+
+[data-default-color="theme3"] .signup textarea::-webkit-input-placeholder {
+    color: $theme3-main;
+}
+
+[data-default-color="theme3"] .signup textarea::-moz-input-placeholder {
+    color: $theme3-main;
+}
+
+[data-default-color="theme3"] .signup textarea::-o-input-placeholder {
+    color: $theme3-main;
+}
+
+[data-default-color="theme3"] .signup textarea::-ms-input-placeholder {
+    color: $theme3-main;
+}
+
+[data-default-color="theme3"] .signup textarea::input-placeholder {
+    color: $theme3-main;
+}
+
+[data-default-color="theme3"] .st0 {
+    fill: $theme3-rgba_1
+}
+
+[data-default-color="theme3"] .st1 {
+    fill: $theme3-second
+}
+
+[data-default-color="theme3"] .st2 {
+    fill: $theme3-main
+}
+
+[data-default-color="theme3"] .gallery .item .overlay .over-text a:hover {
+    background: $theme3-second;
+    color: #fff;
+}
+
+[data-default-color="theme3"] .control:hover {
+    background: $theme3-second;
+    color: #fff;
+    border: 1px solid #000
+}
+
+[data-default-color="theme3"] .mixitup-control-active {
+    background: $theme3-main;
+    color: #fff;
+    outline: none;
+    border: 1px solid #000
+}
+
+/************** end theme3 *********/
 
 /*   theme4 ********/
+
 [data-default-color="theme4"] .color1 {
     color: $theme4-main;
-    }
-    [data-default-color="theme4"] .color2 {
+}
+
+[data-default-color="theme4"] .color2 {
     color: $theme4-second
-    }
-    [data-default-color="theme4"] .background1 {
+}
+
+[data-default-color="theme4"] .background1 {
     background-color: $theme4-main
-    }
-    [data-default-color="theme4"] .background2 {
+}
+
+[data-default-color="theme4"] .background2 {
     background-color: $theme4-second
-    }
-    [data-default-color="theme4"] .rgb1 {
-        background-color: $theme4-rgba_1
-        }
-        [data-default-color="theme4"] .rgb2 {
-            background-color: $theme4-rgba_2
-            }
-    [data-default-color="theme4"] .border1 {
-        border: 1px solid $theme4-second
-        }
-    
-        [data-default-color="theme4"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-            border-top: 5px solid $theme4-second;
-        }
-        [data-default-color="theme4"]  .moree .my-cv:hover {
-            background: $theme4-second;
-            color: #fff
-        }
-        [data-default-color="theme4"]    .signup button:hover {
-            background: $theme4-second;
-            color: #fff
-        }
-    [data-default-color="theme4"] .themes-menu .theme-click .i22 {
-        color: $theme4-second
-    }
-    [data-default-color="theme4"] .menu a:hover {
-        background: $theme4-main
-    }
-    [data-default-color="theme4"] #toggle:checked ~ .click span:nth-of-type(1) {
-        background: $theme4-second;
-        color: #fff
-    }
-    [data-default-color="theme4"]  #toggle:checked ~ .click span:last-child {
-        background: $theme4-second;
-        color: #fff  4 
-    }
-    [data-default-color="theme4"] .wellcome .social .icon:hover {
-        background: $theme4-second;
-    }
-    [data-default-color="theme4"] .wellcome .social .icon:hover a {
-       color: #fff
-    }
-    [data-default-color="theme4"] .menu a.active {
-        background: $theme4-second;
-        color: #fff
-    }
-    [data-default-color="theme4"] #my-tabs li.inactive:hover {
-        color: $theme4-second;
-        border: 1px solid $theme4-second;
-    }
-    [data-default-color="theme4"] .services .carousel .carousel-indicators .active {
-        background: $theme4-second;
-    }
-    [data-default-color="theme4"] .signup .custom-input input  {
-        border-bottom: 1px solid $theme4-second;
-    }
-    [data-default-color="theme4"]  .signup  textarea {
-        border-bottom: 1px solid $theme4-second;
-    }
-    [data-default-color="theme4"] .signup textarea::-webkit-input-placeholder {
-        color: $theme4-main ;
-    }
-    [data-default-color="theme4"] .signup textarea::-moz-input-placeholder {
-        color: $theme4-main ;
-    }
-    [data-default-color="theme4"] .signup textarea::-o-input-placeholder {
-        color: $theme4-main ;
-    }
-    [data-default-color="theme4"] .signup textarea::-ms-input-placeholder {
-        color: $theme4-main ;
-    }
-    [data-default-color="theme4"] .signup textarea::input-placeholder {
-        color: $theme1-main ;
-    }
-    [data-default-color="theme4"] .st0{
-    
-        fill: $theme4-rgba_1
-    }
-    [data-default-color="theme4"] .st1{
-    
-        fill: $theme4-second
-    }
-    [data-default-color="theme4"] .st2{
-    
-        fill: $theme4-main
-    }
-    .gallery .item .overlay .over-text a:hover {
-        background: $theme4-second;
-        color: #fff;
-    }
-    /************** end theme4 *********/
+}
+
+[data-default-color="theme4"] .rgb1 {
+    background-color: $theme4-rgba_1
+}
+
+[data-default-color="theme4"] .rgb2 {
+    background-color: $theme4-rgba_2
+}
+
+[data-default-color="theme4"] .border1 {
+    border: 1px solid $theme4-second
+}
+
+[data-default-color="theme4"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+    border-top: 5px solid $theme4-second;
+}
+
+[data-default-color="theme4"] .moree .my-cv:hover {
+    background: $theme4-second;
+    color: #fff
+}
+
+[data-default-color="theme4"] .signup button:hover {
+    background: $theme4-second;
+    color: #fff
+}
+
+[data-default-color="theme4"] .themes-menu .theme-click .i22 {
+    color: $theme4-second
+}
+
+[data-default-color="theme4"] .menu a:hover {
+    background: $theme4-main
+}
+
+[data-default-color="theme4"] #toggle:checked~.click span:nth-of-type(1) {
+    background: $theme4-second;
+    color: #fff
+}
+
+[data-default-color="theme4"] #toggle:checked~.click span:last-child {
+    background: $theme4-second;
+    color: #fff 4
+}
+
+[data-default-color="theme4"] .wellcome .social .icon:hover {
+    background: $theme4-second;
+}
+
+[data-default-color="theme4"] .wellcome .social .icon:hover a {
+    color: #fff
+}
+
+[data-default-color="theme4"] .menu a.active {
+    background: $theme4-second;
+    color: #fff
+}
+
+[data-default-color="theme4"] #my-tabs li.inactive:hover {
+    color: $theme4-second;
+    border: 1px solid $theme4-second;
+}
+
+[data-default-color="theme4"] .services .carousel .carousel-indicators .active {
+    background: $theme4-second;
+}
+
+[data-default-color="theme4"] .signup .custom-input input {
+    border-bottom: 1px solid $theme4-second;
+}
+
+[data-default-color="theme4"] .signup textarea {
+    border-bottom: 1px solid $theme4-second;
+}
+
+[data-default-color="theme4"] .signup textarea::-webkit-input-placeholder {
+    color: $theme4-main;
+}
+
+[data-default-color="theme4"] .signup textarea::-moz-input-placeholder {
+    color: $theme4-main;
+}
+
+[data-default-color="theme4"] .signup textarea::-o-input-placeholder {
+    color: $theme4-main;
+}
+
+[data-default-color="theme4"] .signup textarea::-ms-input-placeholder {
+    color: $theme4-main;
+}
+
+[data-default-color="theme4"] .signup textarea::input-placeholder {
+    color: $theme1-main;
+}
+
+[data-default-color="theme4"] .st0 {
+    fill: $theme4-rgba_1
+}
+
+[data-default-color="theme4"] .st1 {
+    fill: $theme4-second
+}
+
+[data-default-color="theme4"] .st2 {
+    fill: $theme4-main
+}
+
+[data-default-color="theme4"] .gallery .item .overlay .over-text a:hover {
+    background: $theme4-second;
+    color: #fff;
+}
+
+[data-default-color="theme4"] .control:hover {
+    background: $theme4-second;
+    color: #fff;
+    border: 1px solid #000
+}
+
+[data-default-color="theme4"] .mixitup-control-active {
+    background: $theme4-main;
+    color: #fff;
+    outline: none;
+    border: 1px solid #000
+}
+
+/************** end theme4 *********/
 
 /*   theme5 ********/
+
 [data-default-color="theme5"] .color1 {
     color: $theme5-main;
-    }
-    [data-default-color="theme5"] .color2 {
+}
+
+[data-default-color="theme5"] .color2 {
     color: $theme5-second
-    }
-    [data-default-color="theme5"] .background1 {
+}
+
+[data-default-color="theme5"] .background1 {
     background-color: $theme5-main
-    }
-    [data-default-color="theme5"] .background2 {
+}
+
+[data-default-color="theme5"] .background2 {
     background-color: $theme5-second
-    }
-    [data-default-color="theme5"] .rgb1 {
-        background-color: $theme5-rgba_1
-        }
-        [data-default-color="theme5"] .rgb2 {
-            background-color: $theme5-rgba_2
-            }
-    [data-default-color="theme5"] .border1 {
-        border: 1px solid $theme5-second
-        }
-    
-        [data-default-color="theme5"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-            border-top: 5px solid $theme5-second;
-        }
-        [data-default-color="theme5"]  .moree .my-cv:hover {
-            background: $theme5-second;
-            color: #fff
-        }
-        [data-default-color="theme5"]    .signup button:hover {
-            background: $theme5-second;
-            color: #fff
-        }
-    [data-default-color="theme5"] .themes-menu .theme-click .i22 {
-        color: $theme5-second
-    }
-    [data-default-color="theme5"] .menu a:hover {
-        background: $theme5-main
-    }
-    [data-default-color="theme5"] #toggle:checked ~ .click span:nth-of-type(1) {
-        background: $theme5-second;
-        color: #fff
-    }
-    [data-default-color="theme5"]  #toggle:checked ~ .click span:last-child {
-        background: $theme5-second;
-        color: #fff   
-    }
-    [data-default-color="theme5"] .wellcome .social .icon:hover {
-        background: $theme5-second;
-    }
-    [data-default-color="theme5"] .wellcome .social .icon:hover a {
-       color: #fff
-    }
-    [data-default-color="theme5"] .menu a.active {
-        background: $theme5-second;
-        color: #fff
-    }
-    [data-default-color="theme5"] #my-tabs li.inactive:hover {
-        color: $theme5-second;
-        border: 1px solid $theme5-second;
-    }
-    [data-default-color="theme5"] .services .carousel .carousel-indicators .active {
-        background: $theme5-second;
-    }
-    [data-default-color="theme5"] .signup .custom-input input {
-        border-bottom: 1px solid $theme5-second;
-    }
-    [data-default-color="theme5"]  .signup  textarea {
-        border-bottom: 1px solid $theme5-second;
-    }
-    [data-default-color="theme5"] .signup textarea::-webkit-input-placeholder {
-        color: $theme5-main ;
-    }
-    [data-default-color="theme5"] .signup textarea::-moz-input-placeholder {
-        color: $theme5-main ;
-    }
-    [data-default-color="theme5"] .signup textarea::-o-input-placeholder {
-        color: $theme5-main ;
-    }
-    [data-default-color="theme5"] .signup textarea::-ms-input-placeholder {
-        color: $theme5-main ;
-    }
-    [data-default-color="theme5"] .signup textarea::input-placeholder {
-        color: $theme5-main ;
-    }
-    [data-default-color="theme5"] .st0{
-    
-        fill: $theme5-rgba_1
-    }
-    [data-default-color="theme5"] .st1{
-    
-        fill: $theme5-second
-    }
-    [data-default-color="theme5"] .st2{
-    
-        fill: $theme5-main
-    }
-    .gallery .item .overlay .over-text a:hover {
-        background: $theme5-second;
-        color: #fff;
-    }
-    /************** end theme5 *********/
-                
+}
+
+[data-default-color="theme5"] .rgb1 {
+    background-color: $theme5-rgba_1
+}
+
+[data-default-color="theme5"] .rgb2 {
+    background-color: $theme5-rgba_2
+}
+
+[data-default-color="theme5"] .border1 {
+    border: 1px solid $theme5-second
+}
+
+[data-default-color="theme5"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
+    border-top: 5px solid $theme5-second;
+}
+
+[data-default-color="theme5"] .moree .my-cv:hover {
+    background: $theme5-second;
+    color: #fff
+}
+
+[data-default-color="theme5"] .signup button:hover {
+    background: $theme5-second;
+    color: #fff
+}
+
+[data-default-color="theme5"] .themes-menu .theme-click .i22 {
+    color: $theme5-second
+}
+
+[data-default-color="theme5"] .menu a:hover {
+    background: $theme5-main
+}
+
+[data-default-color="theme5"] #toggle:checked~.click span:nth-of-type(1) {
+    background: $theme5-second;
+    color: #fff
+}
+
+[data-default-color="theme5"] #toggle:checked~.click span:last-child {
+    background: $theme5-second;
+    color: #fff
+}
+
+[data-default-color="theme5"] .wellcome .social .icon:hover {
+    background: $theme5-second;
+}
+
+[data-default-color="theme5"] .wellcome .social .icon:hover a {
+    color: #fff
+}
+
+[data-default-color="theme5"] .menu a.active {
+    background: $theme5-second;
+    color: #fff
+}
+
+[data-default-color="theme5"] #my-tabs li.inactive:hover {
+    color: $theme5-second;
+    border: 1px solid $theme5-second;
+}
+
+[data-default-color="theme5"] .services .carousel .carousel-indicators .active {
+    background: $theme5-second;
+}
+
+[data-default-color="theme5"] .signup .custom-input input {
+    border-bottom: 1px solid $theme5-second;
+}
+
+[data-default-color="theme5"] .signup textarea {
+    border-bottom: 1px solid $theme5-second;
+}
+
+[data-default-color="theme5"] .signup textarea::-webkit-input-placeholder {
+    color: $theme5-main;
+}
+
+[data-default-color="theme5"] .signup textarea::-moz-input-placeholder {
+    color: $theme5-main;
+}
+
+[data-default-color="theme5"] .signup textarea::-o-input-placeholder {
+    color: $theme5-main;
+}
+
+[data-default-color="theme5"] .signup textarea::-ms-input-placeholder {
+    color: $theme5-main;
+}
+
+[data-default-color="theme5"] .signup textarea::input-placeholder {
+    color: $theme5-main;
+}
+
+[data-default-color="theme5"] .st0 {
+    fill: $theme5-rgba_1
+}
+
+[data-default-color="theme5"] .st1 {
+    fill: $theme5-second
+}
+
+[data-default-color="theme5"] .st2 {
+    fill: $theme5-main
+}
+
+[data-default-color="theme5"] .gallery .item .overlay .over-text a:hover {
+    background: $theme5-second;
+    color: #fff;
+}
+
+[data-default-color="theme5"] .control:hover {
+    background: $theme5-second;
+    color: #fff;
+    border: 1px solid #000
+}
+
+[data-default-color="theme5"] .mixitup-control-active {
+    background: $theme5-main;
+    color: #fff;
+    outline: none;
+    border: 1px solid #000
+}
+
+/************** end theme5 *********/
+
 #theme-1 {
     background: $theme1-second;
     div {
         background: $theme1-main
     }
 }
+
 #theme-2 {
     background: $theme2-second;
     div {
         background: $theme2-main
     }
 }
+
 #theme-3 {
     background: $theme3-second;
     div {
         background: $theme3-main
     }
 }
+
 #theme-4 {
     background: $theme4-second;
     div {
         background: $theme4-main
     }
 }
+
 #theme-5 {
     background: $theme5-second;
     div {
         background: $theme5-main
     }
 }
- [data-dark="dark"]  .background-dark {
+
+[data-dark="dark"] .background-dark {
     background: #000
 }
-[data-dark="dark"]  .color-dark {
+
+[data-dark="dark"] .color-dark {
     background: #000
 }
-[data-dark="dark"]  .background-light {
+
+[data-dark="dark"] .background-light {
     background: #fff
 }
-[data-dark="dark"]  .color-light {
+
+[data-dark="dark"] .color-light {
     color: #fff
 }
-[data-dark="dark"] .moree .basic p{
+
+[data-dark="dark"] .moree .basic p {
     color: rgb(221, 208, 208)
 }
+
 [data-dark="dark"] #my-tabs li.inactive {
     border: 1px solid #fff;
     color: #fff;
 }
+
 [data-dark="dark"] .services .carousel .carousel-item p {
     color: #fff
 }
+
 [data-dark="dark"] .signup .signup-content {
-    background: #000 ;
+    background: #000;
     border: 1px solid #fff
 }
+
 [data-dark="dark"] .themes-menu {
-    border: 1px solid #fff}
+    border: 1px solid #fff
+}
+
+[data-dark="dark"] .services .carousel .carousel-item i {
+    color: #fff
+}
+
+[data-dark="dark"] .control {
+    color: #fff;
+    border: 1px solid #fff
+}
+
+[data-dark="dark"] .control:hover {
+    border: 1px solid #fff
+}
+
+[data-dark="dark"] .mixitup-control-active {
+    color: #fff;
+    border: 1px solid #fff
+}
+
+[data-dark="dark"] .mix {
+    box-shadow: 3px 3px 10px -2px rgba(255, 255, 255, 0.3)
+}
+
+.mix {
+    box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, .3)
+}

@@ -1,65 +1,70 @@
 $(function () {
     'use strict';
- 
+
     $(document).scroll(function () {
-     if ($(document).scrollTop() > 20) {
+        if ($(document).scrollTop() > 20) {
             $(".navbar").addClass("custom-nav");
             $(".navbar .lan").addClass("black");
-            $(".navbar .lan a").css({"color": "#000"});
+            $(".navbar .lan a").css({ "color": "#000" });
             $("#ar-click").removeClass("ar-click");
-     }
-     else {
-        $(".navbar").removeClass("custom-nav");
-        $(".navbar .lan").removeClass("black");
-        $(".navbar .lan a").css({"color": "#fff"});
-        $("#ar-click").addClass("ar-click");
-    }
+        }
+        else {
+            $(".navbar").removeClass("custom-nav");
+            $(".navbar .lan").removeClass("black");
+            $(".navbar .lan a").css({ "color": "#fff" });
+            $("#ar-click").addClass("ar-click");
+        }
     });
     $(document).scroll(function () {
         if ($(document).scrollTop() > 20) {
-            $(".menu a").removeClass("active"); 
-            $("#home").addClass("active");  }
+            $(".menu a").removeClass("active");
+            $("#home").addClass("active");
+        }
     });
 
     $(document).scroll(function () {
         if ($(this).scrollTop() >= $('.moree').offset().top - 200) {
-            $(".menu a").removeClass("active"); 
-            $("#moree").addClass("active");    }
+            $(".menu a").removeClass("active");
+            $("#moree").addClass("active");
+        }
     });
     $(document).scroll(function () {
         if ($(this).scrollTop() >= $('.gallery').offset().top - 200) {
-            $(".menu a").removeClass("active"); 
-            $("#Portfolio").addClass("active");    }
+            $(".menu a").removeClass("active");
+            $("#Portfolio").addClass("active");
+        }
     });
     $(document).scroll(function () {
         if ($(this).scrollTop() >= $('.services').offset().top - 200) {
-            $(".menu a").removeClass("active"); 
-            $("#Services").addClass("active");    }
+            $(".menu a").removeClass("active");
+            $("#Services").addClass("active");
+        }
     });
     $(document).scroll(function () {
         if ($(this).scrollTop() >= $('.signup').offset().top - 200) {
-            $(".menu a").removeClass("active"); 
-            $("#Contact").addClass("active");    }
+            $(".menu a").removeClass("active");
+            $("#Contact").addClass("active");
+        }
     });
-    $("#home").on("click", function(){
+    $("#home").on("click", function () {
         event.preventDefault();
-        $("html, body").animate({scrollTop: $("body").offset().top});
-            });
-    $("#moree").on("click", function(){
-        event.preventDefault();
-$("html, body").animate({scrollTop: $(".moree").offset().top - 171});
+        $("html, body").animate({ scrollTop: $("body").offset().top });
     });
-    $("#Portfolio").on("click", function(){
+    $("#moree").on("click", function () {
         event.preventDefault();
-$("html, body").animate({scrollTop: $(".gallery").offset().top - 50});
+        $("html, body").animate({ scrollTop: $(".moree").offset().top - 171 });
     });
-    $("#Services").on("click", function(){
+    $("#Portfolio").on("click", function () {
         event.preventDefault();
-$("html, body").animate({scrollTop: $(".services").offset().top - 50});
+        $("html, body").animate({ scrollTop: $(".gallery").offset().top - 50 });
     });
-    $("#Contact").on("click", function(){
+    $("#Services").on("click", function () {
         event.preventDefault();
-$("html, body").animate({scrollTop: $(".signup").offset().top - 50});
+        $("html, body").animate({ scrollTop: $(".services").offset().top - 50 });
+    });
+    $("#Contact").on("click", function () {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $(".signup").offset().top - 50 });
     });
 
 
@@ -116,48 +121,33 @@ $("html, body").animate({scrollTop: $(".signup").offset().top - 50});
             $(".repassword label").removeClass("has-data");
         }
     });
-    $("#theme-click").on("click", function(){
+    $("#theme-click").on("click", function () {
         $(this).toggleClass("theme-click-1");
         $(".theme-click .i2").toggleClass("i22");
         $(".themes-menu").toggleClass("themes-1");
-        
+
     });
-  
-    $(".themes-menu .list div").on("click", function () {       
+
+    $(".themes-menu .list div").on("click", function () {
         $(".themes-menu").removeClass("themes-1");
         $("#theme-click").removeClass("theme-click-1");
         $(".theme-click .i2").removeClass("i22");
-       $("body").attr("data-default-color", $(this).data("color"));
- 
-    }); 
-    // tabs
-// get the click li  id and cache in myId varible
- $("#my-tabs li").on("click", function()
- {
-var myID = $(this).attr("id");
-// remove class inactive frome clicked li and add it to other li in the same UL
- $(this).removeClass("inactive").siblings().addClass("inactive");
- $(".tab").fadeOut();
- $("."+myID+"-content").fadeIn(700);
- // $(".the-tabs .ss").fadeOut(5000);
-// hide all divs when click on the li
+        $("body").attr("data-default-color", $(this).data("color"));
 
+    });
 
+    $("#dark").on("click", function () {
+        $("body").attr("data-dark", "dark");
+        $("body").css({ "background": "#000" });
+        $(".themes-menu").removeClass("themes-1");
+        $("#theme-click").removeClass("theme-click-1");
+        $(".theme-click .i2").removeClass("i22");
+    });
+    $("#light").on("click", function () {
+        $("body").removeAttr("data-dark", "dark");
+        $("body").css({ "background": "#fff" });
+        $(".themes-menu").removeClass("themes-1");
+        $("#theme-click").removeClass("theme-click-1");
+        $(".theme-click .i2").removeClass("i22");
+    });
 });
-
-$("#my-tabs .all").on("click", function(){
-    $(".tab").fadeIn();
-});
-$("#dark").on("click", function (){
-    $("body").attr("data-dark", "dark");
-    $("body").css({"background":"#000"});
-    $(".themes-menu").removeClass("themes-1");
-    $("#theme-click").removeClass("theme-click-1");
-});
-$("#light").on("click", function (){
-    $("body").removeAttr("data-dark", "dark");
-    $("body").css({"background":"#fff"});
-    $(".themes-menu").removeClass("themes-1");
-    $("#theme-click").removeClass("theme-click-1");
-});
-        });

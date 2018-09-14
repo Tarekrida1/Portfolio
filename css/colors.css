@@ -125,9 +125,22 @@
   fill: #00c9fd;
 }
 
-.gallery .item .overlay .over-text a:hover {
+[data-default-color="theme1"] .gallery .item .overlay .over-text a:hover {
   background: #ff3773;
   color: #fff;
+}
+
+[data-default-color="theme1"] .control:hover {
+  background: #ff3773;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+[data-default-color="theme1"] .mixitup-control-active {
+  background: #00c9fd;
+  color: #fff;
+  outline: none;
+  border: 1px solid #000;
 }
 
 /************** end theme1 *********/
@@ -254,9 +267,22 @@
   fill: #00c853;
 }
 
-.gallery .item .overlay .over-text a:hover {
+[data-default-color="theme2"] .gallery .item .overlay .over-text a:hover {
   background: #FFB74D;
   color: #fff;
+}
+
+[data-default-color="theme2"] .control:hover {
+  background: #FFB74D;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+[data-default-color="theme2"] .mixitup-control-active {
+  background: #00c853;
+  color: #fff;
+  outline: none;
+  border: 1px solid #000;
 }
 
 /************** end theme2 *********/
@@ -383,9 +409,22 @@
   fill: #FF7043;
 }
 
-.gallery .item .overlay .over-text a:hover {
+[data-default-color="theme3"] .gallery .item .overlay .over-text a:hover {
   background: #9575CD;
   color: #fff;
+}
+
+[data-default-color="theme3"] .control:hover {
+  background: #9575CD;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+[data-default-color="theme3"] .mixitup-control-active {
+  background: #FF7043;
+  color: #fff;
+  outline: none;
+  border: 1px solid #000;
 }
 
 /************** end theme3 *********/
@@ -447,7 +486,7 @@
 
 [data-default-color="theme4"] #toggle:checked ~ .click span:last-child {
   background: #26A69A;
-  color: #fff  4;
+  color: #fff 4;
 }
 
 [data-default-color="theme4"] .wellcome .social .icon:hover {
@@ -512,9 +551,22 @@
   fill: #F48FB1;
 }
 
-.gallery .item .overlay .over-text a:hover {
+[data-default-color="theme4"] .gallery .item .overlay .over-text a:hover {
   background: #26A69A;
   color: #fff;
+}
+
+[data-default-color="theme4"] .control:hover {
+  background: #26A69A;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+[data-default-color="theme4"] .mixitup-control-active {
+  background: #F48FB1;
+  color: #fff;
+  outline: none;
+  border: 1px solid #000;
 }
 
 /************** end theme4 *********/
@@ -641,9 +693,22 @@
   fill: #9E9E9E;
 }
 
-.gallery .item .overlay .over-text a:hover {
+[data-default-color="theme5"] .gallery .item .overlay .over-text a:hover {
   background: #AFB42B;
   color: #fff;
+}
+
+[data-default-color="theme5"] .control:hover {
+  background: #AFB42B;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+[data-default-color="theme5"] .mixitup-control-active {
+  background: #9E9E9E;
+  color: #fff;
+  outline: none;
+  border: 1px solid #000;
 }
 
 /************** end theme5 *********/
@@ -723,5 +788,33 @@
 
 [data-dark="dark"] .themes-menu {
   border: 1px solid #fff;
+}
+
+[data-dark="dark"] .services .carousel .carousel-item i {
+  color: #fff;
+}
+
+[data-dark="dark"] .control {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+[data-dark="dark"] .control:hover {
+  border: 1px solid #fff;
+}
+
+[data-dark="dark"] .mixitup-control-active {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+[data-dark="dark"] .mix {
+  -webkit-box-shadow: 3px 3px 10px -2px rgba(255, 255, 255, 0.3);
+          box-shadow: 3px 3px 10px -2px rgba(255, 255, 255, 0.3);
+}
+
+.mix {
+  -webkit-box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=colors.css.map */
