@@ -43,7 +43,9 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 [data-default-color="theme1"] .background2 {
     background-color: $theme1-second
 }
-
+[data-default-color="theme1"] .gradient {
+    background: linear-gradient( to left, $theme1-main, $theme1-second);
+}
 [data-default-color="theme1"] .rgb1 {
     background-color: $theme1-rgba_1
 }
@@ -98,7 +100,7 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 
 [data-default-color="theme1"] .menu a.active {
     background: $theme1-second;
-    color: #fff
+    color: #fff !important
 }
 
 [data-default-color="theme1"] #my-tabs li.inactive:hover {
@@ -195,7 +197,9 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 [data-default-color="theme2"] .rgb2 {
     background-color: $theme2-rgba_2
 }
-
+[data-default-color="theme2"] .gradient {
+    background: linear-gradient( to left, $theme2-main, $theme2-second);
+}
 [data-default-color="theme2"] .border1 {
     border: 1px solid $theme2-second
 }
@@ -242,7 +246,7 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 
 [data-default-color="theme2"] .menu a.active {
     background: $theme2-second;
-    color: #fff
+    color: #fff !important
 }
 
 [data-default-color="theme2"] #my-tabs li.inactive:hover {
@@ -339,7 +343,9 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 [data-default-color="theme3"] .rgb2 {
     background-color: $theme3-rgba_2
 }
-
+[data-default-color="theme3"] .gradient {
+    background: linear-gradient( to left, $theme3-main, $theme3-second);
+}
 [data-default-color="theme3"] .border1 {
     border: 1px solid $theme3-second
 }
@@ -386,7 +392,7 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 
 [data-default-color="theme3"] .menu a.active {
     background: $theme3-second;
-    color: #fff
+    color: #fff !important
 }
 
 [data-default-color="theme3"] #my-tabs li.inactive:hover {
@@ -483,7 +489,9 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 [data-default-color="theme4"] .rgb2 {
     background-color: $theme4-rgba_2
 }
-
+[data-default-color="theme4"] .gradient {
+    background: linear-gradient( to left, $theme4-main, $theme4-second);
+}
 [data-default-color="theme4"] .border1 {
     border: 1px solid $theme4-second
 }
@@ -530,7 +538,7 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 
 [data-default-color="theme4"] .menu a.active {
     background: $theme4-second;
-    color: #fff
+    color: #fff !important
 }
 
 [data-default-color="theme4"] #my-tabs li.inactive:hover {
@@ -627,7 +635,9 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 [data-default-color="theme5"] .rgb2 {
     background-color: $theme5-rgba_2
 }
-
+[data-default-color="theme5"] .gradient {
+    background: linear-gradient( to left, $theme5-main, $theme5-second);
+}
 [data-default-color="theme5"] .border1 {
     border: 1px solid $theme5-second
 }
@@ -674,7 +684,7 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 
 [data-default-color="theme5"] .menu a.active {
     background: $theme5-second;
-    color: #fff
+    color: #fff  !important
 }
 
 [data-default-color="theme5"] #my-tabs li.inactive:hover {

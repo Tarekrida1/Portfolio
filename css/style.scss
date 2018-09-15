@@ -278,16 +278,6 @@ body {
             -o-border-radius: 5px;
         }
     }
-    .lan.black,
-    .lan.english {
-        color: #000;
-        &:hover {
-            border: 1px solid #000
-        }
-        a {
-            color: #000
-        }
-    }
 }
 
 .navbar.custom-nav {
@@ -319,20 +309,31 @@ body {
 
 .wellcome {
     height: 100vh;
+    background-image: url(../img/background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .8;
+        height: 100%;
+        width: 100%;
+    }
     .top-left {
         width: 50%;
         position: absolute;
-        top: -55px;
+        top: -130px;
         left: 0;
         z-index: 1;
     }
     .bottom {
         width: 100%;
         position: absolute;
-        bottom: -100px;
+        bottom: -170px;
         left: 0;
         z-index: 1;
     }
@@ -341,9 +342,10 @@ body {
         text-align: center;
         #pp {
             font-weight: bold;
+            color: #fff
         }
         .ppp {
-            color: #000;
+            color: #fff;
             font-weight: bold;
             span:nth-of-type(1) {
                 font-size: 100px;

@@ -1,18 +1,26 @@
 $(function () {
     'use strict';
-
+ 
+    $("html").niceScroll({
+        cursorcolor: "#fff",
+        cursorwidth: "10px",
+        cursorborderradius: "5px",
+        cursorborder: "1px solid #000",
+        zindex: "999999999"
+    });
+/*    change bg nav and animate on scroll */
     $(document).scroll(function () {
         if ($(document).scrollTop() > 20) {
             $(".navbar").addClass("custom-nav");
-            $(".navbar .lan").addClass("black");
-            $(".navbar .lan a").css({ "color": "#000" });
-            $("#ar-click").removeClass("ar-click");
+            $(".navbar .click").css({ "border-color": "#000" });
+            $(".navbar .click span").css({ "background": "#000" });
+            $(".navbar .lan a, .navbar .menu a").css({ "color": "#000" });
         }
         else {
             $(".navbar").removeClass("custom-nav");
-            $(".navbar .lan").removeClass("black");
-            $(".navbar .lan a").css({ "color": "#fff" });
-            $("#ar-click").addClass("ar-click");
+            $(".navbar .click").css({ "border-color": "#fff" });
+            $(".navbar .click span").css({ "background": "#fff" });
+            $(".navbar .lan a, .navbar .menu a").css({ "color": "#fff" });
         }
     });
     $(document).scroll(function () {
@@ -46,6 +54,7 @@ $(function () {
             $("#Contact").addClass("active");
         }
     });
+    /*    end change bg nav and animate on scroll */
     $("#home").on("click", function () {
         event.preventDefault();
         $("html, body").animate({ scrollTop: $("body").offset().top });
