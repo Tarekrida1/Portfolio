@@ -67,7 +67,7 @@
     -o-transition: all 1s ease-in-out;
   }
   .menu a {
-    color: #000;
+    color: #000 !important;
     padding: 5px;
     border-radius: 5px;
     -webkit-transition: all .2s ease-in-out;
@@ -135,7 +135,7 @@
     top: 33px;
   }
   #toggle:checked ~ .click span:nth-of-type(2) {
-    background: transparent;
+    background: transparent !important;
   }
   #toggle:checked ~ .click span:nth-of-type(1) {
     top: 22px;
