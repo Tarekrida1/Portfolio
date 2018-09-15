@@ -18,16 +18,16 @@
   <script>
     $(function () {
       $(window).load(function () {
-        $(".loading").slideUp(1, function () {
+        $(".loading").fadeOut(500 , function () {
           $(this).remove();
         });
       });
-
     });
+    
   </script>
 </head>
 
-<body data-default-color="theme1">
+<body data-default-color="theme1" onload="setTimeout(myInfo,1200);">
   <!-- theme option   -->
   <div class="themes-menu background-dark">
     <span class="color-light">Change Theme</span>
@@ -590,7 +590,7 @@
   </div>
   <!-- end sgin up -->
   <!-- start loading  -->
-  <div class="loading">
+  <div class="loading" id="loading">
     <div class="lds-ripple">
       <div></div>
       <div></div>

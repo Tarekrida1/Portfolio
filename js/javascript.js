@@ -10,4 +10,4 @@ function myInfo() {
         }
     }, 50);
 };
-myInfo();
+
