@@ -81,12 +81,12 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 }
 
 [data-default-color="theme1"] #toggle:checked~.click span:nth-of-type(1) {
-    background: $theme1-second;
+    background: $theme1-second !important;
     color: #fff
 }
 
 [data-default-color="theme1"] #toggle:checked~.click span:last-child {
-    background: $theme1-second;
+    background: $theme1-second !important;
     color: #fff
 }
 
@@ -227,12 +227,12 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 }
 
 [data-default-color="theme2"] #toggle:checked~.click span:nth-of-type(1) {
-    background: $theme2-second;
+    background: $theme2-second !important;
     color: #fff
 }
 
 [data-default-color="theme2"] #toggle:checked~.click span:last-child {
-    background: $theme2-second;
+    background: $theme2-second !important;
     color: #fff
 }
 
@@ -373,12 +373,12 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 }
 
 [data-default-color="theme3"] #toggle:checked~.click span:nth-of-type(1) {
-    background: $theme3-second;
+    background: $theme3-second !important;
     color: #fff
 }
 
 [data-default-color="theme3"] #toggle:checked~.click span:last-child {
-    background: $theme3-second;
+    background: $theme3-second !important;
     color: #fff
 }
 
@@ -519,12 +519,12 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 }
 
 [data-default-color="theme4"] #toggle:checked~.click span:nth-of-type(1) {
-    background: $theme4-second;
+    background: $theme4-second !important;
     color: #fff
 }
 
 [data-default-color="theme4"] #toggle:checked~.click span:last-child {
-    background: $theme4-second;
+    background: $theme4-second !important;
     color: #fff 4
 }
 
@@ -665,12 +665,12 @@ $theme5-rgba_1:rgba(158, 158, 158, 0.5);
 }
 
 [data-default-color="theme5"] #toggle:checked~.click span:nth-of-type(1) {
-    background: $theme5-second;
+    background: $theme5-second !important;
     color: #fff
 }
 
 [data-default-color="theme5"] #toggle:checked~.click span:last-child {
-    background: $theme5-second;
+    background: $theme5-second !important;
     color: #fff
 }
 

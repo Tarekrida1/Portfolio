@@ -59,12 +59,12 @@
 }
 
 [data-default-color="theme1"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #ff3773;
+  background: #ff3773 !important;
   color: #fff;
 }
 
 [data-default-color="theme1"] #toggle:checked ~ .click span:last-child {
-  background: #ff3773;
+  background: #ff3773 !important;
   color: #fff;
 }
 
@@ -206,12 +206,12 @@
 }
 
 [data-default-color="theme2"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #FFB74D;
+  background: #FFB74D !important;
   color: #fff;
 }
 
 [data-default-color="theme2"] #toggle:checked ~ .click span:last-child {
-  background: #FFB74D;
+  background: #FFB74D !important;
   color: #fff;
 }
 
@@ -353,12 +353,12 @@
 }
 
 [data-default-color="theme3"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #9575CD;
+  background: #9575CD !important;
   color: #fff;
 }
 
 [data-default-color="theme3"] #toggle:checked ~ .click span:last-child {
-  background: #9575CD;
+  background: #9575CD !important;
   color: #fff;
 }
 
@@ -500,12 +500,12 @@
 }
 
 [data-default-color="theme4"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #26A69A;
+  background: #26A69A !important;
   color: #fff;
 }
 
 [data-default-color="theme4"] #toggle:checked ~ .click span:last-child {
-  background: #26A69A;
+  background: #26A69A !important;
   color: #fff 4;
 }
 
@@ -647,12 +647,12 @@
 }
 
 [data-default-color="theme5"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #AFB42B;
+  background: #AFB42B !important;
   color: #fff;
 }
 
 [data-default-color="theme5"] #toggle:checked ~ .click span:last-child {
-  background: #AFB42B;
+  background: #AFB42B !important;
   color: #fff;
 }
 
