@@ -4,24 +4,24 @@
 /***********/
 /*   theme1 ********/
 [data-default-color="theme1"] .color1 {
-  color: #a7d1dc;
+  color: #7ab5c5;
 }
 
 [data-default-color="theme1"] .color2 {
-  color: #f9749c;
+  color: #f64f81;
 }
 
 [data-default-color="theme1"] .background1 {
-  background-color: #a7d1dc;
+  background-color: #7ab5c5;
 }
 
 [data-default-color="theme1"] .background2 {
-  background-color: #f9749c;
+  background-color: #f64f81;
 }
 
 [data-default-color="theme1"] .gradient {
-  background: -webkit-gradient(linear, right top, left top, from(#a7d1dc), to(#f9749c));
-  background: linear-gradient(to left, #a7d1dc, #f9749c);
+  background: -webkit-gradient(linear, right top, left top, from(#7ab5c5), to(#f64f81));
+  background: linear-gradient(to left, #7ab5c5, #f64f81);
 }
 
 [data-default-color="theme1"] .rgb1 {
@@ -33,43 +33,43 @@
 }
 
 [data-default-color="theme1"] .border1 {
-  border: 1px solid #f9749c;
+  border: 1px solid #f64f81;
 }
 
 [data-default-color="theme1"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-  border-top: 5px solid #f9749c;
+  border-top: 5px solid #f64f81;
 }
 
 [data-default-color="theme1"] .moree .my-cv:hover {
-  background: #f9749c;
+  background: #f64f81;
   color: #fff;
 }
 
 [data-default-color="theme1"] .signup button:hover {
-  background: #f9749c;
+  background: #f64f81;
   color: #fff;
 }
 
 [data-default-color="theme1"] .themes-menu .theme-click .i22 {
-  color: #f9749c;
+  color: #f64f81;
 }
 
 [data-default-color="theme1"] .menu a:hover {
-  background: #a7d1dc;
+  background: #7ab5c5;
 }
 
 [data-default-color="theme1"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #f9749c !important;
+  background: #f64f81 !important;
   color: #fff;
 }
 
 [data-default-color="theme1"] #toggle:checked ~ .click span:last-child {
-  background: #f9749c !important;
+  background: #f64f81 !important;
   color: #fff;
 }
 
 [data-default-color="theme1"] .wellcome .social .icon:hover {
-  background: #f9749c;
+  background: #f64f81;
 }
 
 [data-default-color="theme1"] .wellcome .social .icon:hover a {
@@ -77,45 +77,45 @@
 }
 
 [data-default-color="theme1"] .menu a.active {
-  background: #f9749c;
+  background: #f64f81;
   color: #fff !important;
 }
 
 [data-default-color="theme1"] #my-tabs li.inactive:hover {
-  color: #f9749c;
-  border: 1px solid #f9749c;
+  color: #f64f81;
+  border: 1px solid #f64f81;
 }
 
 [data-default-color="theme1"] .services .carousel .carousel-indicators .active {
-  background: #f9749c;
+  background: #f64f81;
 }
 
 [data-default-color="theme1"] .signup .custom-input input {
-  border-bottom: 1px solid #f9749c;
+  border-bottom: 1px solid #f64f81;
 }
 
 [data-default-color="theme1"] .signup textarea {
-  border-bottom: 1px solid #f9749c;
+  border-bottom: 1px solid #f64f81;
 }
 
 [data-default-color="theme1"] .signup textarea::-webkit-input-placeholder {
-  color: #a7d1dc;
+  color: #7ab5c5;
 }
 
 [data-default-color="theme1"] .signup textarea::-moz-input-placeholder {
-  color: #a7d1dc;
+  color: #7ab5c5;
 }
 
 [data-default-color="theme1"] .signup textarea::-o-input-placeholder {
-  color: #a7d1dc;
+  color: #7ab5c5;
 }
 
 [data-default-color="theme1"] .signup textarea::-ms-input-placeholder {
-  color: #a7d1dc;
+  color: #7ab5c5;
 }
 
 [data-default-color="theme1"] .signup textarea::input-placeholder {
-  color: #a7d1dc;
+  color: #7ab5c5;
 }
 
 [data-default-color="theme1"] .st0 {
@@ -123,29 +123,22 @@
 }
 
 [data-default-color="theme1"] .st1 {
-  fill: #f9749c;
+  fill: #f64f81;
 }
 
 [data-default-color="theme1"] .st2 {
-  fill: #a7d1dc;
+  fill: #7ab5c5;
 }
 
 [data-default-color="theme1"] .gallery .item .overlay .over-text a:hover {
-  background: #f9749c;
+  background: #f64f81;
   color: #fff;
-}
-
-[data-default-color="theme1"] .control:hover {
-  background: #f9749c;
-  color: #fff;
-  border: 1px solid #000;
 }
 
 [data-default-color="theme1"] .mixitup-control-active {
-  background: #a7d1dc;
+  background: #f64f81;
   color: #fff;
   outline: none;
-  border: 1px solid #000;
 }
 
 /************** end theme1 *********/
@@ -262,7 +255,7 @@
 }
 
 [data-default-color="theme2"] .signup textarea::input-placeholder {
-  color: #a7d1dc;
+  color: #7ab5c5;
 }
 
 [data-default-color="theme2"] .st0 {
@@ -282,17 +275,10 @@
   color: #fff;
 }
 
-[data-default-color="theme2"] .control:hover {
+[data-default-color="theme2"] .mixitup-control-active {
   background: #FFB74D;
   color: #fff;
-  border: 1px solid #000;
-}
-
-[data-default-color="theme2"] .mixitup-control-active {
-  background: #00c853;
-  color: #fff;
   outline: none;
-  border: 1px solid #000;
 }
 
 /************** end theme2 *********/
@@ -429,17 +415,10 @@
   color: #fff;
 }
 
-[data-default-color="theme3"] .control:hover {
+[data-default-color="theme3"] .mixitup-control-active {
   background: #9575CD;
   color: #fff;
-  border: 1px solid #000;
-}
-
-[data-default-color="theme3"] .mixitup-control-active {
-  background: #FF7043;
-  color: #fff;
   outline: none;
-  border: 1px solid #000;
 }
 
 /************** end theme3 *********/
@@ -556,7 +535,7 @@
 }
 
 [data-default-color="theme4"] .signup textarea::input-placeholder {
-  color: #a7d1dc;
+  color: #7ab5c5;
 }
 
 [data-default-color="theme4"] .st0 {
@@ -576,17 +555,10 @@
   color: #fff;
 }
 
-[data-default-color="theme4"] .control:hover {
+[data-default-color="theme4"] .mixitup-control-active {
   background: #26A69A;
   color: #fff;
-  border: 1px solid #000;
-}
-
-[data-default-color="theme4"] .mixitup-control-active {
-  background: #F48FB1;
-  color: #fff;
   outline: none;
-  border: 1px solid #000;
 }
 
 /************** end theme4 *********/
@@ -723,26 +695,19 @@
   color: #fff;
 }
 
-[data-default-color="theme5"] .control:hover {
+[data-default-color="theme5"] .mixitup-control-active {
   background: #AFB42B;
   color: #fff;
-  border: 1px solid #000;
-}
-
-[data-default-color="theme5"] .mixitup-control-active {
-  background: #ff7761;
-  color: #fff;
   outline: none;
-  border: 1px solid #000;
 }
 
 /************** end theme5 *********/
 #theme-1 {
-  background: #f9749c;
+  background: #f64f81;
 }
 
 #theme-1 div {
-  background: #a7d1dc;
+  background: #7ab5c5;
 }
 
 #theme-2 {
@@ -817,20 +782,6 @@
 
 [data-dark="dark"] .services .carousel .carousel-item i {
   color: #fff;
-}
-
-[data-dark="dark"] .control {
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-[data-dark="dark"] .control:hover {
-  border: 1px solid #fff;
-}
-
-[data-dark="dark"] .mixitup-control-active {
-  color: #fff;
-  border: 1px solid #fff;
 }
 
 [data-dark="dark"] .mix {

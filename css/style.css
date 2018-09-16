@@ -312,12 +312,7 @@ body {
 }
 
 .menu a:hover {
-  border: 1px solid #000;
   color: #fff;
-}
-
-.menu a.active {
-  border: 1px solid #000;
 }
 
 #toggle {
@@ -356,7 +351,6 @@ body {
 .wellcome .bottom {
   width: 100%;
   position: absolute;
-  bottom: -170px;
   left: 0;
   z-index: 1;
 }
@@ -369,6 +363,7 @@ body {
 .wellcome .wellcome-text #pp {
   font-weight: bold;
   color: #fff;
+  font-size: 17px;
 }
 
 .wellcome .wellcome-text .ppp {
@@ -607,8 +602,10 @@ body {
   margin-bottom: 5px;
   background: transparent;
   cursor: pointer;
-  color: #000;
-  border: 1px solid;
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0 0 5px rgba(121, 119, 119, 0.59);
+          box-shadow: 0 0 5px rgba(121, 119, 119, 0.59);
   border-radius: 5px;
   -webkit-transition: all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
@@ -952,6 +949,7 @@ body {
   border: none;
   background: transparent;
   margin: 0 50px;
+  resize: none;
 }
 
 .signup textarea:focus {

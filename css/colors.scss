@@ -1,5 +1,5 @@
-$theme1-main: #a7d1dc;
-$theme1-second: #f9749c;
+$theme1-main: #7ab5c5;
+$theme1-second: #f64f81;
 $theme1-rgba_2:rgba(167, 209, 220, 0.8);
 $theme1-rgba_1:rgba(249, 116, 156, 0.8);
 /****/
@@ -157,17 +157,11 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff;
 }
 
-[data-default-color="theme1"] .control:hover {
-    background: $theme1-second;
-    color: #fff;
-    border: 1px solid #000
-}
 
 [data-default-color="theme1"] .mixitup-control-active {
-    background: $theme1-main;
+    background: $theme1-second;
     color: #fff;
     outline: none;
-    border: 1px solid #000
 }
 
 /************** end theme1 *********/
@@ -303,17 +297,10 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff;
 }
 
-[data-default-color="theme2"] .control:hover {
+[data-default-color="theme2"] .mixitup-control-active {
     background: $theme2-second;
     color: #fff;
-    border: 1px solid #000
-}
-
-[data-default-color="theme2"] .mixitup-control-active {
-    background: $theme2-main;
-    color: #fff;
     outline: none;
-    border: 1px solid #000
 }
 
 /************** end theme2 *********/
@@ -449,17 +436,11 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff;
 }
 
-[data-default-color="theme3"] .control:hover {
-    background: $theme3-second;
-    color: #fff;
-    border: 1px solid #000
-}
 
 [data-default-color="theme3"] .mixitup-control-active {
-    background: $theme3-main;
+    background: $theme3-second;
     color: #fff;
     outline: none;
-    border: 1px solid #000
 }
 
 /************** end theme3 *********/
@@ -595,17 +576,11 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff;
 }
 
-[data-default-color="theme4"] .control:hover {
-    background: $theme4-second;
-    color: #fff;
-    border: 1px solid #000
-}
 
 [data-default-color="theme4"] .mixitup-control-active {
-    background: $theme4-main;
+    background: $theme4-second;
     color: #fff;
     outline: none;
-    border: 1px solid #000
 }
 
 /************** end theme4 *********/
@@ -741,19 +716,12 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff;
 }
 
-[data-default-color="theme5"] .control:hover {
-    background: $theme5-second;
-    color: #fff;
-    border: 1px solid #000
-}
 
 [data-default-color="theme5"] .mixitup-control-active {
-    background: $theme5-main;
+    background: $theme5-second;
     color: #fff;
     outline: none;
-    border: 1px solid #000
 }
-
 /************** end theme5 *********/
 
 #theme-1 {
@@ -833,19 +801,7 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff
 }
 
-[data-dark="dark"] .control {
-    color: #fff;
-    border: 1px solid #fff
-}
 
-[data-dark="dark"] .control:hover {
-    border: 1px solid #fff
-}
-
-[data-dark="dark"] .mixitup-control-active {
-    color: #fff;
-    border: 1px solid #fff
-}
 
 [data-dark="dark"] .mix {
     box-shadow: 3px 3px 10px -2px rgba(255, 255, 255, 0.3)

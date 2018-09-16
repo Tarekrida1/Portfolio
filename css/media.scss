@@ -15,7 +15,7 @@
 @media only screen and (min-width: 768px) {
     /* For desktop: */
  .wellcome .bottom {
-        bottom: -100px
+        bottom: -150px
     }
     .navbar .menu {
         display: flex;
@@ -214,6 +214,12 @@
 .moree {
 
     margin: 40px 15px}
+    .wellcome .wellcome-text {
+        margin-top: 90px
+    }
+    .wellcome .wellcome-text .ppp span:nth-of-type(1) {
+        font-size: 64px;
+    }
 
 }
 @media only screen and (max-width: 479px) {
@@ -222,12 +228,7 @@
             
             padding: 5px;
             font-size: 12px}
-            .wellcome .wellcome-text {
-                margin-top: 90px
-            }
-            .wellcome .wellcome-text .ppp span:nth-of-type(1) {
-                font-size: 64px;
-            }
+ 
          
 }
 
