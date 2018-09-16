@@ -4,72 +4,72 @@
 /***********/
 /*   theme1 ********/
 [data-default-color="theme1"] .color1 {
-  color: #00c9fd;
+  color: #a7d1dc;
 }
 
 [data-default-color="theme1"] .color2 {
-  color: #ff3773;
+  color: #f9749c;
 }
 
 [data-default-color="theme1"] .background1 {
-  background-color: #00c9fd;
+  background-color: #a7d1dc;
 }
 
 [data-default-color="theme1"] .background2 {
-  background-color: #ff3773;
+  background-color: #f9749c;
 }
 
 [data-default-color="theme1"] .gradient {
-  background: -webkit-gradient(linear, right top, left top, from(#00c9fd), to(#ff3773));
-  background: linear-gradient(to left, #00c9fd, #ff3773);
+  background: -webkit-gradient(linear, right top, left top, from(#a7d1dc), to(#f9749c));
+  background: linear-gradient(to left, #a7d1dc, #f9749c);
 }
 
 [data-default-color="theme1"] .rgb1 {
-  background-color: rgba(255, 18, 90, 0.5);
+  background-color: rgba(249, 116, 156, 0.8);
 }
 
 [data-default-color="theme1"] .rgb2 {
-  background-color: rgba(0, 201, 253, 0.5);
+  background-color: rgba(167, 209, 220, 0.8);
 }
 
 [data-default-color="theme1"] .border1 {
-  border: 1px solid #ff3773;
+  border: 1px solid #f9749c;
 }
 
 [data-default-color="theme1"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-  border-top: 5px solid #ff3773;
+  border-top: 5px solid #f9749c;
 }
 
 [data-default-color="theme1"] .moree .my-cv:hover {
-  background: #ff3773;
+  background: #f9749c;
   color: #fff;
 }
 
 [data-default-color="theme1"] .signup button:hover {
-  background: #ff3773;
+  background: #f9749c;
   color: #fff;
 }
 
 [data-default-color="theme1"] .themes-menu .theme-click .i22 {
-  color: #ff3773;
+  color: #f9749c;
 }
 
 [data-default-color="theme1"] .menu a:hover {
-  background: #00c9fd;
+  background: #a7d1dc;
 }
 
 [data-default-color="theme1"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #ff3773 !important;
+  background: #f9749c !important;
   color: #fff;
 }
 
 [data-default-color="theme1"] #toggle:checked ~ .click span:last-child {
-  background: #ff3773 !important;
+  background: #f9749c !important;
   color: #fff;
 }
 
 [data-default-color="theme1"] .wellcome .social .icon:hover {
-  background: #ff3773;
+  background: #f9749c;
 }
 
 [data-default-color="theme1"] .wellcome .social .icon:hover a {
@@ -77,72 +77,72 @@
 }
 
 [data-default-color="theme1"] .menu a.active {
-  background: #ff3773;
+  background: #f9749c;
   color: #fff !important;
 }
 
 [data-default-color="theme1"] #my-tabs li.inactive:hover {
-  color: #ff3773;
-  border: 1px solid #ff3773;
+  color: #f9749c;
+  border: 1px solid #f9749c;
 }
 
 [data-default-color="theme1"] .services .carousel .carousel-indicators .active {
-  background: #ff3773;
+  background: #f9749c;
 }
 
 [data-default-color="theme1"] .signup .custom-input input {
-  border-bottom: 1px solid #ff3773;
+  border-bottom: 1px solid #f9749c;
 }
 
 [data-default-color="theme1"] .signup textarea {
-  border-bottom: 1px solid #ff3773;
+  border-bottom: 1px solid #f9749c;
 }
 
 [data-default-color="theme1"] .signup textarea::-webkit-input-placeholder {
-  color: #00c9fd;
+  color: #a7d1dc;
 }
 
 [data-default-color="theme1"] .signup textarea::-moz-input-placeholder {
-  color: #00c9fd;
+  color: #a7d1dc;
 }
 
 [data-default-color="theme1"] .signup textarea::-o-input-placeholder {
-  color: #00c9fd;
+  color: #a7d1dc;
 }
 
 [data-default-color="theme1"] .signup textarea::-ms-input-placeholder {
-  color: #00c9fd;
+  color: #a7d1dc;
 }
 
 [data-default-color="theme1"] .signup textarea::input-placeholder {
-  color: #00c9fd;
+  color: #a7d1dc;
 }
 
 [data-default-color="theme1"] .st0 {
-  fill: rgba(255, 18, 90, 0.5);
+  fill: rgba(249, 116, 156, 0.8);
 }
 
 [data-default-color="theme1"] .st1 {
-  fill: #ff3773;
+  fill: #f9749c;
 }
 
 [data-default-color="theme1"] .st2 {
-  fill: #00c9fd;
+  fill: #a7d1dc;
 }
 
 [data-default-color="theme1"] .gallery .item .overlay .over-text a:hover {
-  background: #ff3773;
+  background: #f9749c;
   color: #fff;
 }
 
 [data-default-color="theme1"] .control:hover {
-  background: #ff3773;
+  background: #f9749c;
   color: #fff;
   border: 1px solid #000;
 }
 
 [data-default-color="theme1"] .mixitup-control-active {
-  background: #00c9fd;
+  background: #a7d1dc;
   color: #fff;
   outline: none;
   border: 1px solid #000;
@@ -262,7 +262,7 @@
 }
 
 [data-default-color="theme2"] .signup textarea::input-placeholder {
-  color: #00c9fd;
+  color: #a7d1dc;
 }
 
 [data-default-color="theme2"] .st0 {
@@ -556,7 +556,7 @@
 }
 
 [data-default-color="theme4"] .signup textarea::input-placeholder {
-  color: #00c9fd;
+  color: #a7d1dc;
 }
 
 [data-default-color="theme4"] .st0 {
@@ -592,7 +592,7 @@
 /************** end theme4 *********/
 /*   theme5 ********/
 [data-default-color="theme5"] .color1 {
-  color: #9E9E9E;
+  color: #ff7761;
 }
 
 [data-default-color="theme5"] .color2 {
@@ -600,7 +600,7 @@
 }
 
 [data-default-color="theme5"] .background1 {
-  background-color: #9E9E9E;
+  background-color: #ff7761;
 }
 
 [data-default-color="theme5"] .background2 {
@@ -608,7 +608,7 @@
 }
 
 [data-default-color="theme5"] .rgb1 {
-  background-color: rgba(158, 158, 158, 0.5);
+  background-color: rgba(255, 119, 97, 0.5);
 }
 
 [data-default-color="theme5"] .rgb2 {
@@ -616,8 +616,8 @@
 }
 
 [data-default-color="theme5"] .gradient {
-  background: -webkit-gradient(linear, right top, left top, from(#9E9E9E), to(#AFB42B));
-  background: linear-gradient(to left, #9E9E9E, #AFB42B);
+  background: -webkit-gradient(linear, right top, left top, from(#ff7761), to(#AFB42B));
+  background: linear-gradient(to left, #ff7761, #AFB42B);
 }
 
 [data-default-color="theme5"] .border1 {
@@ -643,7 +643,7 @@
 }
 
 [data-default-color="theme5"] .menu a:hover {
-  background: #9E9E9E;
+  background: #ff7761;
 }
 
 [data-default-color="theme5"] #toggle:checked ~ .click span:nth-of-type(1) {
@@ -687,27 +687,27 @@
 }
 
 [data-default-color="theme5"] .signup textarea::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #ff7761;
 }
 
 [data-default-color="theme5"] .signup textarea::-moz-input-placeholder {
-  color: #9E9E9E;
+  color: #ff7761;
 }
 
 [data-default-color="theme5"] .signup textarea::-o-input-placeholder {
-  color: #9E9E9E;
+  color: #ff7761;
 }
 
 [data-default-color="theme5"] .signup textarea::-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #ff7761;
 }
 
 [data-default-color="theme5"] .signup textarea::input-placeholder {
-  color: #9E9E9E;
+  color: #ff7761;
 }
 
 [data-default-color="theme5"] .st0 {
-  fill: rgba(158, 158, 158, 0.5);
+  fill: rgba(255, 119, 97, 0.5);
 }
 
 [data-default-color="theme5"] .st1 {
@@ -715,7 +715,7 @@
 }
 
 [data-default-color="theme5"] .st2 {
-  fill: #9E9E9E;
+  fill: #ff7761;
 }
 
 [data-default-color="theme5"] .gallery .item .overlay .over-text a:hover {
@@ -730,7 +730,7 @@
 }
 
 [data-default-color="theme5"] .mixitup-control-active {
-  background: #9E9E9E;
+  background: #ff7761;
   color: #fff;
   outline: none;
   border: 1px solid #000;
@@ -738,11 +738,11 @@
 
 /************** end theme5 *********/
 #theme-1 {
-  background: #ff3773;
+  background: #f9749c;
 }
 
 #theme-1 div {
-  background: #00c9fd;
+  background: #a7d1dc;
 }
 
 #theme-2 {
@@ -774,7 +774,7 @@
 }
 
 #theme-5 div {
-  background: #9E9E9E;
+  background: #ff7761;
 }
 
 [data-dark="dark"] .background-dark {
