@@ -185,12 +185,8 @@
   .moree {
     margin: 40px 15px;
   }
-  .wellcome .wellcome-text .ppp {
-    font-size: 55px;
-    line-height: 55px;
-  }
-  .wellcome .wellcome-text .ppp .tt {
-    font-size: 55px;
+  .wellcome .hh2, .wellcome {
+    font-size: 33px;
   }
 }
 
