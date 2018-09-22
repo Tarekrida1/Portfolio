@@ -32,6 +32,11 @@
           -ms-transition: all .4s ease-in-out;
           -o-transition: all .4s ease-in-out;
 }
+.gallery .controls .control {
+    padding: 10px 25px;
+    font-size: 20px;
+
+}
 }
 
 @media only screen and (max-width: 768px) {

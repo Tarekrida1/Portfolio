@@ -599,13 +599,15 @@ body {
 }
 
 .controls {
-    text-align: center
+    text-align: center;
+    margin-bottom: 30px
 }
 
 .control {
     position: relative;
     display: inline-block;
-    margin-bottom: 5px;
+    margin: 5px;
+    padding: 5px;
     background: transparent;
     cursor: pointer;
     color: #fff;
@@ -618,6 +620,7 @@ body {
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
+  
 }
 
 .control[data-filter]+.control[data-sort] {

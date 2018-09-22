@@ -6,7 +6,8 @@ $(function () {
         cursorwidth: "10px",
         cursorborderradius: "5px",
         cursorborder: "1px solid #000",
-        zindex: "999999999"
+        zindex: "999999999",
+        
     });
 /*    change bg nav and animate on scroll */
     $(document).scroll(function () {

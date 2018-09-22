@@ -682,12 +682,14 @@ body {
 
 .controls {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .control {
   position: relative;
   display: inline-block;
-  margin-bottom: 5px;
+  margin: 5px;
+  padding: 5px;
   background: transparent;
   cursor: pointer;
   color: #fff;
