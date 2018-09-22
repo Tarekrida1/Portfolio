@@ -1,3 +1,4 @@
+/*
 myText = document.getElementById('pp').getAttribute('data-text'),
     i = 0;
 function myInfo() {
@@ -10,4 +11,13 @@ function myInfo() {
         }
     }, 50);
 };
-
+*/
+var typed3 = new Typed('#typed3', {
+    strings: ['', 'UX Developer', 'Front End Developer','Photographer'],
+    typeSpeed: 20,
+    backSpeed: 10,
+    loop: true,
+    backDelay: 2000,
+    startDelay: 1000,
+    
+  });

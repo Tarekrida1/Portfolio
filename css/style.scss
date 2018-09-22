@@ -32,8 +32,8 @@ body {
 .lds-ripple {
     display: inline-block;
     position: relative;
-    width: 64px;
-    height: 64px;
+    width: 200px;
+    height: 200px;
     z-index: 99999;
     top: 50%;
     left: 50%;
@@ -302,7 +302,13 @@ body {
 /****************************** end nav *****************/
 
 /***************************** start wellcomee ************/
-
+@keyframes hide-show {
+    0% {opacity: 1;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: .8;}
+    100% {opacity: 1;}
+}
 .wellcome {
     height: 100vh;
     background-image: url(../img/background.jpeg);
@@ -315,9 +321,10 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        opacity: .8;
+        opacity: .6;
         height: 100%;
         width: 100%;
+        background: #383838;
     }
     .top-left {
         width: 50%;
@@ -333,23 +340,36 @@ body {
         z-index: 1;
     }
     .wellcome-text {
-        margin-top: 150px;
-        text-align: center;
-        #pp {
-            font-weight: bold;
-            color: #fff;
-            font-size: 17px;
-        }
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+      
         .ppp {
             color: #fff;
             font-weight: bold;
-            span:nth-of-type(1) {
-                font-size: 100px;
+            font-size: 100px;
+            text-align: center;
+            line-height: 95px;
+            text-shadow: 0 0 2px #000;
+            -o-text-shadow: 0 0 2px #000;
+            -webkit-text-shadow: 0 0 2px #000;
+            -ms-text-shadow: 0 0 2px #000;
+            -moz-text-shadow: 0 0 2px #000;
+           
+            .tt {
+                animation: hide-show .6s infinite;
             }
-            span:nth-of-type(2) {
-                font-size: 50px;
-                font-weight: 900;
-            }
+          
+        }
+        .hh {  
+            color: #fff;
+            display: table;
+            font-size: 30px;
+            margin: 15px auto;
+            padding: 5px 10px;
+        
         }
     }
     .social {
@@ -363,7 +383,6 @@ body {
         z-index: 2;
         .icon {
             display: inline-block;
-            background: #fff;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -373,7 +392,7 @@ body {
             transition: all .3s ease-in-out;
             a {
                 font-size: 35px;
-                color: #000;
+                color: #fff;
             }
         }
     }
@@ -888,7 +907,7 @@ body {
         font-weight: 600;
         background: #fff;
         border: none;
-        border: 1px solid $second_color;
+        border: 1px solid ;
         border-radius: 10px;
         color: #000;
         margin-top: 10px;

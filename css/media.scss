@@ -2,15 +2,10 @@
 /******************************* media ******************/
 
 @media only screen and (max-width: 991px) {
-    .wellcome .wellcome-text {
-        margin-top: 50px
-    }
 }
 
 @media only screen and (max-width: 991px) {
-    .wellcome .wellcome-text {
-        margin-top: 50px
-    }
+ 
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -168,14 +163,7 @@
             top: 0px
                    
                        }
-                       .wellcome .wellcome-text .ppp {
-                        margin-top: 100px;
-                    }
-    .wellcome .wellcome-text .ppp :nth-of-type(1) {
-        font-size: 45px;
-        margin-top: 20px
-    }
-    
+
 .wellcome .social .icon {
     width: 40px;
     height: 40px;
@@ -214,11 +202,12 @@
 .moree {
 
     margin: 40px 15px}
-    .wellcome .wellcome-text {
-        margin-top: 90px
-    }
-    .wellcome .wellcome-text .ppp span:nth-of-type(1) {
-        font-size: 64px;
+    .wellcome .wellcome-text .ppp {
+        font-size: 55px;
+        line-height: 55px;
+        .tt {
+            font-size: 55px
+        }
     }
 
 }
@@ -234,13 +223,7 @@
 
 @media only screen and (max-width: 320px) {
 
-            .wellcome .wellcome-text {
-                margin-top: 70px
-            }
-            .wellcome .wellcome-text .ppp span:nth-of-type(1) {
-                font-size: 30px;
-      
-            }
+
 
 }
 @media screen and (max-width: 1245px) {

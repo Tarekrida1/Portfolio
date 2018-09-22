@@ -84,6 +84,8 @@ $(function () {
         var y = $(this).scrollTop();
         if (y = $('#skills').offset().top) {
             $(".moree .skills .progresss ul li .prog_bar .percent").removeClass("prog_width");
+        } else {
+            $(".moree .skills .progresss ul li .prog_bar .percent").addClass("prog_width");
         }
 
     });

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/media.css" type="text/css">
   <link rel="stylesheet" href="css/colors.css" type="text/css">
+  <script src="js/typed.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-1.12.1.min.js"></script>
   <script>
@@ -27,7 +28,7 @@
   </script>
 </head>
 
-<body data-default-color="theme1" onload="setTimeout(myInfo,1200);">
+<body data-default-color="theme1">
   <!-- theme option   -->
   <div class="themes-menu background-dark">
     <span class="color-light">Change Theme</span>
@@ -79,22 +80,19 @@
       <a href="#" class="menu-item" id="Contact">Contact Me</a>
     </div>
   </nav>
-  <!-- end nav -->
+  <!-- end nav --> 
   <!-- start wellcome -->
   <div class="wellcome">
-  <div class="overlay gradient"></div>
+  <div class="overlay"></div>
     <div class="container">
       <div class="wellcome-text">
+          <h6 class="hh background1">I'm TaReK RiDa</h6>
         <p class="ppp" data-aos="fade-right">
-          <span class="color-light">My Name Is
-            <span class="color1"style="text-shadow: 0px 0px 3px black;
-            ">TaReK</span>
+          
+          <span class="color1" id="typed3">
           </span>
-          <br>
-          <span></span>
+          <span class="tt color1">|</span>
         </p>
-        <p class="color-light" id="pp" data-text="I’m a front-end developer I have more than 2 years of experience in web Design based on webstandard technologies like HTML5, CSS, javascript, jquery, bootstrap and sass."
-          data-aos="fade-left"></p>
       </div>
     </div>
     <div class="social">
@@ -163,9 +161,8 @@
         <img class="border1" src="img/my-photo.jpg" alt="profile imge">
         <h1 class="color1">About Me</h1>
         <p class="color-light">
-          I graduated from Faculty of Tourism and Hotels, South Valley University, Hotel Management Hotel in June 2016, I am Egyptian
-          My date of birth is 1/9/1994, I am Muslim, I am single, I completed my military service, my place of birth is Luxor
-          and I live in Cairo.</p>
+          I graduated from Faculty of Tourism and Hotels, South Valley University, Hotel Management Hotel in June 2016, Egyptian,
+          date of birth: 1/9/1994, Muslim, single, completed my military service, live in Cairo.</p>
       </div>
       <div class="row">
         <div class="basic col-md-6 col-sm-12">
@@ -518,10 +515,10 @@
   <div class="services text-center " id="services">
     <div class="container">
       <h1 class="color1">Services</h1>
-      <h2 class="color2" data-aos="fade-up">What Can I Do For You?</h2>
-      <h5 class="color-light" data-aos="fade-up">responsive websites, javascript and jquery functions, clean and professional code.</h5>
+      <h2 class="color2">What Can I Do For You?</h2>
+      <h5 class="color-light">responsive websites, javascript and jquery functions, clean and professional code.</h5>
     </div>
-    <div id="demo" class="carousel slide" data-ride="carousel" data-aos="fade-up">
+    <div id="demo" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ul class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active background1"></li>
@@ -572,19 +569,19 @@
   <div class="signup">
     <div class="container">
       <h1 class="color1">Contact With Me</h1>
-      <h3 class="color2" data-aos="fade-up">You can send a message to contact with me</h3>
+      <h3 class="color2">You can send a message to contact with me</h3>
       <form class="signup-content">
         <div class="custom-input first-name">
           <input type="text" class="signup-input">
-          <label class="color1" data-aos="fade-up">Full name</label>
+          <label class="color1">Full name</label>
         </div>
         <div class="custom-input email">
           <input type="email" class="signup-input">
-          <label class="color1" data-aos="fade-up">Email Adress</label>
+          <label class="color1">Email Adress</label>
         </div>
-        <textarea id="subject" name="subject" placeholder="Write a message for us.." data-aos="fade-up"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write a message for us.."></textarea>
         <br>
-        <button class="background-dark color-light" data-aos="fade-up">Submit</button>
+        <button class="background-dark color-light border1">Submit</button>
       </form>
     </div>
   </div>
@@ -599,7 +596,6 @@
   <!-- end loading -->
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/popper.min.js"></script>
   <script src="js/plugin.js"></script>
   <script src="js/javascript.js"></script>
   <script src="js/aos.js"></script>

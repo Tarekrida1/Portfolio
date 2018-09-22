@@ -1,31 +1,31 @@
-$theme1-main: #7ab5c5;
-$theme1-second: #f64f81;
-$theme1-rgba_2:rgba(167, 209, 220, 0.8);
-$theme1-rgba_1:rgba(249, 116, 156, 0.8);
+$theme1-main: #0080ff;
+$theme1-second: #13c0ff;
+$theme1-rgba_2:rgba(20, 192, 255, 0.8);
+$theme1-rgba_1:rgba(0, 127, 255, 0.8);
 /****/
 
-$theme2-main: #00c853;
-$theme2-second: #FFB74D;
-$theme2-rgba_2:rgba(255, 183, 77, 0.5);
-$theme2-rgba_1:rgba(0, 200, 83, 0.5);
+$theme2-main: #FE2370;
+$theme2-second: #FF4B68;
+$theme2-rgba_2:rgba(254, 35, 112, 0.8);
+$theme2-rgba_1:rgba(255, 75, 105, 0.8);
 /****/
 
-$theme3-main: #FF7043;
-$theme3-second: #9575CD;
-$theme3-rgba_2:rgba(149, 117, 205, 0.5);
-$theme3-rgba_1:rgba(255, 112, 67, 0.5);
+$theme3-main: #4BC2C5;
+$theme3-second: #78fee0;
+$theme3-rgba_2:rgba(75, 195, 197, 0.8);
+$theme3-rgba_1:rgba(120, 254, 225, 0.8);
 /*******/
 
-$theme4-main: #F48FB1;
-$theme4-second: #26A69A;
-$theme4-rgba_2:rgba(38, 166, 154, 0.5);
-$theme4-rgba_1:rgba(244, 143, 177, 0.5);
+$theme4-main: #f3759f;
+$theme4-second: #F48FB1;
+$theme4-rgba_2:rgba(243, 117, 159, 0.8);
+$theme4-rgba_1:rgba(244, 143, 177, 0.8);
 /***********/
 
-$theme5-main: #ff7761;
-$theme5-second: #AFB42B;
-$theme5-rgba_2:rgba(175, 180, 43, 0.5);
-$theme5-rgba_1:rgba(255,119,97,.5);
+$theme5-main: #00a03e;
+$theme5-second: #12ca59;
+$theme5-rgba_2:rgba(0, 160, 61, 0.8);
+$theme5-rgba_1:rgba(18, 202, 89, 0.8);
 /*   theme1 ********/
 
 [data-default-color="theme1"] .color1 {
@@ -90,12 +90,9 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff
 }
 
-[data-default-color="theme1"] .wellcome .social .icon:hover {
-    background: $theme1-second;
-}
 
 [data-default-color="theme1"] .wellcome .social .icon:hover a {
-    color: #fff
+    color: #000
 }
 
 [data-default-color="theme1"] .menu a.active {
@@ -230,12 +227,9 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff
 }
 
-[data-default-color="theme2"] .wellcome .social .icon:hover {
-    background: $theme2-second;
-}
 
 [data-default-color="theme2"] .wellcome .social .icon:hover a {
-    color: #fff
+    color: #000
 }
 
 [data-default-color="theme2"] .menu a.active {
@@ -369,12 +363,10 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff
 }
 
-[data-default-color="theme3"] .wellcome .social .icon:hover {
-    background: $theme3-second;
-}
+
 
 [data-default-color="theme3"] .wellcome .social .icon:hover a {
-    color: #fff
+    color: #000
 }
 
 [data-default-color="theme3"] .menu a.active {
@@ -509,12 +501,9 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff 4
 }
 
-[data-default-color="theme4"] .wellcome .social .icon:hover {
-    background: $theme4-second;
-}
 
 [data-default-color="theme4"] .wellcome .social .icon:hover a {
-    color: #fff
+    color: #000
 }
 
 [data-default-color="theme4"] .menu a.active {
@@ -649,12 +638,9 @@ $theme5-rgba_1:rgba(255,119,97,.5);
     color: #fff
 }
 
-[data-default-color="theme5"] .wellcome .social .icon:hover {
-    background: $theme5-second;
-}
 
 [data-default-color="theme5"] .wellcome .social .icon:hover a {
-    color: #fff
+    color: #000
 }
 
 [data-default-color="theme5"] .menu a.active {
@@ -809,4 +795,16 @@ $theme5-rgba_1:rgba(255,119,97,.5);
 
 .mix {
     box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, .3)
+}
+.wrap{
+	max-width: 600px;
+	margin:50px auto;
+}
+
+.type-wrap{
+	margin:10px auto;
+	padding:20px;
+	background:#f0f0f0;
+	border-radius:5px;
+	border:#CCC 1px solid;
 }
