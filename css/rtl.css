@@ -8,6 +8,16 @@
   left: 0;
 }
 
+.navbar .progress-page {
+  left: auto;
+  right: 0;
+}
+
+.navbar .progress-page .prog {
+  left: auto;
+  right: 0;
+}
+
 .moree img {
   transform: translate(50%, -90%);
   -ms-transform: translate(50%, -90%);
@@ -36,5 +46,10 @@
 
 .moree .basic h4, .moree .my-cv a, .gallery h1 {
   letter-spacing: 0;
+}
+
+footer .me {
+  margin-left: 0;
+  margin-right: 50px;
 }
 /*# sourceMappingURL=rtl.css.map */

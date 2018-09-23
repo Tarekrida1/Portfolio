@@ -756,6 +756,10 @@
   border: 1px solid #fff;
 }
 
+[data-dark="dark"] footer {
+  color: #000;
+}
+
 [data-dark="dark"] .themes-menu {
   border: 1px solid #fff;
 }

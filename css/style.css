@@ -349,6 +349,22 @@ body {
   -o-border-radius: 5px;
 }
 
+.navbar .progress-page {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar .progress-page .prog {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .navbar.custom-nav {
   background: #fff;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
@@ -797,11 +813,6 @@ body {
   -o-transform: translate(-100%);
   -moz-transform: translate(-100%);
   -ms-transform: translate(-100%);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
   opacity: 0;
 }
 
@@ -1055,4 +1066,28 @@ body {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
+
+/* start footer */
+footer {
+  padding: 5px 10px;
+  z-index: 1000;
+  width: 100%;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  position: relative;
+  bottom: -461px;
+  z-index: 9999999;
+  left: 0;
+}
+
+footer .me {
+  margin-left: 50px;
+}
+
+footer .me span {
+  font-weight: bold;
+}
+
+/* end footer */
 /*# sourceMappingURL=style.css.map */
