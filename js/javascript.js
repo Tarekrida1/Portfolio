@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	//set animation timing
-	var animationDelay = 1000,
+	var animationDelay = 2000,
 		//loading bar effect
 		barAnimationDelay = 3800,
 		barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
@@ -13,17 +13,15 @@ jQuery(document).ready(function($){
 		//clip effect 
 		revealDuration = 600,
 		revealAnimationDelay = 1500;
-	
-	initHeadline();
-	
-
 	function initHeadline() {
 		//insert <i> element for each letter of a changing word
 		singleLetters($('.cd-headline.letters').find('b'));
 		//initialise headline animation
 		animateHeadline($('.cd-headline'));
 	}
-
+	$(window).load(function () {
+        initHeadline();
+      });
 	function singleLetters($words) {
 		$words.each(function(){
 			var word = $(this),
