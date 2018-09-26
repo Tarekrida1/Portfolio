@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="css/aos.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/slick.css" type="text/css">
+  <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/media.css" type="text/css">
   <link rel="stylesheet" href="css/colors.css" type="text/css">
-  <script src="js/typed.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-1.12.1.min.js"></script>
   <script>
@@ -23,7 +24,7 @@
           $(this).remove();
         });
       });
-    
+
     });
   </script>
 </head>
@@ -79,7 +80,9 @@
       <a href="#" class="menu-item" id="Services">Services</a>
       <a href="#" class="menu-item" id="Contact">Contact Me</a>
     </div>
-    <div class="progress-page"><div class="prog background1" id="myprog"></div></div>
+    <div class="progress-page">
+      <div class="prog background1" id="myprog"></div>
+    </div>
   </nav>
   <!-- end nav -->
   <!-- start wellcome -->
@@ -90,14 +93,14 @@
         <h6 class="hh background1">TaReK RiDa</h6>
         <h1 class="hh2 cd-headline clip is-full-width color1">
           <span class="cd-words-wrapper">
-              <b class="is-visible">Front End Developer</b>
-              <b class="is-hidden">UX Developer</b>
-              <b class="is-hidden">Photographer</b>
+            <b class="is-visible">Front End Developer</b>
+            <b class="is-hidden">UX Developer</b>
+            <b class="is-hidden">Photographer</b>
           </span>
           <span class="tt color1">|</span>
         </h1>
-        
-  
+
+
       </div>
     </div>
     <div class="social">
@@ -515,55 +518,64 @@
   <!-- start services -->
   <div class="services text-center " id="services">
     <div class="container">
-      <h1 class="color1">Services</h1>
-      <h2 class="color2">What Can I Do For You?</h2>
-      <h5 class="color-light">responsive websites, javascript and jquery functions, clean and professional code.</h5>
+      <div class="head">
+        <h1 class="color1">Services</h1>
+        <h2 class="color2">What Can I Do For You?</h2>
+        <h5 class="color-light">responsive websites, javascript and jquery functions, clean and professional code.</h5>
+      </div>
+
     </div>
-    <div id="demo" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active background1"></li>
-        <li data-target="#demo" data-slide-to="1" class="background1"></li>
-        <li data-target="#demo" data-slide-to="2" class="background1"></li>
-        <li data-target="#demo" data-slide-to="3" class="background1"></li>
-        <li data-target="#demo" data-slide-to="4" class="background1"></li>
-        <li data-target="#demo" data-slide-to="5" class="background1"></li>
-      </ul>
-      <!-- The slideshow -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <i class="fa fa-desktop"></i>
+    <div class="sevices-slider">
+
+      <div class="slide">
+        <div class="container">
+          <img src="img/services/codee.svg" alt="">
           <h3 class=" color2 color-light">Web Design</h3>
           <p>I Can Create And Design Your Dreams Wesbite!</p>
         </div>
-        <div class="carousel-item">
-          <i class="fa fa-edit"></i>
+      </div>
+      <div class="slide">
+        <div class="container">
+          <img src="img/services/brands.svg" alt="">
           <h3 class=" color2 color-light">Branding</h3>
           <p>Creating PSD (photoshop) Or Images For Your New Branding And Logo!</p>
         </div>
-        <div class="carousel-item">
-          <i class="fa fa-thumbs-up"></i>
+      </div>
+      <div class="slide">
+        <div class="container">
+          <img src="img/services/clean.svg" alt="">
           <h3 class=" color2 color-light">Clean Code</h3>
           <p>Will Find it So Easy To Edit, Maintain, Or Even Adding On My Code!</p>
         </div>
-        <div class="carousel-item">
-          <i class="fa fa-mobile"></i>
+      </div>
+      <div class="slide">
+        <div class="container">
+          <img src="img/services/responsive.svg" alt="">
           <h3 class=" color2 color-light">Fully Responsive</h3>
           <p>My Web Designs Are Fully Responsive And Friendly On Any Kind Of Screens
           </p>
         </div>
-        <div class="carousel-item">
-          <i class="fa fa-exclamation-triangle"></i>
+      </div>
+      <div class="slide">
+        <div class="container">
+          <img src="img/services/error.svg" alt="">
           <h3 class=" color2 color-light">Fixing errors</h3>
           <p>You can contact me via email to find all support</p>
         </div>
-        <div class="carousel-item">
-          <i class="fa fa-cogs"></i>
+      </div>
+      <div class="slide">
+        <div class="container">
+          <img src="img/services/dynamic.svg" alt="">
           <h3 class=" color2 color-light">Dynamic</h3>
           <p>Websites don't have to be static, I love making pages come to life.</p>
         </div>
       </div>
+
+
+
     </div>
+
+
   </div>
   <!-- end services -->
   <!-- sign up -->
@@ -590,9 +602,9 @@
   <!--start footer-->
   <footer class="background-light color-dark">
     <span class="copy">Copyright &amp; 2018</span><span class="me"><span class="color1">Tarek</span> Rida</span>
-   
+
   </footer>
-   <!--end footer-->
+  <!--end footer-->
   <!-- start loading  -->
   <div class="loading" id="loading">
     <div class="lds-ripple">
@@ -607,6 +619,8 @@
   <script src="js/javascript.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script>
     AOS.init({
       easing: 'ease-in-out-sine'
@@ -617,7 +631,22 @@
 
     var mixer = mixitup(containerEl);
   </script>
-
+     <script>
+      $(function () {
+        $('.sevices-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 700,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: false,
+  fade: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+      
+      });
+      });
+    </script>
 </body>
 
 </html>

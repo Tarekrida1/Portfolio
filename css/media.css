@@ -201,5 +201,23 @@
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .services .head h1 {
+    font-size: 35px;
+  }
+  .services .head h2 {
+    font-size: 20px;
+  }
+  .services .sevices-slider .slide {
+    padding-top: 185px;
+  }
+  .services .sevices-slider .slide h3 {
+    font-size: 20px;
+  }
+  .services .sevices-slider .slide img {
+    height: 30vh;
+  }
+}
+
 /********************************* media ******************/
 /*# sourceMappingURL=media.css.map */

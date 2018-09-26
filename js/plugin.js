@@ -72,7 +72,7 @@ $(function () {
     });
     $("#Services").on("click", function () {
         event.preventDefault();
-        $("html, body").animate({ scrollTop: $(".services").offset().top - 50 });
+        $("html, body").animate({ scrollTop: $(".services").offset().top });
     });
     $("#Contact").on("click", function () {
         event.preventDefault();
@@ -164,4 +164,6 @@ $(function () {
         $("#theme-click").removeClass("theme-click-1");
         $(".theme-click .i2").removeClass("i22");
     });
+
+
 });

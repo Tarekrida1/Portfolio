@@ -790,4 +790,55 @@
   border-radius: 5px;
   border: #CCC 1px solid;
 }
+
+/* services */
+.services .sevices-slider .slick-dots li:nth-child(1) button {
+  background: #0080ff;
+}
+
+.services .sevices-slider .slick-dots li:nth-child(2) button {
+  background: #FE2370;
+}
+
+.services .sevices-slider .slick-dots li:nth-child(3) button {
+  background: #4BC2C5;
+}
+
+.services .sevices-slider .slick-dots li:nth-child(4) button {
+  background: #f3759f;
+}
+
+.services .sevices-slider .slick-dots li:nth-child(5) button {
+  background: #00a03e;
+}
+
+.services .sevices-slider .slick-dots li:nth-child(6) button {
+  background: #000;
+}
+
+#slick-slide00 {
+  background: #0080ff;
+}
+
+#slick-slide01 {
+  background: #FE2370;
+}
+
+#slick-slide02 {
+  background: #4BC2C5;
+}
+
+#slick-slide03 {
+  background: #f3759f;
+}
+
+#slick-slide04 {
+  background: #00a03e;
+}
+
+#slick-slide05 {
+  background: #000;
+}
+
+/* end services */
 /*# sourceMappingURL=colors.css.map */

@@ -811,3 +811,24 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 	border-radius:5px;
 	border:#CCC 1px solid;
 }
+/* services */ 
+.services .sevices-slider {
+ 
+    .slick-dots {
+        li:nth-child(1) button {  background: $theme1-main}
+        li:nth-child(2) button {  background: $theme2-main}
+        li:nth-child(3) button {  background: $theme3-main}
+        li:nth-child(4) button {  background: $theme4-main}
+        li:nth-child(5) button {  background: $theme5-main}
+        li:nth-child(6) button {  background: #000
+        }
+    }
+ 
+}
+#slick-slide00 {    background: $theme1-main}
+#slick-slide01 {    background: $theme2-main}
+#slick-slide02 {    background: $theme3-main}
+#slick-slide03 {    background: $theme4-main}
+#slick-slide04 {    background: $theme5-main}
+#slick-slide05 {    background: #000}
+/* end services */ 
