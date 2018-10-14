@@ -1,15 +1,15 @@
 $(function () {
     'use strict';
- 
+
     $("html").niceScroll({
         cursorcolor: "#fff",
         cursorwidth: "10px",
         cursorborderradius: "5px",
         cursorborder: "1px solid #000",
         zindex: "999999999",
-        
+
     });
-/*    change bg nav and animate on scroll */
+    /*    change bg nav and animate on scroll */
     $(document).scroll(function () {
         if ($(document).scrollTop() > 20) {
             $(".navbar").addClass("custom-nav");
@@ -79,17 +79,19 @@ $(function () {
         $("html, body").animate({ scrollTop: $(".signup").offset().top - 50 });
     });
 
-
-    // animate prog while scroll
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-        if (y = $('#skills').offset().top) {
+    $(document).on('scroll', function () {
+        var skills = $('#skills').position().top,
+            gallery = $('.gallery').position().top;
+        if ($(this).scrollTop() >= skills) {
             $(".moree .skills .progresss ul li .prog_bar .percent").removeClass("prog_width");
-        } else {
-            $(".moree .skills .progresss ul li .prog_bar .percent").addClass("prog_width");
         }
 
-    });
+        if ($(this).scrollTop() >= gallery) {
+            $(".moree .skills .progresss ul li .prog_bar .percent").addClass("prog_width");
+
+        }
+    })
+    console.log(skills);
     // animate prog while scroll 
 
     // inputs 
