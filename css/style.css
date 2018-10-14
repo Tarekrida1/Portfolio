@@ -350,10 +350,10 @@ body {
 }
 
 .navbar .progress-page {
-  height: 2px;
+  height: 3px;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
 }
 
@@ -549,9 +549,14 @@ body {
   font-weight: bold;
 }
 
+.moree .basic {
+  margin: 20px 0;
+}
+
 .moree .basic h2 {
   text-align: center;
   font-weight: bold;
+  padding-bottom: 30px;
 }
 
 .moree .basic h4 {
@@ -563,9 +568,14 @@ body {
   color: rgba(8, 8, 8, 0.8);
 }
 
+.moree .skills {
+  margin: 20px 0;
+}
+
 .moree .skills h2 {
   text-align: center;
   font-weight: bold;
+  padding-bottom: 30px;
 }
 
 .moree .skills .progresss ul {
@@ -689,6 +699,10 @@ body {
 /******************** start galry ***********/
 /* Controls
 ---------------------------------------------------------------------- */
+.gallery {
+  padding-top: 20px;
+}
+
 .gallery h1,
 .gallery p {
   text-align: center;

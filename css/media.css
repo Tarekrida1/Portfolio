@@ -147,6 +147,11 @@
     -ms-transform: rotate(135deg);
     -o-transform: rotate(135deg);
   }
+  /*      informaion */
+  .moree .basic {
+    text-align: center;
+  }
+  /*  information */
   /**************** wellcome ********/
   .wellcome .bottom {
     bottom: 0px;

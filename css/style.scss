@@ -323,10 +323,10 @@ body {
         }
     }
     .progress-page {
-        height: 2px;
+        height: 3px;
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: -3px;
         left: 0;
         .prog {
             height: 100%;
@@ -479,9 +479,11 @@ body {
         }
     }
     .basic {
+        margin: 20px 0;
         h2 {
             text-align: center;
             font-weight: bold;
+            padding-bottom: 30px;
         }
         h4 {
             letter-spacing: 2px;
@@ -492,9 +494,11 @@ body {
         }
     }
     .skills {
+        margin: 20px 0;
         h2 {
             text-align: center;
             font-weight: bold;
+            padding-bottom: 30px;
         }
         .progresss {
             ul {
@@ -605,6 +609,7 @@ body {
 ---------------------------------------------------------------------- */
 
 .gallery {
+    padding-top: 20px;
     h1,
     p {
         text-align: center

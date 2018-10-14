@@ -280,7 +280,7 @@
 }
 
 [data-default-color="theme3"] .color2 {
-  color: #78fee0;
+  color: #3ca0a2;
 }
 
 [data-default-color="theme3"] .background1 {
@@ -288,7 +288,7 @@
 }
 
 [data-default-color="theme3"] .background2 {
-  background-color: #78fee0;
+  background-color: #3ca0a2;
 }
 
 [data-default-color="theme3"] .rgb1 {
@@ -300,30 +300,30 @@
 }
 
 [data-default-color="theme3"] .gradient {
-  background: -webkit-gradient(linear, right top, left top, from(#4BC2C5), to(#78fee0));
-  background: linear-gradient(to left, #4BC2C5, #78fee0);
+  background: -webkit-gradient(linear, right top, left top, from(#4BC2C5), to(#3ca0a2));
+  background: linear-gradient(to left, #4BC2C5, #3ca0a2);
 }
 
 [data-default-color="theme3"] .border1 {
-  border: 1px solid #78fee0;
+  border: 1px solid #3ca0a2;
 }
 
 [data-default-color="theme3"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-  border-top: 5px solid #78fee0;
+  border-top: 5px solid #3ca0a2;
 }
 
 [data-default-color="theme3"] .moree .my-cv:hover {
-  background: #78fee0;
+  background: #3ca0a2;
   color: #fff;
 }
 
 [data-default-color="theme3"] .signup button:hover {
-  background: #78fee0;
+  background: #3ca0a2;
   color: #fff;
 }
 
 [data-default-color="theme3"] .themes-menu .theme-click .i22 {
-  color: #78fee0;
+  color: #3ca0a2;
 }
 
 [data-default-color="theme3"] .menu a:hover {
@@ -331,12 +331,12 @@
 }
 
 [data-default-color="theme3"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #78fee0 !important;
+  background: #3ca0a2 !important;
   color: #fff;
 }
 
 [data-default-color="theme3"] #toggle:checked ~ .click span:last-child {
-  background: #78fee0 !important;
+  background: #3ca0a2 !important;
   color: #fff;
 }
 
@@ -345,25 +345,25 @@
 }
 
 [data-default-color="theme3"] .menu a.active {
-  background: #78fee0;
+  background: #3ca0a2;
   color: #fff !important;
 }
 
 [data-default-color="theme3"] #my-tabs li.inactive:hover {
-  color: #78fee0;
-  border: 1px solid #78fee0;
+  color: #3ca0a2;
+  border: 1px solid #3ca0a2;
 }
 
 [data-default-color="theme3"] .services .carousel .carousel-indicators .active {
-  background: #78fee0;
+  background: #3ca0a2;
 }
 
 [data-default-color="theme3"] .signup .custom-input input {
-  border-bottom: 1px solid #78fee0;
+  border-bottom: 1px solid #3ca0a2;
 }
 
 [data-default-color="theme3"] .signup textarea {
-  border-bottom: 1px solid #78fee0;
+  border-bottom: 1px solid #3ca0a2;
 }
 
 [data-default-color="theme3"] .signup textarea::-webkit-input-placeholder {
@@ -391,7 +391,7 @@
 }
 
 [data-default-color="theme3"] .st1 {
-  fill: #78fee0;
+  fill: #3ca0a2;
 }
 
 [data-default-color="theme3"] .st2 {
@@ -399,12 +399,12 @@
 }
 
 [data-default-color="theme3"] .gallery .item .overlay .over-text a:hover {
-  background: #78fee0;
+  background: #3ca0a2;
   color: #fff;
 }
 
 [data-default-color="theme3"] .mixitup-control-active {
-  background: #78fee0;
+  background: #3ca0a2;
   color: #fff;
   outline: none;
 }
@@ -699,7 +699,7 @@
 }
 
 #theme-3 {
-  background: #78fee0;
+  background: #3ca0a2;
 }
 
 #theme-3 div {
