@@ -1,3 +1,33 @@
+.button-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#7954b6), to(#f34791));
+  background: linear-gradient(to left, #7954b6, #f34791);
+  z-index: 55;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.button-effect + span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 77;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+}
+
+.button-effect + span a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @font-face {
   src: url(../fonts/Cairo-Regular.ttf);
   font-family: cairo-font;
@@ -672,23 +702,19 @@ body {
   margin: 10px 0 20px 0;
   background: #fff;
   width: 130px;
-  padding: 5px 0;
+  height: 50px;
   margin: 20px auto;
-  border-radius: 5px;
-  transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
+  border-radius: 5px 25px 5px 5px;
+  -webkit-border-radius: 5px 25px 5px 5px;
+  -moz-border-radius: 5px 25px 5px 5px;
+  -ms-border-radius: 5px 25px 5px 5px;
+  -o-border-radius: 5px 25px 5px 5px;
+  position: relative;
+  overflow: hidden;
 }
 
-.moree .my-cv a {
-  color: #000;
-  text-decoration: none;
-}
-
-.moree .my-cv:hover {
-  background: #ff125a;
+.moree .my-cv:hover .button-effect {
+  width: 100%;
 }
 
 .moree .my-cv:hover a {
@@ -1164,27 +1190,36 @@ body {
 }
 
 .signup button {
-  padding: 5px 20px;
+  width: 100px;
+  height: 40px;
+  margin: 20px 0;
   font-size: 16px;
   font-weight: 600;
-  background: #fff;
   border: none;
-  border: 1px solid;
-  border-radius: 10px;
-  color: #000;
-  margin-top: 10px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  border-radius: 5px 25px 5px 5px;
+  -webkit-border-radius: 5px 25px 5px 5px;
+  -moz-border-radius: 5px 25px 5px 5px;
+  -ms-border-radius: 5px 25px 5px 5px;
+  -o-border-radius: 5px 25px 5px 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.signup button:hover .button-effect {
+  width: 100%;
 }
 
 /* start footer */
 footer {
-  padding: 7px 10px;
+  margin-top: 50px;
   z-index: 1000;
   width: 100%;
+  height: 80px;
+  border-radius: 100% 100% 0 0;
   text-align: center;
-  background: #000;
   color: #fff;
+  line-height: 80px;
+  font-size: 20px;
 }
 
 footer .me {
@@ -1193,6 +1228,7 @@ footer .me {
 
 footer .me span {
   font-weight: bold;
+  color: #000;
 }
 
 /* end footer */

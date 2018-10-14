@@ -17,7 +17,7 @@ $theme3-rgba_1:rgba(120, 254, 225, 0.8);
 /*******/
 
 $theme4-main: #f3759f;
-$theme4-second: #F48FB1;
+$theme4-second: #c5738f;
 $theme4-rgba_2:rgba(243, 117, 159, 0.8);
 $theme4-rgba_1:rgba(244, 143, 177, 0.8);
 /***********/
@@ -60,16 +60,6 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 
 [data-default-color="theme1"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
     border-top: 5px solid $theme1-second;
-}
-
-[data-default-color="theme1"] .moree .my-cv:hover {
-    background: $theme1-second;
-    color: #fff
-}
-
-[data-default-color="theme1"] .signup button:hover {
-    background: $theme1-second;
-    color: #fff
 }
 
 [data-default-color="theme1"] .themes-menu .theme-click .i22 {
@@ -199,16 +189,6 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
     border-top: 5px solid $theme2-second;
 }
 
-[data-default-color="theme2"] .moree .my-cv:hover {
-    background: $theme2-second;
-    color: #fff
-}
-
-[data-default-color="theme2"] .signup button:hover {
-    background: $theme2-second;
-    color: #fff
-}
-
 [data-default-color="theme2"] .themes-menu .theme-click .i22 {
     color: $theme2-second
 }
@@ -333,16 +313,6 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 
 [data-default-color="theme3"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
     border-top: 5px solid $theme3-second;
-}
-
-[data-default-color="theme3"] .moree .my-cv:hover {
-    background: $theme3-second;
-    color: #fff
-}
-
-[data-default-color="theme3"] .signup button:hover {
-    background: $theme3-second;
-    color: #fff
 }
 
 [data-default-color="theme3"] .themes-menu .theme-click .i22 {
@@ -473,16 +443,6 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
     border-top: 5px solid $theme4-second;
 }
 
-[data-default-color="theme4"] .moree .my-cv:hover {
-    background: $theme4-second;
-    color: #fff
-}
-
-[data-default-color="theme4"] .signup button:hover {
-    background: $theme4-second;
-    color: #fff
-}
-
 [data-default-color="theme4"] .themes-menu .theme-click .i22 {
     color: $theme4-second
 }
@@ -608,16 +568,6 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 
 [data-default-color="theme5"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
     border-top: 5px solid $theme5-second;
-}
-
-[data-default-color="theme5"] .moree .my-cv:hover {
-    background: $theme5-second;
-    color: #fff
-}
-
-[data-default-color="theme5"] .signup button:hover {
-    background: $theme5-second;
-    color: #fff
 }
 
 [data-default-color="theme5"] .themes-menu .theme-click .i22 {

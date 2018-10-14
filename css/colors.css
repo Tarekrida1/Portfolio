@@ -40,16 +40,6 @@
   border-top: 5px solid #13c0ff;
 }
 
-[data-default-color="theme1"] .moree .my-cv:hover {
-  background: #13c0ff;
-  color: #fff;
-}
-
-[data-default-color="theme1"] .signup button:hover {
-  background: #13c0ff;
-  color: #fff;
-}
-
 [data-default-color="theme1"] .themes-menu .theme-click .i22 {
   color: #13c0ff;
 }
@@ -174,16 +164,6 @@
 
 [data-default-color="theme2"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
   border-top: 5px solid #FF4B68;
-}
-
-[data-default-color="theme2"] .moree .my-cv:hover {
-  background: #FF4B68;
-  color: #fff;
-}
-
-[data-default-color="theme2"] .signup button:hover {
-  background: #FF4B68;
-  color: #fff;
 }
 
 [data-default-color="theme2"] .themes-menu .theme-click .i22 {
@@ -312,16 +292,6 @@
   border-top: 5px solid #3ca0a2;
 }
 
-[data-default-color="theme3"] .moree .my-cv:hover {
-  background: #3ca0a2;
-  color: #fff;
-}
-
-[data-default-color="theme3"] .signup button:hover {
-  background: #3ca0a2;
-  color: #fff;
-}
-
 [data-default-color="theme3"] .themes-menu .theme-click .i22 {
   color: #3ca0a2;
 }
@@ -416,7 +386,7 @@
 }
 
 [data-default-color="theme4"] .color2 {
-  color: #F48FB1;
+  color: #c5738f;
 }
 
 [data-default-color="theme4"] .background1 {
@@ -424,7 +394,7 @@
 }
 
 [data-default-color="theme4"] .background2 {
-  background-color: #F48FB1;
+  background-color: #c5738f;
 }
 
 [data-default-color="theme4"] .rgb1 {
@@ -436,30 +406,20 @@
 }
 
 [data-default-color="theme4"] .gradient {
-  background: -webkit-gradient(linear, right top, left top, from(#f3759f), to(#F48FB1));
-  background: linear-gradient(to left, #f3759f, #F48FB1);
+  background: -webkit-gradient(linear, right top, left top, from(#f3759f), to(#c5738f));
+  background: linear-gradient(to left, #f3759f, #c5738f);
 }
 
 [data-default-color="theme4"] .border1 {
-  border: 1px solid #F48FB1;
+  border: 1px solid #c5738f;
 }
 
 [data-default-color="theme4"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
-  border-top: 5px solid #F48FB1;
-}
-
-[data-default-color="theme4"] .moree .my-cv:hover {
-  background: #F48FB1;
-  color: #fff;
-}
-
-[data-default-color="theme4"] .signup button:hover {
-  background: #F48FB1;
-  color: #fff;
+  border-top: 5px solid #c5738f;
 }
 
 [data-default-color="theme4"] .themes-menu .theme-click .i22 {
-  color: #F48FB1;
+  color: #c5738f;
 }
 
 [data-default-color="theme4"] .menu a:hover {
@@ -467,12 +427,12 @@
 }
 
 [data-default-color="theme4"] #toggle:checked ~ .click span:nth-of-type(1) {
-  background: #F48FB1 !important;
+  background: #c5738f !important;
   color: #fff;
 }
 
 [data-default-color="theme4"] #toggle:checked ~ .click span:last-child {
-  background: #F48FB1 !important;
+  background: #c5738f !important;
   color: #fff 4;
 }
 
@@ -481,25 +441,25 @@
 }
 
 [data-default-color="theme4"] .menu a.active {
-  background: #F48FB1;
+  background: #c5738f;
   color: #fff !important;
 }
 
 [data-default-color="theme4"] #my-tabs li.inactive:hover {
-  color: #F48FB1;
-  border: 1px solid #F48FB1;
+  color: #c5738f;
+  border: 1px solid #c5738f;
 }
 
 [data-default-color="theme4"] .services .carousel .carousel-indicators .active {
-  background: #F48FB1;
+  background: #c5738f;
 }
 
 [data-default-color="theme4"] .signup .custom-input input {
-  border-bottom: 1px solid #F48FB1;
+  border-bottom: 1px solid #c5738f;
 }
 
 [data-default-color="theme4"] .signup textarea {
-  border-bottom: 1px solid #F48FB1;
+  border-bottom: 1px solid #c5738f;
 }
 
 [data-default-color="theme4"] .signup textarea::-webkit-input-placeholder {
@@ -527,7 +487,7 @@
 }
 
 [data-default-color="theme4"] .st1 {
-  fill: #F48FB1;
+  fill: #c5738f;
 }
 
 [data-default-color="theme4"] .st2 {
@@ -535,12 +495,12 @@
 }
 
 [data-default-color="theme4"] .gallery .item .overlay .over-text a:hover {
-  background: #F48FB1;
+  background: #c5738f;
   color: #fff;
 }
 
 [data-default-color="theme4"] .mixitup-control-active {
-  background: #F48FB1;
+  background: #c5738f;
   color: #fff;
   outline: none;
 }
@@ -582,16 +542,6 @@
 
 [data-default-color="theme5"] .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
   border-top: 5px solid #12ca59;
-}
-
-[data-default-color="theme5"] .moree .my-cv:hover {
-  background: #12ca59;
-  color: #fff;
-}
-
-[data-default-color="theme5"] .signup button:hover {
-  background: #12ca59;
-  color: #fff;
 }
 
 [data-default-color="theme5"] .themes-menu .theme-click .i22 {
@@ -707,7 +657,7 @@
 }
 
 #theme-4 {
-  background: #F48FB1;
+  background: #c5738f;
 }
 
 #theme-4 div {
