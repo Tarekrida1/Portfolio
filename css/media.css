@@ -189,6 +189,9 @@
   .services .carousel .carousel-item p {
     padding-top: 0;
   }
+  .services .sevices-slider .slide img {
+    height: 100%;
+  }
   .services .sevices-slider .slide .slid-text {
     margin-top: 0;
   }
