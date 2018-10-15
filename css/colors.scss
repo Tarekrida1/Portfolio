@@ -86,7 +86,7 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 }
 
 [data-default-color="theme1"] .menu a.active {
-    background: $theme1-second;
+    background: linear-gradient( to left, $theme1-main, $theme1-second);
     color: #fff !important
 }
 
@@ -213,7 +213,7 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 }
 
 [data-default-color="theme2"] .menu a.active {
-    background: $theme2-second;
+    background: linear-gradient( to left, $theme2-main, $theme2-second);
     color: #fff !important
 }
 
@@ -340,7 +340,7 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 }
 
 [data-default-color="theme3"] .menu a.active {
-    background: $theme3-second;
+    background: linear-gradient( to left, $theme3-main, $theme3-second);
     color: #fff !important
 }
 
@@ -467,7 +467,7 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 }
 
 [data-default-color="theme4"] .menu a.active {
-    background: $theme4-second;
+    background:linear-gradient( to left, $theme4-main, $theme4-second);
     color: #fff !important
 }
 
@@ -594,7 +594,7 @@ $theme5-rgba_1:rgba(18, 202, 89, 0.8);
 }
 
 [data-default-color="theme5"] .menu a.active {
-    background: $theme5-second;
+    background: linear-gradient( to left, $theme5-main, $theme5-second);
     color: #fff  !important
 }
 

@@ -15,15 +15,17 @@ $(function () {
             $(".navbar").addClass("custom-nav");
             $(".navbar .click").css({ "border-color": "#000" });
             $(".navbar .click span").css({ "background": "#000" });
-            $(".navbar .lan a").css({ "color": "#000" });
             $(".navbar .menu a").css({ "color": "#000" });
+            $(".navbar .logo .lan").css({ "opacity": "1" });
+            $("#brand").removeClass("brand");
         }
         else {
             $(".navbar").removeClass("custom-nav");
             $(".navbar .click").css({ "border-color": "#fff" });
             $(".navbar .click span").css({ "background": "#fff" });
-            $(".navbar .lan a").css({ "color": "#fff" });
             $(".navbar .menu a").css({ "color": "#fff" });
+            $(".navbar .logo .lan").css({ "opacity": "0" });
+            $("#brand").addClass("brand");
         }
     });
     $(document).scroll(function () {

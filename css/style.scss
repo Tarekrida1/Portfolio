@@ -154,6 +154,7 @@ body {
   
   
 /* end type */
+
 /*********** start themes *******/
 
 .themes-menu {
@@ -325,33 +326,64 @@ body {
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    .lan {
-        height: 25px;
-        width: 35px;
-        text-align: center;
-        line-height: 18px;
-        border-radius: 5px;
-        border: 1px solid transparent;
-        -webkit-transition: all .5s ease-in-out;
-        -moz-transition: all .5s ease-in-out;
-        -ms-transition: all .5s ease-in-out;
-        -o-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
-        font-size: 12px;
-        color: #fff;
-        a {
-            text-decoration: none;
-            color: #fff
-        }
-        &:hover {
-            border: 1px solid #fff;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-        }
+    /* logo */
+.logo {
+    
+    span:nth-of-type(1) {
+        font-size: 35px;
+    font-weight: bold;
     }
+    span:nth-of-type(2) {
+        width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    &:hover {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        -ms-border-radius: 50%;
+    }
+    a {
+        text-decoration: none;
+        color: #fff !important;
+        transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    }
+    .brand {
+        color: #fff
+    }
+} 
+/* logo */
     .progress-page {
         height: 3px;
         width: 100%;
@@ -413,7 +445,7 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
-        opacity: .8;
+        opacity: .6;
         background: #000;
     }
     .top-left {
@@ -859,31 +891,36 @@ color: #fff;
         height: 100vh;
 
         padding-top: 205px;
-        h3 {
-            display: inline-block;
-            color: #fff;
-            font-weight: bold;
-            position: relative;
-            padding-bottom: 10px;
-            &::after {
-                    content: "";
-                    background: #fff;
-                    height: 3px;
-                    width: 50px;
-                    position: absolute;
-                    left: 50%;
-                    bottom: -2px;
-                    transform: translate(-50%);
-                    -webkit-transform: translate(-50%);
-                    -moz-transform: translate(-50%);
-                    -ms-transform: translate(-50%);
-                    -o-transform: translate(-50%);
+        .slid-text {
+            margin-top: 10%;
+            h3 {
+                display: inline-block;
+                color: #fff;
+                font-weight: bold;
+                position: relative;
+                padding-bottom: 10px;
+                &::after {
+                        content: "";
+                        background: #fff;
+                        height: 3px;
+                        width: 50px;
+                        position: absolute;
+                        left: 50%;
+                        bottom: -2px;
+                        transform: translate(-50%);
+                        -webkit-transform: translate(-50%);
+                        -moz-transform: translate(-50%);
+                        -ms-transform: translate(-50%);
+                        -o-transform: translate(-50%);
+                }
+    
+            }
+            p {
+                color: #fff
             }
 
         }
-        p {
-            color: #fff
-        }
+
     }
       .slick-dots {
         bottom: 0;

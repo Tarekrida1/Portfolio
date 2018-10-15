@@ -30,6 +30,9 @@
     padding: 10px 25px;
     font-size: 20px;
   }
+  .services .sevices-slider .slide .slid-text h3 {
+    font-size: 50px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -185,6 +188,9 @@
   }
   .services .carousel .carousel-item p {
     padding-top: 0;
+  }
+  .services .sevices-slider .slide .slid-text {
+    margin-top: 0;
   }
   /******************* end services **********/
   .signup .signup-content {
