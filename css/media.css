@@ -222,6 +222,12 @@
   .wellcome .hh2, .wellcome {
     font-size: 33px;
   }
+  .services .sevices-slider .slide .slide-text {
+    margin-top: 0;
+  }
+  footer {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
