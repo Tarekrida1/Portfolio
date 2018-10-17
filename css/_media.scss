@@ -229,15 +229,17 @@ font-size: 50px;
          h3 {
             font-size: 18px;
         }
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
         .signup-input {
             width: 100%;
         }
         .custom-input {
             width: 95%;
             label {        
-                left: 5%;}
+                left: 5%;
+                font-size: 14px;
+            }
              input:focus + label {
                 left: 5%;
                 }
@@ -245,6 +247,7 @@ font-size: 50px;
             textarea {
                 width: 90%;
                 margin: 0 ;
+                font-size: 14px;
             }
     
     }

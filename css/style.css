@@ -1023,8 +1023,8 @@ body {
   text-align: center;
   margin: 10px 0 20px 0;
   background: #fff;
-  width: 130px;
-  height: 50px;
+  width: 100px;
+  height: 35px;
   margin: 20px auto;
   -webkit-border-radius: 5px 25px 5px 5px;
   -moz-border-radius: 5px 25px 5px 5px;
@@ -1277,6 +1277,9 @@ body {
 
 .services .sevices-slider .slide .slide-container {
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .services .sevices-slider .slide h3 {
@@ -1328,10 +1331,6 @@ body {
   color: white;
   outline: none;
   font-weight: bold;
-}
-
-.services .sevices-slider .slide .slide-text {
-  margin-top: 15%;
 }
 
 .services .sevices-slider .slide img {
@@ -1559,10 +1558,9 @@ body {
 
 .signup button {
   width: 100px;
-  height: 40px;
+  height: 35px;
   margin: 20px 0;
   font-size: 16px;
-  font-weight: 600;
   border: none;
   -webkit-border-radius: 5px 25px 5px 5px;
   -moz-border-radius: 5px 25px 5px 5px;
@@ -2696,8 +2694,8 @@ span:nth-of-type(2) {
     width: 100px;
   }
   .signup .signup-content {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .signup .signup-content h1 {
     font-size: 25px;
@@ -2713,6 +2711,7 @@ span:nth-of-type(2) {
   }
   .signup .signup-content .custom-input label {
     left: 5%;
+    font-size: 14px;
   }
   .signup .signup-content .custom-input input:focus + label {
     left: 5%;
@@ -2720,6 +2719,7 @@ span:nth-of-type(2) {
   .signup .signup-content textarea {
     width: 90%;
     margin: 0;
+    font-size: 14px;
   }
   .moree {
     margin: 40px 15px;
