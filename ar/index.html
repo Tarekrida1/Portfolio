@@ -14,19 +14,7 @@
   <link rel="stylesheet" href="../css/slick-theme.css" type="text/css">
   <link rel="stylesheet" href="../css/style.css" type="text/css">
   <link rel="stylesheet" href="../css/rtl.css" type="text/css">
-  <script src="../js/jquery-3.3.1.min.js"></script>
-  <script src="../js/jquery-1.12.1.min.js"></script>
-  <script>
-    $(function () {
-      $(window).load(function () {
-        $(".loading").slideUp(1, function () {
-          $(this).remove();
-        });
-      });
-    });
-  </script>
 </head>
-
 <body data-default-color="theme1">
 
   <!-- theme option   -->
@@ -650,13 +638,17 @@
   </footer>
   <!--end footer-->
   <!-- start loading  -->
-  <div class="loading">
-    <div class="lds-ripple">
-      <div></div>
-      <div></div>
-    </div>
+  <div class="loading" id="loading">
+      <div class="loadercontainer">
+        <span>جار التحميل</span>
+          <div class="dash gradient uno"></div>
+          <div class="dash gradient dos"></div>
+          <div class="dash gradient tres"></div>
+          <div class="dash gradient cuatro"></div>
+        </div>
   </div>
   <!-- end loading -->
+  <script src="../js/jquery-3.3.1.min.js"></script>
   <script src="../js/jquery.nicescroll.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/plugin.js"></script>

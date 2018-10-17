@@ -13,20 +13,7 @@
   <link rel="stylesheet" href="css/slick.css" type="text/css">
   <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-1.12.1.min.js"></script>
-  <script>
-    $(function () {
-      $(window).load(function () {
-        $(".loading").fadeOut(1000, function () {
-          $(this).remove();
-        });
-      });
-
-    });
-  </script>
 </head>
-
 <body data-default-color="theme1">
   <!-- theme option   -->
   <div class="themes-menu background-dark">
@@ -648,12 +635,16 @@
   <!--end footer-->
   <!-- start loading  -->
   <div class="loading" id="loading">
-    <div class="lds-ripple">
-      <div></div>
-      <div></div>
-    </div>
+      <div class="loadercontainer">
+        <span>Loading Page...</span>
+          <div class="dash gradient uno"></div>
+          <div class="dash gradient dos"></div>
+          <div class="dash gradient tres"></div>
+          <div class="dash gradient cuatro"></div>
+        </div>
   </div>
   <!-- end loading -->
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/plugin.js"></script>
