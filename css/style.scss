@@ -26,28 +26,40 @@ $w_color: #fff;
   -ms-transform: translate($tr, $st2);
   -o-transform: translate($tr, $st2);
 }
-.button-effect {
+.btnn {
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  margin: 35px;
+  position: relative;
+  outline: none;
+  transition: all .3s ease-in-out;
+  @include bradius(50px);
+  @include tran(.5s);
+}
+.btnn:active, .btnn:visited {
+  @include bshadow(0 0 5px);
+  @include translat(-5px, 0);
+}
+.btnn .animate_btnn {
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 0;
-  z-index: 55;
-  @include tran(0.5s);
+  @include bradius(50px);
+  z-index: -1;
+  @include tran(.3s);
 }
-.button-effect + span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  @include translat(-50%, -50%);
-  z-index: 77;
-  width: 100%;
-  color: #fff;
-  font-weight: 600;
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
+.btnn:hover .animate_btnn {
+  transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  opacity: 0;
 }
 @font-face {
   src: url(../fonts/Cairo-Regular.ttf);
@@ -681,21 +693,10 @@ body {
     }
   }
   .my-cv {
-    text-align: center;
-    margin: 10px 0 20px 0;
-    background: #fff;
-    width: 100px;
-    height: 35px;
     margin: 20px auto;
-    @include bradius(5px 25px 5px 5px);
-    position: relative;
-    overflow: hidden;
-    &:hover .button-effect {
-      width: 100%;
-    }
-
-    &:hover a {
-      color: #fff;
+    a {
+      text-decoration: none;
+      color: #fff
     }
   }
 }
@@ -721,17 +722,9 @@ body {
 }
 
 .control {
-  position: relative;
-  display: inline-block;
-  margin: 2px;
-  padding: 5px 10px;
-  background: transparent;
+color: #fff;
   cursor: pointer;
-  color: #fff;
-  border: none;
-  @include bshadow(0 0 5px);
-  @include bradius(5px 25px 5px 5px);
-  @include tran(0.5s);
+  margin: 0 5px 10px 0;
 }
 
 .control[data-filter] + .control[data-sort] {
@@ -1117,17 +1110,8 @@ body {
     }
   }
   button {
-    width: 100px;
-    height: 35px;
-    margin: 20px 0;
-    font-size: 16px;
-    border: none;
-    @include bradius(5px 25px 5px 5px);
-    overflow: hidden;
-    position: relative;
-    &:hover .button-effect {
-      width: 100%;
-    }
+  color: #fff;
+  outline: none
   }
 }
 

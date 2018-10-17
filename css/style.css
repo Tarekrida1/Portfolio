@@ -1,32 +1,57 @@
-.button-effect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  z-index: 55;
+.btnn {
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  margin: 35px;
+  position: relative;
+  outline: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.button-effect + span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  z-index: 77;
-  width: 100%;
-  color: #fff;
-  font-weight: 600;
+.btnn:active, .btnn:visited {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  transform: translate(-5px, 0);
+  -webkit-transform: translate(-5px, 0);
+  -moz-transform: translate(-5px, 0);
+  -ms-transform: translate(-5px, 0);
+  -o-transform: translate(-5px, 0);
 }
 
-.button-effect + span a {
-  text-decoration: none;
-  color: #fff;
+.btnn .animate_btnn {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnn:hover .animate_btnn {
+  transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  opacity: 0;
 }
 
 @font-face {
@@ -1020,25 +1045,11 @@ body {
 }
 
 .moree .my-cv {
-  text-align: center;
-  margin: 10px 0 20px 0;
-  background: #fff;
-  width: 100px;
-  height: 35px;
   margin: 20px auto;
-  -webkit-border-radius: 5px 25px 5px 5px;
-  -moz-border-radius: 5px 25px 5px 5px;
-  -ms-border-radius: 5px 25px 5px 5px;
-  -o-border-radius: 5px 25px 5px 5px;
-  position: relative;
-  overflow: hidden;
 }
 
-.moree .my-cv:hover .button-effect {
-  width: 100%;
-}
-
-.moree .my-cv:hover a {
+.moree .my-cv a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -1061,25 +1072,9 @@ body {
 }
 
 .control {
-  position: relative;
-  display: inline-block;
-  margin: 2px;
-  padding: 5px 10px;
-  background: transparent;
-  cursor: pointer;
   color: #fff;
-  border: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 5px 25px 5px 5px;
-  -moz-border-radius: 5px 25px 5px 5px;
-  -ms-border-radius: 5px 25px 5px 5px;
-  -o-border-radius: 5px 25px 5px 5px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  margin: 0 5px 10px 0;
 }
 
 .control[data-filter] + .control[data-sort] {
@@ -1557,21 +1552,8 @@ body {
 }
 
 .signup button {
-  width: 100px;
-  height: 35px;
-  margin: 20px 0;
-  font-size: 16px;
-  border: none;
-  -webkit-border-radius: 5px 25px 5px 5px;
-  -moz-border-radius: 5px 25px 5px 5px;
-  -ms-border-radius: 5px 25px 5px 5px;
-  -o-border-radius: 5px 25px 5px 5px;
-  overflow: hidden;
-  position: relative;
-}
-
-.signup button:hover .button-effect {
-  width: 100%;
+  color: #fff;
+  outline: none;
 }
 
 /* start footer */
