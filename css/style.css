@@ -967,7 +967,7 @@ body {
   font-size: 12px;
   font-weight: bold;
   position: absolute;
-  right: -20px;
+  right: -12px;
   bottom: 14px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -977,7 +977,7 @@ body {
 
 .moree .skills .progresss ul li .prog_bar .percent span:nth-of-type(2) {
   position: absolute;
-  right: -10px;
+  right: -3px;
   bottom: 10px;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
