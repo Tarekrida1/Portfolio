@@ -156,6 +156,16 @@ $theme5-rgba_1: rgba(18, 202, 89, 0.8);
   color: #fff;
   outline: none;
 }
+[data-default-color="theme1"] #stt0 {
+  fill: $theme1-main;
+}
+[data-default-color="theme1"] #stt2{
+  fill: $theme1-main;
+}
+[data-default-color="theme1"] #stt1 {
+  fill: $theme1-second;
+}
+
 
 /************** end theme1 *********/
 
@@ -288,6 +298,15 @@ $theme5-rgba_1: rgba(18, 202, 89, 0.8);
   background: $theme2-second;
   color: #fff;
   outline: none;
+}
+[data-default-color="theme2"] #stt0 {
+  fill: $theme2-main;
+}
+[data-default-color="theme2"] #stt2{
+  fill: $theme2-main;
+}
+[data-default-color="theme2"] #stt1 {
+  fill: $theme2-second;
 }
 
 /************** end theme2 *********/
@@ -422,6 +441,15 @@ $theme5-rgba_1: rgba(18, 202, 89, 0.8);
   color: #fff;
   outline: none;
 }
+[data-default-color="theme3"] #stt0 {
+  fill: $theme3-main;
+}
+[data-default-color="theme3"] #stt2{
+  fill: $theme3-main;
+}
+[data-default-color="theme3"] #stt1 {
+  fill: $theme3-second;
+}
 
 /************** end theme3 *********/
 
@@ -555,6 +583,16 @@ $theme5-rgba_1: rgba(18, 202, 89, 0.8);
   color: #fff;
   outline: none;
 }
+[data-default-color="theme4"] #stt0 {
+  fill: $theme4-main;
+}
+[data-default-color="theme4"] #stt2{
+  fill: $theme4-main;
+}
+[data-default-color="theme4"] #stt1 {
+  fill: $theme4-second;
+}
+
 
 /************** end theme4 *********/
 
@@ -688,6 +726,16 @@ $theme5-rgba_1: rgba(18, 202, 89, 0.8);
   color: #fff;
   outline: none;
 }
+[data-default-color="theme5"] #stt0 {
+  fill: $theme5-main;
+}
+[data-default-color="theme5"] #stt2{
+  fill: $theme5-main;
+}
+[data-default-color="theme5"] #stt1 {
+  fill: $theme5-second;
+}
+
 /************** end theme5 *********/
 
 #theme-1 {
@@ -755,7 +803,7 @@ $theme5-rgba_1: rgba(18, 202, 89, 0.8);
 }
 
 [data-dark="dark"] .signup .signup-content {
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
 }
 

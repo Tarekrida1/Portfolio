@@ -1397,14 +1397,65 @@ body {
 }
 
 /********************** end sevicese ***********/
+
+@-webkit-keyframes rootate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rootate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 /* sign up */
 .signup {
   width: 100%;
   text-align: center;
   position: relative;
-  height: 900px;
-  background-image: url(../img/form.svg);
-  margin-bottom: -40px;
+  height: 700px;
+  margin-bottom: -30px;
+}
+
+.signup svg {
+  position: absolute;
+  top: 30px;
+  left: 65px;
+  width: 250px;
+  height: 250px;
+  -webkit-animation: rootate 110s linear infinite;
+  animation: rootate 110s linear infinite;
+}
+
+.signup svg:nth-of-type(2) {
+  left: auto;
+  top: 70px;
+  right: 55px;
+  transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-animation: rootate 130s linear infinite;
+  animation: rootate 130s linear infinite;
+}
+
+.signup svg:nth-of-type(3) {
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: 60px;
+  opacity: .5;
+  transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-animation: rootate 90s linear infinite;
+  animation: rootate 90s linear infinite;
 }
 
 .signup .signup-content {
@@ -1420,22 +1471,22 @@ body {
   -o-border-radius: 20px;
   overflow: hidden;
   color: #000;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
   right: 0;
   margin: 130px 25%;
-  padding: 25px 10px;
+  padding: 10px;
 }
 
 .signup .signup-content h1 {
   font-size: 35px;
   font-weight: bold;
-  padding-top: 40px;
+  padding-top: 15px;
 }
 
 .signup .signup-content h3 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .signup .signup-input {
@@ -1494,7 +1545,7 @@ body {
 
 .signup textarea {
   width: 60%;
-  height: 130px;
+  height: 70px;
   padding: 5px 10px;
   border: none;
   background: transparent;
@@ -1686,6 +1737,18 @@ span:nth-of-type(2) {
   outline: none;
 }
 
+[data-default-color="theme1"] #stt0 {
+  fill: #0080ff;
+}
+
+[data-default-color="theme1"] #stt2 {
+  fill: #0080ff;
+}
+
+[data-default-color="theme1"] #stt1 {
+  fill: #13c0ff;
+}
+
 /************** end theme1 *********/
 /*   theme2 ********/
 [data-default-color="theme2"] .color1 {
@@ -1819,6 +1882,18 @@ span:nth-of-type(2) {
   background: #ff4b68;
   color: #fff;
   outline: none;
+}
+
+[data-default-color="theme2"] #stt0 {
+  fill: #fe2370;
+}
+
+[data-default-color="theme2"] #stt2 {
+  fill: #fe2370;
+}
+
+[data-default-color="theme2"] #stt1 {
+  fill: #ff4b68;
 }
 
 /************** end theme2 *********/
@@ -1956,6 +2031,18 @@ span:nth-of-type(2) {
   outline: none;
 }
 
+[data-default-color="theme3"] #stt0 {
+  fill: #4bc2c5;
+}
+
+[data-default-color="theme3"] #stt2 {
+  fill: #4bc2c5;
+}
+
+[data-default-color="theme3"] #stt1 {
+  fill: #3ca0a2;
+}
+
 /************** end theme3 *********/
 /*   theme4 ********/
 [data-default-color="theme4"] .color1 {
@@ -2089,6 +2176,18 @@ span:nth-of-type(2) {
   background: #c5738f;
   color: #fff;
   outline: none;
+}
+
+[data-default-color="theme4"] #stt0 {
+  fill: #f3759f;
+}
+
+[data-default-color="theme4"] #stt2 {
+  fill: #f3759f;
+}
+
+[data-default-color="theme4"] #stt1 {
+  fill: #c5738f;
 }
 
 /************** end theme4 *********/
@@ -2226,6 +2325,18 @@ span:nth-of-type(2) {
   outline: none;
 }
 
+[data-default-color="theme5"] #stt0 {
+  fill: #00a03e;
+}
+
+[data-default-color="theme5"] #stt2 {
+  fill: #00a03e;
+}
+
+[data-default-color="theme5"] #stt1 {
+  fill: #12ca59;
+}
+
 /************** end theme5 *********/
 #theme-1 {
   background: #13c0ff;
@@ -2297,7 +2408,7 @@ span:nth-of-type(2) {
 }
 
 [data-dark="dark"] .signup .signup-content {
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
 }
 
@@ -2580,9 +2691,19 @@ span:nth-of-type(2) {
     margin-top: 0;
   }
   /******************* end services **********/
+  .signup svg {
+    height: 100px;
+    width: 100px;
+  }
   .signup .signup-content {
     margin-left: 50px;
     margin-right: 50px;
+  }
+  .signup .signup-content h1 {
+    font-size: 25px;
+  }
+  .signup .signup-content h3 {
+    font-size: 18px;
   }
   .signup .signup-content .signup-input {
     width: 100%;

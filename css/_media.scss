@@ -217,25 +217,37 @@ font-size: 50px;
     margin-top: 0
 }
 /******************* end services **********/
-.signup .signup-content {
-    margin-left: 50px;
-    margin-right: 50px;
-    .signup-input {
-        width: 100%;
+.signup {
+    svg {
+        height: 100px;
+        width: 100px
     }
-    .custom-input {
-        width: 95%;
-        label {        
-            left: 5%;}
-         input:focus + label {
-            left: 5%;
-            }
-    }
-        textarea {
-            width: 90%;
-            margin: 0 ;
+    .signup-content {
+         h1 {
+             font-size: 25px;
+         }
+         h3 {
+            font-size: 18px;
         }
-
+        margin-left: 50px;
+        margin-right: 50px;
+        .signup-input {
+            width: 100%;
+        }
+        .custom-input {
+            width: 95%;
+            label {        
+                left: 5%;}
+             input:focus + label {
+                left: 5%;
+                }
+        }
+            textarea {
+                width: 90%;
+                margin: 0 ;
+            }
+    
+    }
 }
 .moree {
 
