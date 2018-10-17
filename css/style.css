@@ -2501,10 +2501,6 @@ span:nth-of-type(2) {
     -ms-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
   }
-  .gallery .controls .control {
-    padding: 10px 25px;
-    font-size: 20px;
-  }
   .services .sevices-slider .slide .slid-text h3 {
     font-size: 50px;
   }
