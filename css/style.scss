@@ -171,6 +171,15 @@ body {
   top: 0;
   left: 0;
   overflow: hidden;
+  direction: ltr;
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%, 0);  
+}
 .loadercontainer {
 	position: absolute;
 	top: 50%;
@@ -178,14 +187,6 @@ body {
 	transform: translate(-50%, -50%);
     display: flex;
     background: #fff;
-    span {
-        font-size: 20px;
-        letter-spacing: 3px;
-        font-weight: bold;
-        position: absolute;
-    top: -75px;
-    left: 30px;
-    }
 }
 .dash {
 	margin: 0 15px;

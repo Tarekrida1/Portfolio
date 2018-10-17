@@ -315,6 +315,17 @@ body {
   top: 0;
   left: 0;
   overflow: hidden;
+  direction: ltr;
+}
+
+.loading span {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .loading .loadercontainer {
@@ -327,15 +338,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   background: #fff;
-}
-
-.loading .loadercontainer span {
-  font-size: 20px;
-  letter-spacing: 3px;
-  font-weight: bold;
-  position: absolute;
-  top: -75px;
-  left: 30px;
 }
 
 .loading .dash {
