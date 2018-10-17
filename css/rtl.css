@@ -26,10 +26,6 @@
   -webkit-transform: translate(50%, -90%);
 }
 
-.moree .basic {
-  text-align: right;
-}
-
 .signup .custom-input label {
   left: auto;
   right: 15%;
@@ -44,7 +40,9 @@
   text-align: right;
 }
 
-.moree .basic h4, .moree .my-cv a, .gallery h1 {
+.moree .basic h4,
+.moree .my-cv a,
+.gallery h1 {
   letter-spacing: 0;
 }
 

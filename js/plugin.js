@@ -81,8 +81,9 @@ $(function () {
         $("html, body").animate({ scrollTop: $(".signup").offset().top - 50 });
     });
 
-    $(document).on('scroll', function () {
-        var skills = $('#skills').position().top,
+    $(document).on('scroll', function() {
+        setTimeout(function() {
+            var skills = $('#skills').position().top,
             gallery = $('.gallery').position().top;
         if ($(this).scrollTop() >= skills) {
             $(".moree .skills .progresss ul li .prog_bar .percent").removeClass("prog_width");
@@ -92,8 +93,9 @@ $(function () {
             $(".moree .skills .progresss ul li .prog_bar .percent").addClass("prog_width");
 
         }
-    })
-    console.log(skills);
+           }, 2000);
+       
+    });
     // animate prog while scroll 
 
     // inputs 
