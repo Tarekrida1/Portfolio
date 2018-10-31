@@ -177,4 +177,10 @@ $(window).on('load', function () {
       $(this).remove();
     });
   });
+// remove animation on mobile screen
+ if ($(window).width() <= 768) {
+    $("#animatestyle").attr("disabled", "disabled");
+ } else {
+    $("#animatestyle").removeAttr("disabled");
+ }
 });
