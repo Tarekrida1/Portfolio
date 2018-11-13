@@ -1,4 +1,5 @@
 $w_color: #fff;
+
 @mixin tran($t) {
   -webkit-transition: all $t ease-in-out;
   -moz-transition: all $t ease-in-out;
@@ -229,6 +230,7 @@ body {
 }
 
 }
+
 /**************************** end loading ************/
 /* start type */
 .cd-words-wrapper {

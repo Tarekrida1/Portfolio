@@ -27,59 +27,16 @@ $(function () {
             $(".navbar .logo .lan").css({ "opacity": "0" });
             $("#brand").addClass("brand");
         }
-    });
-    $(document).scroll(function () {
-        if ($(document).scrollTop() > 20) {
-            $(".menu a").removeClass("active");
-            $("#home").addClass("active");
-        }
-    });
-
-    $(document).scroll(function () {
-        if ($(this).scrollTop() >= $('.moree').offset().top - 200) {
-            $(".menu a").removeClass("active");
-            $("#moree").addClass("active");
-        }
-    });
-    $(document).scroll(function () {
-        if ($(this).scrollTop() >= $('.gallery').offset().top - 200) {
-            $(".menu a").removeClass("active");
-            $("#Portfolio").addClass("active");
-        }
-    });
-    $(document).scroll(function () {
-        if ($(this).scrollTop() >= $('.services').offset().top - 200) {
-            $(".menu a").removeClass("active");
-            $("#Services").addClass("active");
-        }
-    });
-    $(document).scroll(function () {
-        if ($(this).scrollTop() >= $('.signup').offset().top - 200) {
-            $(".menu a").removeClass("active");
-            $("#Contact").addClass("active");
-        }
+    });  
+    $('.menu a').on('click', function(){
+        event.preventDefault();
+        var mySection =  $(this).attr("id");
+        $(this).addClass('active').siblings().removeClass('active');
+        $('html, body').animate({
+            scrollTop: $('#'+mySection+'-content').offset().top
+        },1000);
     });
     /*    end change bg nav and animate on scroll */
-    $("#home").on("click", function () {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: $("body").offset().top });
-    });
-    $("#moree").on("click", function () {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: $(".moree").offset().top - 171 });
-    });
-    $("#Portfolio").on("click", function () {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: $(".gallery").offset().top - 50 });
-    });
-    $("#Services").on("click", function () {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: $(".services").offset().top });
-    });
-    $("#Contact").on("click", function () {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: $(".signup").offset().top - 50 });
-    });
 
     $(document).on('scroll', function() {
         setTimeout(function() {
@@ -96,6 +53,7 @@ $(function () {
            }, 2000);
        
     });
+    
     // animate prog while scroll 
 
     // inputs 
@@ -177,10 +135,4 @@ $(window).on('load', function () {
       $(this).remove();
     });
   });
-// remove animation on mobile screen
- if ($(window).width() <= 768) {
-    $("#animatestyle").attr("disabled", "disabled");
- } else {
-    $("#animatestyle").removeAttr("disabled");
- }
 });

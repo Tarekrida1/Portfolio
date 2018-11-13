@@ -7,7 +7,7 @@
   <meta name="description" content="creating responsive websites and converting psd files to codes using front end web developer technologies">
   <title>Tarek Portfolio</title>
   <link rel="icon" href="/img/logo.png">
-  <link rel="stylesheet" href="css/aos.css" type="text/css" id="animatestyle">
+  <link rel="stylesheet" href="css/aos.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/slick.css" type="text/css">
@@ -17,7 +17,6 @@
   <script src="js/jquery-1.12.1.min.js"></script>
 </head>
 <body data-default-color="theme1">
-
   <!-- theme option   -->
   <div class="themes-menu background-dark">
     <span class="color-light">Change Theme</span>
@@ -72,7 +71,7 @@
   </nav>
   <!-- end nav -->
   <!-- start wellcome -->
-  <div class="wellcome">
+  <div class="wellcome" id="home-content">
     <div class="overlay"></div>
     <div class="container">
       <div class="wellcome-text">
@@ -147,10 +146,11 @@
   </div>
   <!-- end wellcome -->
   <!-- start more about me -->
+  <div id="moree-content"></div>
   <div class="moree border1">
     <div class="container">
       <div class="con" data-aos="fade-up">
-        <img class="border1" src="img/my-photo.jpg" alt="profile imge">
+        <img class="border1" src="img/my-photo.jpg"   alt="profile imge">
         <h1 class="color1">About Me</h1>
         <p class="color-light">
           I am a front-end developer. I developing websites based on
@@ -281,9 +281,11 @@
           <i class="fa fa-download"></i> Resume</a>
       </span>
     </div>
+    <div id="Portfolio-content"></div>
   </div>
   <!-- end more about me -->
   <!-- start gallery -->
+
   <div class="gallery">
     <h1 class="color1 aos-init aos-animate" data-aos="fade-up">Portfolio</h1>
     <p class="color2 aos-init aos-animate" data-aos="fade-up">Most Important Websites I have developed them.</p>
@@ -511,7 +513,7 @@
   </div>
   <!-- end gallery -->
   <!-- start services -->
-  <div class="services text-center " id="services">
+  <div class="services text-center " id="Services-content">
     <div class="container">
       <div class="head">
         <h1 class="color1">Services</h1>
@@ -607,7 +609,7 @@
   </div>
   <!-- end services -->
   <!-- sign up -->
-  <div class="signup">
+  <div class="signup" id="Contact-content">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
    <path id="stt0" d="M183.1,169.2C114.2,260.4,5.6,248.5,4.4,283.2C3,327.2,175,420.6,294.9,345c99.4-62.7,123.8-216.7,66.7-289.3
