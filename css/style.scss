@@ -858,7 +858,7 @@ body {
         left: 0;
         background: rgba(0, 183, 255, 0.459);
         width: 100%;
-        height: 25%;
+        height: 50%;
         @include tran(0.5s);
         @include translat(-100%, 0);
         opacity: 0;
@@ -866,9 +866,20 @@ body {
             position: absolute;
             left: 50%;
             top: 50%;
+            width: 100%;
             @include translat(-50%, -50%);
             text-align: center;
             display: grid;
+            h3 {
+                color: #fff;
+                margin: 0;
+            }
+            p {
+                color: #DDD;
+                span {
+                    color: red
+                }
+            }
             a {
                 background: #fff;
                 text-decoration: none;

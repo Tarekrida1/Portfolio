@@ -1161,7 +1161,7 @@ body {
   left: 0;
   background: rgba(0, 183, 255, 0.459);
   width: 100%;
-  height: 25%;
+  height: 50%;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   transform: translate(-100%, 0);
@@ -1176,6 +1176,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -1184,6 +1185,19 @@ body {
   text-align: center;
   display: -ms-grid;
   display: grid;
+}
+
+.item .overlay .over-text h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.item .overlay .over-text p {
+  color: #DDD;
+}
+
+.item .overlay .over-text p span {
+  color: red;
 }
 
 .item .overlay .over-text a {
